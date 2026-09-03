@@ -4,478 +4,617 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
-<title>Ética de los Negocios — Guía de Estudio | Den</title>
+<title>Guía de Estudio · Certamen 1 · Ética de los Negocios (UDD)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  color-scheme: dark;
-  --cream:#0d1622;      /* body bg */
-  --paper:#16212f;      /* cards */
-  --paper2:#1c2836;     /* nested / details / hover */
-  --ink:#e9eef4;
-  --ink-soft:#bcc7d3;
-  --muted:#8695a4;
-  --line:#293849;
-  --head:#d3e3f8;       /* headings */
-  --udd:#6ea9e8;        /* accent light blue: links, labels */
-  --udd-deep:#0e2c4d;   /* deep navy: table head, pills */
-  --teal:#43c0c9;
-  --red:#d76b6b;
-  --accent:#e2a54c;
-  --blue-bg:#122740;
-  --blue-brd:#274a70;
-  --yellow-bg:#2f2a15;
-  --yellow-brd:#5f5223;
-  --green-bg:#132c1e;
-  --green-brd:#2c5f42;
-  --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;background:var(--cream);color:var(--ink);
-  font-family:"DM Sans",system-ui,sans-serif;font-size:17px;line-height:1.62;
-}
-.wrap{max-width:1180px;margin:0 auto;padding:0 20px;display:flex;gap:34px;align-items:flex-start}
-
-/* ---------- Sidebar nav ---------- */
-aside{position:sticky;top:0;flex:0 0 248px;height:100vh;overflow-y:auto;padding:26px 6px 40px 0}
-aside .brand{font-family:"Playfair Display",serif;font-weight:800;font-size:1.15rem;color:var(--head);line-height:1.2;margin-bottom:4px}
-aside .brand small{display:block;font-family:"DM Sans";font-weight:500;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-top:6px}
-nav{margin-top:22px}
-nav .grp{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:18px 0 6px}
-nav a{display:block;padding:6px 12px;border-radius:8px;color:var(--ink-soft);text-decoration:none;font-size:.9rem;border-left:2px solid transparent;transition:.15s}
-nav a:hover{background:var(--paper2);color:var(--udd)}
-nav a.sub{padding-left:22px;font-size:.85rem;color:var(--muted)}
-
-/* ---------- Main ---------- */
-main{flex:1 1 auto;min-width:0;padding:30px 0 90px}
-.mobbar{display:none}
-
-h1{font-family:"Playfair Display",serif;font-weight:800;font-size:2.5rem;line-height:1.08;margin:.1em 0 .1em;color:var(--head)}
-.subtitle{color:var(--muted);font-size:1.02rem;margin-bottom:26px}
-h2{font-family:"Playfair Display",serif;font-weight:700;font-size:1.9rem;color:var(--head);margin:14px 0 6px;scroll-margin-top:18px}
-h3{font-family:"Playfair Display",serif;font-weight:700;font-size:1.28rem;color:var(--ink);margin:30px 0 10px}
-h4{font-weight:700;font-size:1.02rem;margin:18px 0 6px;color:var(--udd)}
-p{margin:10px 0}
-b,strong{color:var(--ink);font-weight:700}
-a.inl{color:var(--udd);text-decoration:underline;text-underline-offset:2px}
-
-.classcard{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:30px 34px;margin:26px 0;box-shadow:var(--shadow)}
-.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#dce8f6;background:var(--udd-deep);padding:4px 11px;border-radius:999px;margin-bottom:10px}
-.tag.t2{background:var(--teal);color:#0d1622}
-.date{color:var(--muted);font-size:.86rem;font-weight:500}
-
-/* Big idea banner */
-.banner{background:linear-gradient(100deg,#0e2a49,#134c86);color:#eef4fb;border-radius:14px;padding:20px 24px;margin:18px 0 8px;box-shadow:var(--shadow);border:1px solid #1d4a7a}
-.banner .k{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#9cc6f2;font-weight:700}
-.banner p{margin:6px 0 0;font-size:1.14rem;line-height:1.5}
-.banner b{color:#fff}
-
-/* Card grid */
-.grid{display:grid;gap:14px;margin:14px 0}
-.grid.g2{grid-template-columns:1fr 1fr}
-.grid.g3{grid-template-columns:1fr 1fr 1fr}
-.cell{background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:15px 17px}
-.cell h5{margin:0 0 5px;font-size:.98rem;font-weight:700;color:var(--udd)}
-.cell p{margin:3px 0;font-size:.94rem;color:var(--ink-soft)}
-
-/* Comparison table */
-.cmp{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem;background:var(--paper);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
-.cmp th{background:var(--udd-deep);color:#eef4fb;text-align:left;padding:11px 15px;font-size:.9rem;font-weight:700}
-.cmp td{padding:10px 15px;border-top:1px solid var(--line);color:var(--ink-soft);vertical-align:top}
-.cmp tr td:first-child{background:var(--paper2);font-weight:500;color:var(--ink)}
-
-/* callouts */
-.callout{border-radius:12px;padding:14px 18px;margin:16px 0;font-size:.96rem}
-.ex{background:var(--blue-bg);border:1px solid var(--blue-brd);color:var(--ink-soft)}
-.ex .lab{color:var(--udd);font-weight:700}
-.trap{background:var(--yellow-bg);border:1px solid var(--yellow-brd);color:var(--ink-soft)}
-.trap .lab{color:#e6c454;font-weight:700}
-.glob{background:var(--green-bg);border:1px solid var(--green-brd);color:var(--ink-soft)}
-.glob .lab{color:#74d29a;font-weight:700}
-.callout .lab{display:block;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
-.callout ul{margin:6px 0 0;padding-left:20px}
-.callout li{margin:3px 0}
-.callout b{color:var(--ink)}
-
-/* framework list */
-.fw{counter-reset:step;margin:14px 0;padding:0;list-style:none}
-.fw li{position:relative;padding:10px 14px 10px 46px;margin:8px 0;background:var(--paper2);border:1px solid var(--line);border-radius:10px}
-.fw li::before{counter-increment:step;content:counter(step);position:absolute;left:12px;top:11px;width:24px;height:24px;background:var(--udd);color:#0d1622;border-radius:50%;display:grid;place-items:center;font-size:.82rem;font-weight:700}
-.fw li b{color:var(--head)}
-
-/* practice */
-details{background:var(--paper2);border:1px solid var(--line);border-radius:11px;margin:10px 0;padding:2px 4px}
-details[open]{background:var(--paper);border-color:var(--line)}
-summary{cursor:pointer;padding:12px 16px;font-weight:600;color:var(--ink);list-style:none;display:flex;align-items:center;gap:10px}
-summary::-webkit-details-marker{display:none}
-summary::before{content:"\2712";color:var(--accent);font-weight:700}
-summary .qt{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:#0d1622;background:var(--teal);padding:2px 8px;border-radius:999px;font-weight:700}
-summary .qt.apply{background:var(--accent);color:#241704}
-summary .qt.comp{background:var(--red);color:#2a0d0d}
-summary .qt.integ{background:var(--udd-deep);color:#dce8f6}
-.ans{padding:2px 18px 16px 42px;font-size:.94rem;color:var(--ink-soft)}
-.ans b{color:var(--head)}
-.hint{display:block;color:var(--muted);font-style:italic;margin:0 18px 12px 42px;font-size:.88rem}
-
-/* misc */
-.pill{display:inline-block;background:var(--blue-bg);color:var(--udd);border:1px solid var(--blue-brd);border-radius:999px;padding:2px 10px;font-size:.8rem;font-weight:600;margin:2px 3px 2px 0}
-.note{font-size:.9rem;color:var(--muted)}
-hr.s{border:none;border-top:1px solid var(--line);margin:26px 0}
-.ext{display:inline-block;background:#33291a;border:1px solid #6b5330;color:var(--accent);border-radius:6px;padding:0 7px;font-size:.74rem;font-weight:700;letter-spacing:.02em;white-space:nowrap}
-.extnote{color:var(--accent);font-style:italic}
-.legend{font-size:.85rem;color:var(--muted);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:0 0 20px}
-.legend .ext{margin-right:6px}
-.updatebox{background:var(--paper);border:1px dashed #3a4d63;border-radius:12px;padding:16px 20px;font-size:.9rem;color:var(--ink-soft);margin-top:30px}
-.updatebox b{color:var(--head)}
-footer{color:var(--muted);font-size:.82rem;text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid var(--line)}
-.toc-top{display:none}
-
-@media (max-width:860px){
-  .wrap{flex-direction:column;gap:0}
-  aside{display:none}
-  .mobbar{display:flex;position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line);align-items:center;justify-content:space-between;padding:12px 18px;margin:0 -20px 8px}
-  .mobbar b{font-family:"Playfair Display",serif;color:var(--head)}
-  .mobbar select{font-family:"DM Sans";font-size:.9rem;padding:6px 8px;border-radius:8px;border:1px solid var(--line);background:var(--paper2);color:var(--ink)}
-  h1{font-size:1.9rem}.grid.g2,.grid.g3{grid-template-columns:1fr}
-  .classcard{padding:22px 18px}
-  main{padding:12px 0 70px}
-}
+  :root{
+    --bg:#0b1a2b; --bg2:#0f2338; --panel:#12283f; --card:#14293f; --card2:#173049;
+    --border:#274764; --text:#e8eff7; --muted:#9fb4cc; --heading:#eaf2fb;
+    --teal:#35b7c4; --blue:#5aa0e6; --deep:#16386b; --gold:#e0ad57; --green:#54b98a;
+    --trap:#e7b13a; --ex:#5aa0e6; --danger:#e0736e;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:"DM Sans",system-ui,sans-serif;line-height:1.65;font-size:16px;
+  }
+  h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif;color:var(--heading);line-height:1.2;font-weight:700}
+  a{color:var(--teal);text-decoration:none}
+  code{background:#0d2136;border:1px solid var(--border);border-radius:6px;padding:1px 6px;font-size:.9em}
+  .layout{display:flex;max-width:1280px;margin:0 auto;gap:0}
+  /* Sidebar */
+  aside{
+    width:290px;flex:0 0 290px;position:sticky;top:0;height:100vh;overflow-y:auto;
+    background:linear-gradient(180deg,#0c1f34,#0a1728);border-right:1px solid var(--border);padding:26px 18px 60px;
+  }
+  aside .brand{font-family:"Playfair Display",serif;font-weight:800;font-size:1.15rem;color:#fff;letter-spacing:.3px}
+  aside .brand span{color:var(--teal)}
+  aside .sub{color:var(--muted);font-size:.82rem;margin:4px 0 18px}
+  nav a{display:block;color:var(--muted);padding:7px 10px;border-radius:8px;font-size:.9rem;border-left:2px solid transparent}
+  nav a:hover{background:#12293f;color:var(--text)}
+  nav a.group{margin-top:14px;color:var(--teal);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;pointer-events:none;padding-bottom:2px}
+  nav a.sub-link{padding-left:20px;font-size:.85rem}
+  /* Main */
+  main{flex:1 1 auto;min-width:0;padding:34px 40px 90px;max-width:900px}
+  .hero{background:linear-gradient(135deg,#12365f,#0f2740);border:1px solid var(--border);border-radius:18px;padding:30px 30px 26px;margin-bottom:8px}
+  .hero .kicker{color:var(--teal);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.76rem}
+  .hero h1{font-size:2.1rem;margin:.35em 0 .2em}
+  .hero p{color:var(--muted);margin:.3em 0 0}
+  .legend{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 30px}
+  .legend span{font-size:.78rem;color:var(--muted);background:#0e2338;border:1px solid var(--border);border-radius:20px;padding:4px 11px}
+  section{margin:0 0 14px;scroll-margin-top:16px}
+  .banner{background:linear-gradient(135deg,var(--deep),#0f2740);border-radius:12px;padding:16px 20px;margin:34px 0 18px;border:1px solid var(--border)}
+  .banner .tag{color:var(--teal);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .banner h2{font-size:1.5rem;margin:.2em 0 0}
+  h3{font-size:1.18rem;margin:1.6em 0 .5em;color:#fff}
+  h3.first{margin-top:.6em}
+  p{margin:.6em 0}
+  ul,ol{margin:.5em 0 .8em;padding-left:1.25em}
+  li{margin:.28em 0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+  .grid.three{grid-template-columns:1fr 1fr 1fr}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
+  .card h4{margin:0 0 6px;font-size:1rem;color:var(--teal)}
+  .card.consec{border-top:3px solid var(--teal)}
+  .card.deber{border-top:3px solid #6f89b3}
+  .card.virtud{border-top:3px solid var(--gold)}
+  .card p,.card ul{font-size:.92rem;margin:.3em 0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.9rem}
+  th,td{border:1px solid var(--border);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:#122c46;color:#fff;font-family:"DM Sans";font-weight:700}
+  tr:nth-child(even) td{background:#0f2338}
+  /* callouts */
+  .box{border-radius:12px;padding:13px 16px;margin:14px 0;font-size:.93rem;border:1px solid var(--border)}
+  .ex{background:rgba(90,160,230,.09);border-left:4px solid var(--ex)}
+  .trap{background:rgba(231,177,58,.10);border-left:4px solid var(--trap)}
+  .global{background:rgba(84,185,138,.09);border-left:4px solid var(--green)}
+  .box .lab{font-weight:700;display:block;margin-bottom:3px}
+  .ex .lab{color:var(--ex)} .trap .lab{color:var(--trap)} .global .lab{color:var(--green)}
+  /* external tag */
+  .ext{display:inline-block;background:rgba(224,173,87,.14);color:var(--gold);border:1px solid rgba(224,173,87,.5);
+    border-radius:6px;padding:1px 7px;font-size:.72rem;font-weight:700;letter-spacing:.02em;vertical-align:middle}
+  .ext-note{border-left:4px solid var(--gold);background:rgba(224,173,87,.07)}
+  /* practice */
+  details{background:var(--card2);border:1px solid var(--border);border-radius:12px;margin:12px 0;overflow:hidden}
+  details summary{cursor:pointer;padding:12px 16px;font-weight:700;color:#fff;list-style:none;display:flex;gap:10px;align-items:flex-start}
+  details summary::-webkit-details-marker{display:none}
+  details summary .pill{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;background:var(--deep);color:var(--teal);
+    border-radius:20px;padding:2px 9px;flex:0 0 auto;margin-top:2px}
+  details summary::after{content:"▸";margin-left:auto;color:var(--muted);transition:transform .2s}
+  details[open] summary::after{transform:rotate(90deg)}
+  details .answer{padding:0 16px 14px;border-top:1px solid var(--border);color:var(--text);font-size:.93rem}
+  details .answer .rub{color:var(--muted);font-size:.85rem;font-style:italic;margin-top:8px}
+  .key{color:var(--teal);font-weight:700}
+  .warmup{background:#0e2338;border:1px dashed var(--border);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.9rem;color:var(--muted)}
+  .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+  .pill-row b{background:#12293f;border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-weight:600;font-size:.85rem;color:var(--text)}
+  hr{border:none;border-top:1px solid var(--border);margin:34px 0}
+  .footer{color:var(--muted);font-size:.82rem;margin-top:40px;border-top:1px solid var(--border);padding-top:16px}
+  .topbar{display:none}
+  @media(max-width:860px){
+    .layout{flex-direction:column}
+    aside{position:static;width:auto;height:auto;flex:none;border-right:none;border-bottom:1px solid var(--border)}
+    main{padding:24px 18px 70px}
+    .grid,.grid.three{grid-template-columns:1fr}
+    .hero h1{font-size:1.6rem}
+    .topbar{display:flex}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="layout">
+  <aside>
+    <div class="brand">Ética de los <span>Negocios</span></div>
+    <div class="sub">Guía de estudio · Certamen 1 · Sección 4 · UDD</div>
+    <nav>
+      <a href="#inicio">Cómo llegar bien al Certamen 1</a>
+      <a href="#calientes">🔥 Temas más probables</a>
+      <a class="group">Clase 1 · Fundamentos</a>
+      <a class="sub-link" href="#moral-etica">Moral vs ética</a>
+      <a class="sub-link" href="#etica-empresarial">Qué es ética empresarial</a>
+      <a class="sub-link" href="#etica-ley">Ética y ley (¿legal = ético?)</a>
+      <a class="sub-link" href="#sostenibilidad">Sostenibilidad</a>
+      <a class="group">Clase 2 · Empresa y sociedad</a>
+      <a class="sub-link" href="#empresa">Qué es una empresa</a>
+      <a class="sub-link" href="#friedman">Friedman (accionistas)</a>
+      <a class="sub-link" href="#freeman">Freeman (stakeholders)</a>
+      <a class="sub-link" href="#rse">RSE y business case</a>
+      <a class="sub-link" href="#ciudadania">Ciudadanía empresarial</a>
+      <a class="sub-link" href="#accountability">Accountability</a>
+      <a class="group">Clase 3 · Modelos prescriptivos</a>
+      <a class="sub-link" href="#tres-lentes">Las 3 lentes</a>
+      <a class="sub-link" href="#utilitarismo">Utilitarismo</a>
+      <a class="sub-link" href="#deontologia">Ética del deber (Kant)</a>
+      <a class="sub-link" href="#virtud">Ética de la virtud</a>
+      <a class="group">Clase 4 · Decisión y conducta</a>
+      <a class="sub-link" href="#ocho-pasos">Los 8 pasos</a>
+      <a class="sub-link" href="#descriptivos">Prescriptivo vs descriptivo</a>
+      <a class="sub-link" href="#factores">Factores + racionalizaciones</a>
+      <a class="sub-link" href="#reducir">Reducir deshonestidad</a>
+      <a class="group">Cierre</a>
+      <a href="#glosario">Glosario</a>
+      <a href="#simulacro">Simulacro final</a>
+    </nav>
+  </aside>
 
-<!-- ================= SIDEBAR ================= -->
-<aside>
-  <div class="brand">Ética de los Negocios<small>Guía de estudio · UDD</small></div>
-  <nav>
-    <div class="grp">Control 1 · 20 ago</div>
-    <a href="#c1">Clase 1 — Ética empresarial</a>
-    <a href="#qes" class="sub">Qué es ética empresarial</a>
-    <a href="#moral" class="sub">Moral vs Ética</a>
-    <a href="#ley" class="sub">Ética y Ley</a>
-    <a href="#sost" class="sub">Sostenibilidad</a>
-    <a href="#c2">Clase 2 — Rol de la empresa</a>
-    <a href="#empresa" class="sub">Qué es una empresa</a>
-    <a href="#friedman" class="sub">Friedman (accionistas)</a>
-    <a href="#freeman" class="sub">Freeman (stakeholders)</a>
-    <a href="#rse" class="sub">Business case RSE</a>
-    <a href="#ciud" class="sub">Ciudadanía y accountability</a>
-    <div class="grp">Repaso</div>
-    <a href="#glosario">Glosario clave</a>
-    <a href="#cierre">Cómo llegar al control</a>
-    <div class="grp">Próximas clases</div>
-    <a href="#futuro" style="color:var(--muted)">— por agregar —</a>
-  </nav>
-</aside>
-
-<!-- ================= MAIN ================= -->
-<main>
-  <div class="mobbar">
-    <b>Ética de los Negocios</b>
-    <select onchange="if(this.value)location.hash=this.value">
-      <option value="">Ir a…</option>
-      <option value="#c1">Clase 1 — Ética empresarial</option>
-      <option value="#moral">· Moral vs Ética</option>
-      <option value="#ley">· Ética y Ley</option>
-      <option value="#sost">· Sostenibilidad</option>
-      <option value="#c2">Clase 2 — Rol de la empresa</option>
-      <option value="#friedman">· Friedman</option>
-      <option value="#freeman">· Freeman / stakeholders</option>
-      <option value="#ciud">· Ciudadanía / accountability</option>
-      <option value="#glosario">Glosario</option>
-      <option value="#cierre">Cómo llegar al control</option>
-    </select>
-  </div>
-
-  <h1>Ética de los Negocios</h1>
-  <div class="subtitle">Guía de estudio de Den · Prof. Tatiana Montes · Sección 4 · Ingeniería Comercial, UDD</div>
-
-  <div class="legend"><span class="ext">⧉ Externo</span> Todo lo de esta guía viene de tus materiales del curso (slides Clase 1 y 2 + calendarización). Lo que veas con esta etiqueta es una aclaración mía que <b>no aparece literal en tus materiales</b>.</div>
-
-  <div class="banner">
-    <span class="k">Tarea 1 (control individual en clases) — Jueves 20 de agosto · desarrollo escrito</span>
-    <p>Es la primera de las <b>5 tareas</b> del curso (30% de la nota final en conjunto; se elimina la más baja) — <b>no es el Certamen 1</b>, que es el 3 de septiembre. Cubre los <b>conceptos de Clase 1 y Clase 2</b>. Idea de fondo del curso: <b>lo ético no se decide por intuición, sino desde la reflexión</b>, con criterios más allá de la ley, la reputación o las emociones. En los negocios muchas veces no eliges entre el bien y el mal, sino <b>entre varios bienes o entre varios males</b>.</p>
-  </div>
-
-  <!-- ============================================================= -->
-  <!-- ===============        CLASE 1        ======================== -->
-  <!-- ============================================================= -->
-  <section class="classcard" id="c1">
-    <span class="tag">Clase 1</span> <span class="date">6 de agosto de 2026</span>
-    <h2>Introducción: ¿Qué es la ética empresarial?</h2>
-    <p class="note">Objetivos de la clase: definir ética empresarial, distinguir ética de moral, entender la relación ética–ley y por qué la ética importa en la gestión.</p>
-
-    <h3 id="qes">1 · Qué es la ética empresarial</h3>
-    <div class="grid g2">
-      <div class="cell">
-        <h5>Definición</h5>
-        <p>Es el <b>estudio de situaciones, actividades y decisiones comerciales donde se abordan cuestiones de lo correcto y lo incorrecto</b>. Nos entrega <b>principios que guían la toma de decisiones</b>.</p>
-      </div>
-      <div class="cell">
-        <h5>Para qué sirve</h5>
-        <p>Estudia cómo deben comportarse las empresas, sus líderes y trabajadores para <b>actuar de manera responsable, justa y coherente</b> con los valores de la sociedad.</p>
-      </div>
-    </div>
-    <p>No se trata de que las empresas sean “perfectas” ni “buenas personas”. Se trata de que sean <b>conscientes de su impacto</b> y asuman responsabilidades <b>más allá de lo estrictamente legal o financiero</b>. Las 4 preguntas guía de la ética empresarial:</p>
-    <div class="grid g2">
-      <div class="cell"><p>¿Es <b>justo</b> lo que estamos haciendo?</p></div>
-      <div class="cell"><p>¿Qué <b>consecuencias</b> tiene esta decisión en los distintos grupos involucrados?</p></div>
-      <div class="cell"><p>¿Está la acción <b>alineada con nuestros valores y propósito</b>?</p></div>
-      <div class="cell"><p>¿Estamos siendo <b>coherentes</b> con lo que decimos públicamente?</p></div>
+  <main>
+    <div class="hero" id="inicio">
+      <div class="kicker">Certamen 1 · Jueves 3 de septiembre · 20%</div>
+      <h1>Guía de estudio — Certamen 1</h1>
+      <p>Clases 1 a 4 · Fundamentos, empresa y sociedad, modelos prescriptivos y descriptivos. Evaluación escrita e individual, de desarrollo.</p>
     </div>
 
-    <h4>¿Por qué estudiarla?</h4>
-    <ul>
-      <li>La tecnología (inteligencia artificial, reconocimiento facial) crea desafíos nuevos donde la línea entre lo correcto e incorrecto es muy delgada.</li>
-      <li>La innovación impulsa el crecimiento, pero <b>también abre oportunidades para abusos</b>.</li>
-      <li>Las empresas responden no solo a accionistas y dueños, sino a cada vez más <b>stakeholders</b> (partes interesadas — cualquier grupo afectado por la empresa).</li>
-      <li>Pueden <b>impactar negativamente</b> a las personas, la sociedad y el medio ambiente.</li>
-      <li><b>No todo está regulado por la ley</b>: hay decisiones que la ley no cubre y hay que resolver con criterio ético.</li>
-    </ul>
-
-    <h3 id="moral">2 · Moral vs Ética</h3>
-    <p>Esta distinción es <b>candidata segura de pregunta</b>. La clave: la <b>moral</b> es lo que se hereda y se practica; la <b>ética</b> es la reflexión racional sobre esa moral.</p>
-    <div class="grid g2">
-      <div class="cell">
-        <h5>Moral</h5>
-        <p>Normas, valores y creencias arraigadas en los procesos sociales que definen lo que está bien y mal para un individuo o comunidad. Es un concepto <b>“subjetivo”</b> que <b>varía según individuos, culturas y épocas</b>.</p>
-      </div>
-      <div class="cell">
-        <h5>Ética</h5>
-        <p>Estudio de la moral y <b>aplicación de la razón</b> para dilucidar reglas y principios que determinan lo bueno y lo malo en una situación. Es un <b>sistema organizado de directrices</b> aplicable a todos los miembros de una sociedad. Estas reglas se llaman <b>teorías éticas</b>.</p>
-      </div>
-    </div>
-    <table class="cmp">
-      <tr><th>Moral</th><th>Ética</th></tr>
-      <tr><td>Lo que “se hace” en una cultura o grupo</td><td>Reflexión sobre si eso “debería hacerse”</td></tr>
-      <tr><td>Normas heredadas (familia, religión)</td><td>Criterios razonados y personales</td></tr>
-      <tr><td>Interiorizadas sin necesariamente pensarlas</td><td>Pensadas, argumentadas y discutidas</td></tr>
-      <tr><td>“Siempre se ha hecho así”</td><td>“¿Esto es correcto, justo o legítimo?”</td></tr>
-    </table>
-    <div class="callout ex">
-      <span class="lab">📌 Ejemplo de la clase</span>
-      En algunas familias se considera inmoral que los hijos contradigan a los padres (norma <b>moral</b>). Pero si un hijo ve que su padre actúa injustamente con otra persona y se pregunta “¿está bien callarme solo porque es mi papá?”, ahí aparece la <b>ética</b>: la capacidad de <b>pensar más allá de la obediencia, cuestionar lo aprendido y actuar con responsabilidad personal</b>.
-    </div>
-    <div class="callout trap">
-      <span class="lab">⚠️ Trampa de examen</span>
-      No las inviertas. Un error típico es decir “la ética es lo que me enseñaron y la moral lo que razono”. Es al revés: <b>moral = heredada/practicada; ética = reflexión racional sobre la moral</b>.
+    <div class="legend">
+      <span>📌 Ejemplo aplicado</span>
+      <span>⚠️ Trampa de examen</span>
+      <span>🌍 Nota clave</span>
+      <span class="ext">⧉ Externo</span> = aclaración externa, no proviene de las slides del curso
     </div>
 
-    <h3 id="ley">3 · La Ética y la Ley</h3>
-    <p>Se solapan pero no son lo mismo. Piénsalo como <b>dos círculos que se cruzan</b>: hay cosas legales y éticas a la vez, pero también <b>cosas legales que no son éticas</b> (y cosas éticas que la ley no exige).</p>
-    <div class="banner" style="background:linear-gradient(100deg,#0d2f52,#3aa8b0)">
-      <span class="k">Idea central</span>
-      <p>La <b>ley establece un mínimo</b>: lo permitido y lo prohibido. La <b>ética propone ideales y estándares más altos</b> y te hace preguntar: ¿esto está bien más allá de que sea legal? ¿qué consecuencias tiene para otros? ¿es justo o responsable?</p>
-    </div>
-    <table class="cmp">
-      <tr><th>Ley</th><th>Ética</th></tr>
-      <tr><td>Es obligatoria</td><td>Es voluntaria (pero esperada socialmente)</td></tr>
-      <tr><td>Establece mínimos</td><td>Propone ideales y estándares más altos</td></tr>
-      <tr><td>Se sanciona externamente (castigo legal)</td><td>Se juzga interna o socialmente</td></tr>
-      <tr><td>Aplica igual para todos</td><td>Considera contexto, intenciones y valores</td></tr>
-      <tr><td>Puede cambiar con gobiernos o épocas</td><td>Apunta a principios más estables</td></tr>
-    </table>
-    <p class="note"><b>Pregunta de la clase para pensar:</b> ¿Podemos tener leyes no éticas? Sí — la legalidad no garantiza que algo sea correcto (ej.: pagar condiciones laborales muy inferiores en otro país porque “la ley no lo prohíbe”).</p>
-
-    <h3 id="sost">4 · El objetivo de la ética: ser sostenibles</h3>
-    <p>La <b>sostenibilidad</b> (o sustentabilidad) es el <b>mantenimiento a largo plazo de los sistemas</b> considerando tres dimensiones que deben equilibrarse:</p>
-    <div class="grid g3">
-      <div class="cell"><h5>Económica</h5><p>La empresa se mantiene viable y genera valor en el tiempo.</p></div>
-      <div class="cell"><h5>Social</h5><p>Impacto justo en personas y comunidades.</p></div>
-      <div class="cell"><h5>Ambiental</h5><p>Cuidado del entorno y los recursos.</p></div>
-    </div>
-    <p class="note">Este modelo de las 3 dimensiones es el <b>“triple bottom line” de John Elkington</b> (triple resultado: económico + social + ambiental). Recuérdalo con el nombre — suele pedirse.</p>
-
-    <div class="callout ex">
-      <span class="lab">📌 Mini caso de la clase — “La empresa que quiso ser sustentable… pero no tanto”</span>
-      Una empresa chilena de retail lanza una línea eco-friendly. Para reducir costos de empaque evalúa <b>tercerizar producción en otro país con menos exigencias laborales y ambientales</b>. Es legal y los proveedores son legales, pero esas condiciones <b>no serían aceptadas en Chile</b>. La gerencia se divide: unos lo ven como “decisión estratégica racional”, otros dicen que <b>contradice el propósito sustentable de la marca</b>.
-      <ul>
-        <li><b>Qué entrena este caso:</b> que legal ≠ ético, la tensión entre viabilidad económica y coherencia del propósito, y la responsabilidad con trabajadores externos (stakeholders).</li>
-        <li><b>Cómo responderlo:</b> no hay una única respuesta correcta; lo que se evalúa es que <b>pongas en la balanza los distintos intereses</b> (económico, propósito de marca, trabajadores externos, presión del consumidor) y justifiques con criterio.</li>
-      </ul>
+    <div class="box ext-note">
+      <span class="lab">Cómo leer esta guía</span>
+      El contenido proviene de las slides de las Clases 1–4 y de las pautas de corrección de la profesora Tatiana Montes. Las aclaraciones que no aparecen de forma literal en las slides se marcan con <span class="ext">⧉ Externo</span>. Todo lo demás está verificado contra la fuente.
     </div>
 
-    <div class="callout trap">
-      <span class="lab">⚠️ Trampas de Clase 1</span>
-      <ul>
-        <li>“Legal = correcto” → <b>falso</b>. La ley es el piso, no el techo.</li>
-        <li>Confundir moral y ética (ver arriba).</li>
-        <li>Olvidar que la sostenibilidad tiene <b>3 patas</b>, no solo la ambiental.</li>
-      </ul>
+    <h3 class="first">Qué entra (pauta oficial, Clase 4)</h3>
+    <p>La profesora entregó la pauta en la última slide de la Clase 4, con una advertencia en amarillo: <span class="key">"entra la materia de TODAS las clases realizadas hasta hoy"</span>. La lista es una orientación, no un límite.</p>
+    <div class="grid">
+      <div class="card"><h4>Clase 1 · Fundamentos</h4><ul><li>Qué es ética empresarial</li><li>Ética y legalidad</li><li>Rol de la empresa y responsabilidad por sus decisiones</li></ul></div>
+      <div class="card"><h4>Clase 2 · Empresa y sociedad</h4><ul><li>RSE</li><li>Ciudadanía empresarial</li><li>Partes afectadas / stakeholders</li><li>Efectos e impactos de las decisiones</li></ul></div>
+      <div class="card"><h4>Clase 3 · Prescriptivos</h4><ul><li>Utilitarismo</li><li>Ética del deber</li><li>Ética de la virtud</li><li>Diferencias entre los tres</li><li>Aplicación a dilemas</li></ul></div>
+      <div class="card"><h4>Clase 4 · Decisión y conducta</h4><ul><li>8 pasos</li><li>Prescriptivos vs descriptivos</li><li>Factores individuales y del contexto</li><li>Racionalizaciones</li><li>Valores, estructura e integrado</li></ul></div>
     </div>
 
-    <h4>Practica (respóndelas <b>en voz alta o por escrito antes</b> de abrir la respuesta)</h4>
-    <details><summary><span class="qt">Recordar</span> Explica la diferencia entre moral y ética con tus palabras.</summary>
-      <span class="hint">Piensa: ¿qué se hereda y qué se razona?</span>
-      <div class="ans"><b>Moral:</b> normas/valores heredados y practicados en una cultura, subjetivos, varían según individuos, culturas y épocas. <b>Ética:</b> reflexión racional sobre esa moral para establecer principios (teorías éticas) que determinen lo correcto en una situación, aplicables a todos. En una línea: la moral es “lo que se hace”, la ética es “si eso debería hacerse”.</div>
-    </details>
-    <details><summary><span class="qt apply">Aplicar</span> Una decisión es legal y rentable pero perjudica a un grupo vulnerable. ¿Basta con que sea legal?</summary>
-      <div class="ans">No. La ley fija un <b>mínimo obligatorio</b>; la ética exige mirar las <b>consecuencias para otros</b> y preguntarse si es justo y responsable. Se puede cumplir la ley y aun así actuar de forma <b>no ética</b>. Aquí conviene nombrar el ejemplo de tercerizar en condiciones que no se aceptarían en Chile.</div>
-    </details>
-    <details><summary><span class="qt comp">Comparar</span> Nombra las 3 dimensiones de la sostenibilidad y a qué modelo pertenecen.</summary>
-      <div class="ans"><b>Económica, social y ambiental</b> — el <b>triple bottom line de John Elkington</b>. La idea: sostener los sistemas a largo plazo equilibrando las tres, no solo la ganancia ni solo lo verde.</div>
-    </details>
-  </section>
-
-  <!-- ============================================================= -->
-  <!-- ===============        CLASE 2        ======================== -->
-  <!-- ============================================================= -->
-  <section class="classcard" id="c2">
-    <span class="tag t2">Clase 2</span> <span class="date">13 de agosto de 2026</span>
-    <h2>El rol de las empresas en la sociedad</h2>
-    <p class="note">Objetivos: conocer la evolución del rol de la empresa, evaluar si una corporación puede ser moralmente responsable, y distinguir conceptos clave (accionistas vs stakeholders, accountability, ciudadanía empresarial).</p>
-
-    <h3 id="empresa">1 · ¿Qué es una empresa?</h3>
-    <ul>
-      <li>Se define esencialmente en términos de <b>estatus legal y propiedad de activos</b>.</li>
-      <li>Las empresas son <b>“personas jurídicas”</b> (tienen existencia legal propia).</li>
-      <li>Son teóricamente <b>“propiedad” de los accionistas, pero existen independientemente de ellos</b>.</li>
-      <li>Gerentes y directores tienen una <b>responsabilidad “fiduciaria”</b>: proteger la inversión de los accionistas. <span class="ext">⧉ Externo</span> <span class="extnote">aclaración mía: “fiduciaria” = de confianza; administrar el dinero de otro velando por su interés (no está definido así en la slide).</span></li>
-    </ul>
-    <p class="note">La pregunta de fondo de la clase: <b>¿deben las empresas asumir responsabilidades más allá de la maximización de ganancias y de lo que pide la ley? ¿Cuál es su rol?</b> Dos grandes respuestas: Friedman y Freeman.</p>
-
-    <h3 id="friedman">2 · El debate clásico — Milton Friedman (1970): teoría de los accionistas</h3>
-    <div class="banner">
-      <span class="k">La frase</span>
-      <p>“<b>La responsabilidad social de las empresas es aumentar sus beneficios</b>.” — Friedman, 1970</p>
-    </div>
-    <p>Postura <b>shareholder</b> (accionista): los gerentes deben concentrarse en <b>maximizar utilidades para los accionistas</b>. Se apoya en 3 argumentos:</p>
-    <ol class="fw">
-      <li><b>Naturaleza moral:</b> solo los <b>seres humanos individuales</b> tienen responsabilidad moral, <b>no las corporaciones</b>.</li>
-      <li><b>Agencia:</b> es responsabilidad <b>exclusiva de los gerentes</b> actuar únicamente en el <b>interés financiero de los accionistas</b> (son sus “agentes”).</li>
-      <li><b>Competencia (incumbencia):</b> los <b>problemas sociales</b> son competencia del <b>Estado</b>, no de la administración corporativa.</li>
+    <h3>Cómo se evalúa (lo más importante)</h3>
+    <p>Las pautas de corrección (Control 1 y Tarea 2) muestran un patrón claro. Cada respuesta bien puntuada tiene <span class="key">tres capas</span>, y la corrección reparte puntaje por cada una:</p>
+    <ol>
+      <li><b>Respuesta directa</b> — toma posición y nombra el concepto correcto (ej: "No, no basta con que sea legal" / "es Ética de la Virtud").</li>
+      <li><b>Fundamento teórico</b> — define el concepto con precisión (qué dice la teoría, sus términos propios).</li>
+      <li><b>Aplicación al caso</b> — conectas el concepto con hechos concretos del caso. Sin esto, no hay puntaje completo.</li>
     </ol>
+    <div class="box trap"><span class="lab">⚠️ Trampa #1 de este ramo</span>
+      Nombrar el concepto <b>no basta</b>. La slide "¿Cómo debes prepararte?" lo dice literal: <i>"No basta con nombrar un concepto: debes demostrar que entiendes qué significa y cómo se usa"</i>. Cuatro verbos que se pueden pedir: <b>comprender</b> (explicar el concepto con palabras propias), <b>distinguir</b> (diferenciar conceptos cercanos), <b>aplicar</b> (usar el modelo en un caso) y <b>fundamentar</b> (explicar por qué la respuesta corresponde al concepto, apoyándose en el caso).</div>
 
-    <h3 id="freeman">3 · La evolución — Edward Freeman (1984): teoría de los stakeholders</h3>
-    <div class="banner" style="background:linear-gradient(100deg,#0d2f52,#3aa8b0)">
-      <span class="k">Definición clave</span>
-      <p>Un <b>stakeholder</b> es <b>cualquier grupo o individuo que pueda afectar o ser afectado por el logro de los objetivos de la organización</b> (Freeman, 1984).</p>
+    <!-- ============ TEMAS CALIENTES ============ -->
+    <div class="banner" id="calientes">
+      <div class="tag">Prioridad de estudio</div>
+      <h2>🔥 Los 5 temas más probables</h2>
     </div>
-    <p>Frente a Friedman, Freeman dice que la empresa responde a <b>muchas partes interesadas</b>: trabajadores, clientes, proveedores, comunidad y medio ambiente — no solo a los accionistas. Se sostiene en dos principios:</p>
-    <div class="grid g2">
-      <div class="cell"><h5>Principio de Derechos</h5><p>La corporación tiene la obligación <b>ineludible de no violar los derechos de los demás</b>.</p></div>
-      <div class="cell"><h5>Principio de Efectos</h5><p>Las empresas son <b>responsables de los efectos (positivos y negativos) de sus acciones</b> sobre su entorno.</p></div>
-    </div>
-    <table class="cmp">
-      <tr><th>Friedman — Accionistas (1970)</th><th>Freeman — Stakeholders (1984)</th></tr>
-      <tr><td>La responsabilidad social es aumentar los beneficios</td><td>La empresa responde por su efecto sobre otros</td></tr>
-      <tr><td>Solo individuos tienen responsabilidad moral</td><td>La empresa debe respetar derechos y asumir sus impactos</td></tr>
-      <tr><td>Los gerentes sirven al interés del accionista</td><td>Los gerentes equilibran a todas las partes interesadas</td></tr>
-      <tr><td>Lo social le compete al Estado</td><td>Lo social también es de la empresa</td></tr>
+    <p>Estos cinco temas provienen de un certamen de <b>otra sección</b> del mismo ramo <span class="ext">⧉ Externo</span> (no forman parte de las slides, pero el temario y la profesora son los mismos, por lo que sirven de orientación). No garantizan las preguntas del certamen, pero conviene dominarlos a fondo. Cada uno enlaza a su sección correspondiente.</p>
+    <table>
+      <tr><th>Tema señalado</th><th>Dónde está en el material del curso</th></tr>
+      <tr><td><b>1.</b> Analizar un caso desde la moral y la ética, y diferenciar los conceptos</td><td><a href="#moral-etica">Moral vs ética</a></td></tr>
+      <tr><td><b>2.</b> Si una decisión es legal, ¿es éticamente correcta?</td><td><a href="#etica-ley">Ética y ley</a> (+ rúbrica Control 1)</td></tr>
+      <tr><td><b>3.</b> Utilitarismo</td><td><a href="#utilitarismo">Utilitarismo</a></td></tr>
+      <tr><td><b>4.</b> Ciudadanía empresarial y RSE</td><td><a href="#rse">RSE</a> · <a href="#ciudadania">Ciudadanía empresarial</a></td></tr>
+      <tr><td><b>5.</b> Cómo reducir la deshonestidad</td><td><a href="#reducir">Reducir deshonestidad</a> (valores / estructura / integrado)</td></tr>
     </table>
-    <div class="callout trap">
-      <span class="lab">⚠️ Trampa de examen</span>
-      No cruces los apellidos ni los años. <b>Friedman = accionistas = 1970 = “aumentar beneficios”</b>. <b>Freeman = stakeholders = 1984 = derechos + efectos</b>. Confundirlos es el error más caro de esta clase.
-    </div>
 
-    <h3 id="rse">4 · El “business case” de la RSE: por qué la ética conviene</h3>
-    <p>RSE = <b>Responsabilidad Social Empresarial</b>. La idea: comportarse éticamente <b>genera valor comercial a largo plazo</b>. Cuatro razones:</p>
-    <div class="grid g2">
-      <div class="cell"><h5>1 · Atracción de talento</h5><p>Empleados más comprometidos, motivados y atraídos por el propósito de la organización.</p></div>
-      <div class="cell"><h5>2 · Lealtad de clientes</h5><p>Más consumidores, mayor retención y satisfacción sostenible.</p></div>
-      <div class="cell"><h5>3 · Anticipación regulatoria</h5><p>Adaptarse temprano, antes de que la ley obligue al cambio.</p></div>
-      <div class="cell"><h5>4 · Ahorro y prevención</h5><p>El gasto en responsabilidad social previene conflictos graves y costosos con stakeholders.</p></div>
-    </div>
-    <div class="callout glob">
-      <span class="lab">🌍 Insight clave</span>
-      Integrar procesos operativos respetuosos <b>no es un mero instrumento de marketing</b>: exige un <b>cambio real en la cultura empresarial</b>, reconociendo que <b>empresa y sociedad son mutuamente dependientes</b>.
-    </div>
+    <hr>
 
-    <h3 id="ciud">5 · Ciudadanía empresarial y accountability</h3>
-    <h4>Ciudadanía empresarial</h4>
-    <p>Las empresas han empezado a asumir el papel de <b>actores “políticos”</b>, tomando funciones que antes cumplía el gobierno, porque:</p>
-    <ul>
-      <li>Los <b>gobiernos fallan</b> (o son incapaces) de responder a los problemas sociales.</li>
-      <li>Tienen <b>reducida capacidad para regular</b>, por lo que promueven cada vez más la <b>autorregulación</b>.</li>
-      <li>Las empresas tienen <b>cada vez más poder e influencia</b> (desregulación, privatización de servicios públicos, globalización).</li>
-    </ul>
-    <p>Así, la ciudadanía empresarial reconoce que <b>las empresas juegan un rol cada vez más central en el gobierno de los derechos (civiles, sociales y políticos) de los ciudadanos</b>.</p>
+    <!-- ============ CLASE 1 ============ -->
+    <div class="banner"><div class="tag">Clase 1 · 6 agosto</div><h2>Fundamentos de la ética de los negocios</h2></div>
 
-    <h4>Accountability (rendición de cuentas)</h4>
-    <p>Si las empresas tienen tanto poder, ¿quién las controla? ¿a quién le rinden cuentas? El <b>accountability</b> es la necesidad de que las empresas <b>rindan cuentas de alguna manera por las consecuencias de sus acciones</b>.</p>
-    <div class="callout ex">
-      <span class="lab">📌 La llave: transparencia</span>
-      <b>La transparencia es la clave.</b> Es el <b>grado en que las decisiones, políticas, actividades e impactos corporativos se reconocen y se hacen visibles para los stakeholders relevantes</b>. Sin transparencia no hay rendición de cuentas real.
-    </div>
+    <section id="moral-etica">
+      <h3 class="first">Moral vs ética <span class="ext">tema caliente #1</span></h3>
+      <p>Esta es la distinción base del curso y una diferencia que se pide "distinguir" de forma explícita.</p>
+      <div class="grid">
+        <div class="card consec"><h4>Moral</h4>
+          <p>Se ocupa de las <b>normas, valores y creencias</b> arraigadas en los procesos sociales que definen lo que está bien y mal para un individuo o comunidad.</p>
+          <p>Es un concepto <b>"subjetivo"</b> que varía según los individuos, las culturas y las épocas.</p>
+        </div>
+        <div class="card deber"><h4>Ética</h4>
+          <p>Se ocupa del <b>estudio de la moral</b> y de la <b>aplicación de la razón</b> para dilucidar reglas y principios que determinan lo bueno/malo en una situación determinada.</p>
+          <p>Es un <b>sistema organizado de directrices</b> aplicable a todos los miembros de una sociedad. Esas reglas y principios se llaman <b>teorías éticas</b>.</p>
+        </div>
+      </div>
+      <table>
+        <tr><th>Moral</th><th>Ética</th></tr>
+        <tr><td>Lo que "se hace" en una cultura o grupo</td><td>Reflexión sobre si eso "debería hacerse"</td></tr>
+        <tr><td>Normas heredadas (familia, religión)</td><td>Criterios razonados y personales</td></tr>
+        <tr><td>Interiorizadas sin necesariamente pensarlas</td><td>Pensadas, argumentadas y discutidas</td></tr>
+        <tr><td>"Siempre se ha hecho así"</td><td>"¿Esto es correcto, justo o legítimo?"</td></tr>
+      </table>
+      <div class="box ex"><span class="lab">📌 Ejemplo de la slide</span>
+        En algunas familias se considera inmoral que los hijos contradigan a los padres (norma moral). Pero si un hijo ve a su padre actuar injustamente y se pregunta "¿está bien callarme solo porque es mi papá?", ahí aparece la <b>ética</b>: pensar más allá de la obediencia, cuestionar lo aprendido, actuar con responsabilidad personal.</div>
+      <div class="box global"><span class="lab">🌍 Frase para anclar</span>
+        Moral = <b>lo que se hace</b> (heredado, subjetivo). Ética = <b>la reflexión razonada sobre lo que debería hacerse</b> (sistemática, aplicable a todos). La ética estudia y evalúa la moral.</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): explicar en una frase la diferencia moral/ética y dar un ejemplo donde algo sea "moralmente aceptado" pero éticamente cuestionable.</div>
+      <details>
+        <summary><span class="pill">Aplicar</span>Un ejecutivo dice: "Aquí siempre se han inflado un poco las cifras, todos lo hacen". ¿Se razona desde la moral o desde la ética? Justificar.</summary>
+        <div class="answer">
+          Razona desde la <span class="key">moral</span>: se apoya en lo que "se hace" en el grupo, una norma interiorizada y no cuestionada ("siempre se ha hecho así", "todos lo hacen"). No hay reflexión ética, que exigiría preguntarse <i>si esa práctica es correcta, justa o legítima</i> más allá de que sea habitual. La ética aplicaría la razón para evaluar la norma, no solo repetirla.
+          <div class="rub">Estructura que premia la corrección: (1) nombrar el concepto — moral; (2) fundamentar — moral = lo que se hace/heredado, ética = reflexión razonada; (3) aplicar al caso — "todos lo hacen" es la señal de norma no cuestionada.</div>
+        </div>
+      </details>
+    </section>
 
-    <div class="callout glob">
-      <span class="lab">🌍 Conclusión de la clase — la ética como motor de valor</span>
+    <section id="etica-empresarial">
+      <h3>Qué es la ética empresarial</h3>
+      <p>La <b>ética empresarial</b> es el estudio de situaciones, actividades y decisiones comerciales donde se abordan cuestiones de lo correcto y lo incorrecto. Nos entrega <b>principios que guían la toma de decisiones</b>.</p>
+      <p>Estudia cómo deben comportarse las empresas, sus líderes y trabajadores para actuar de manera <b>responsable, justa y coherente</b> con los valores de la sociedad. No se trata de que las empresas sean "perfectas" o "buenas personas", sino de que sean <b>conscientes de su impacto</b> y asuman responsabilidades <b>más allá de lo estrictamente legal o financiero</b>.</p>
+      <p>Preguntas típicas de la ética empresarial: ¿Es justo lo que hacemos? ¿Qué consecuencias tiene en los grupos involucrados? ¿Está alineado con nuestros valores y propósito? ¿Somos coherentes con lo que decimos públicamente?</p>
+      <div class="box trap"><span class="lab">⚠️ Distinción fina</span>
+        En este curso <b>no</b> se habla de la moral individual ("lo que cada uno cree bueno o malo"), sino de <b>ética en el mundo profesional</b>: decisiones que afectan a muchas personas y exigen reflexión más allá de lo que cada uno siente.</div>
+    </section>
+
+    <section id="etica-ley">
+      <h3>Ética y ley: ¿si es legal, es ético? <span class="ext">tema caliente #2</span></h3>
+      <p>La pregunta de la slide es directa: <b>"¿Podemos tener leyes no éticas?"</b> La respuesta corta: sí. Ley y ética se solapan, pero no son lo mismo.</p>
+      <p class="key">La ley establece un mínimo: lo que está permitido y lo que está prohibido. La ética, en cambio, pregunta: ¿esto está bien más allá de que sea legal? ¿qué consecuencias tiene para otros? ¿es justo o responsable?</p>
+      <table>
+        <tr><th>Ley</th><th>Ética</th></tr>
+        <tr><td>Es obligatoria</td><td>Es voluntaria (pero esperada socialmente)</td></tr>
+        <tr><td>Establece mínimos</td><td>Propone ideales y estándares más altos</td></tr>
+        <tr><td>Se sanciona externamente (castigo legal)</td><td>Se juzga interna o socialmente</td></tr>
+        <tr><td>Aplica igual para todos</td><td>Considera contexto, intenciones y valores</td></tr>
+        <tr><td>Puede cambiar con gobiernos o épocas</td><td>Apunta a principios más estables</td></tr>
+      </table>
+      <div class="box global"><span class="lab">🌍 La frase de oro (sale en la rúbrica del Control 1)</span>
+        "La ley establece un <b>piso o mínimo obligatorio</b> de conducta. La ética permite evaluar si una decisión, <b>aun siendo legal, es además justa, responsable</b> y consistente con estándares que pueden ir más allá de la exigencia legal." Una decisión puede ser <b>legal y rentable, pero no ética</b> si daña a personas o contradice los valores de la organización.</div>
+      <div class="box ex"><span class="lab">📌 Caso real del Control 1 · "El costo de la moda de bajo costo"</span>
+        Una empresa de ropa terceriza su producción a un proveedor extranjero con bajos estándares laborales, pero <b>legales</b> en ese país, para bajar precios. Pregunta: ¿basta el argumento "es legal"? <b>No.</b> Aunque la fábrica cumpla la ley local, la empresa chilena conoce las jornadas extensas y las malas condiciones; no puede justificar su decisión solo diciendo que es legal o que son trabajadores de un tercero. La ética exige evaluar <b>justicia, responsabilidad y efectos</b> sobre las personas.</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): redactar la respuesta completa a la pregunta siguiente con las tres capas (posición → teoría → caso), idealmente cronometrada.</div>
+      <details>
+        <summary><span class="pill">Fundamentar</span>Una empresa dice: "Nuestra práctica es legal, por lo tanto es correcta". ¿Es suficiente ese argumento desde la ética empresarial? (formato certamen)</summary>
+        <div class="answer">
+          <b>No, no es suficiente.</b> Que una práctica sea legal significa que cumple los <span class="key">mínimos obligatorios</span> que establece la ley, pero eso no implica que sea ética. La ley fija un piso (lo permitido/prohibido); la ética propone <span class="key">ideales y estándares más altos</span> y evalúa la decisión según criterios de <b>justicia, responsabilidad y sus efectos sobre las personas</b>, pudiendo exigir más que la ley. Una decisión puede ser legal y rentable y aun así no ética si daña a personas o contradice los valores de la organización. <b>Aplicado a un caso</b>: aunque un proveedor cumpla la legislación local, si la empresa conoce condiciones laborales indignas, no puede escudarse solo en la legalidad; debe considerar los efectos de su decisión.
+          <div class="rub">Puntaje del Control 1 (5 pts): respuesta directa (1) + fundamento ley=mínimo/ética=ideales (2) + análisis "legal y rentable ≠ ético" (1) + aplicación al caso (1).</div>
+        </div>
+      </details>
+    </section>
+
+    <section id="sostenibilidad">
+      <h3>El objetivo de la ética: ser sostenibles</h3>
+      <p>La <b>sostenibilidad</b> (o sustentabilidad) se refiere al <b>mantenimiento a largo plazo</b> de los sistemas de acuerdo con consideraciones <b>ambientales, económicas y sociales</b>.</p>
+      <div class="pill-row"><b>Económico</b><b>Social</b><b>Ambiental</b></div>
+      <p>Estas tres dimensiones son el <b>triple bottom line</b> de John Elkington: la empresa no rinde cuenta solo por lo económico, sino también por lo social y lo ambiental.</p>
+      <div class="box trap"><span class="lab">⚠️ No olvides el autor</span>Triple bottom line → <b>John Elkington</b>. Tres pilares: económico, social, ambiental.</div>
+    </section>
+
+    <hr>
+
+    <!-- ============ CLASE 2 ============ -->
+    <div class="banner"><div class="tag">Clase 2 · 13 agosto</div><h2>El rol de la empresa en la sociedad</h2></div>
+
+    <section id="empresa">
+      <h3 class="first">¿Qué es una empresa? ¿Es responsable moralmente?</h3>
       <ul>
-        <li><b>El fin último evoluciona:</b> la empresa no pierde su fin de generar riqueza, pero ahora lo consigue <b>de otra forma</b>.</li>
-        <li><b>Más allá de la rentabilidad:</b> la empresa <b>no reemplaza al Estado ni a una ONG</b>, pero pide ser valorada por su <b>contribución integral a la sociedad</b>, no solo por su margen.</li>
-        <li><b>La brújula estratégica:</b> la ética empresarial <b>nunca es caridad</b>; es el conjunto operativo de principios que guía las decisiones para gestionar y escalar negocios de forma <b>sostenible</b>.</li>
+        <li>Una empresa se define esencialmente por su <b>estatus legal</b> y la <b>propiedad de activos</b>.</li>
+        <li>Las empresas son <b>"personas jurídicas"</b>.</li>
+        <li>Son teóricamente "propiedad" de los accionistas, pero <b>existen independientemente</b> de ellos.</li>
+        <li>Los gerentes y directores tienen una <b>responsabilidad "fiduciaria"</b> de proteger la inversión de los accionistas. <span class="ext">⧉ Externo:</span> "fiduciaria" = deber de actuar con lealtad y cuidado gestionando algo que es de otro (aquí, el dinero de los accionistas).</li>
       </ul>
+      <p><b>¿Son responsables moralmente?</b> No tienen todas las atribuciones de una persona adulta (ej. votar), pero sí <b>existen legalmente</b>, tienen <b>agencia</b> (hacen cosas en su propio nombre), tienen <b>cultura organizacional</b> e <b>identidad funcional</b> (un nombre y marca que les permite interactuar). Por eso se les puede atribuir cierta responsabilidad.</p>
+    </section>
+
+    <section id="friedman">
+      <h3>El debate clásico — Milton Friedman (1970): teoría de los accionistas</h3>
+      <p>Friedman proponía que <b>"la responsabilidad social de las empresas es aumentar sus beneficios"</b>. Argumentó <b>contra</b> la idea de responsabilidades sociales con <b>tres argumentos</b>:</p>
+      <div class="grid three">
+        <div class="card"><h4>1 · Naturaleza moral</h4><p>Solo los <b>seres humanos individuales</b> tienen responsabilidad moral, no las corporaciones.</p></div>
+        <div class="card"><h4>2 · Agencia</h4><p>Es responsabilidad de los gerentes actuar <b>únicamente en interés (financiero) de los accionistas</b>.</p></div>
+        <div class="card"><h4>3 · Competencia</h4><p>Los problemas sociales son competencia del <b>Estado</b>, no de la administración corporativa.</p></div>
+      </div>
+      <div class="box trap"><span class="lab">⚠️ Trampa de memoria</span>Friedman = <b>teoría de los accionistas</b> (shareholders) = maximizar beneficios. Los 3 argumentos: <b>moral, agencia, competencia</b>. No confundir con los principios de Freeman.</div>
+    </section>
+
+    <section id="freeman">
+      <h3>La evolución — Edward Freeman (1984): teoría de los stakeholders</h3>
+      <p>Freeman propuso que <b>no solo los accionistas</b> tienen expectativas sobre lo que hace la empresa. Definición clave:</p>
+      <p class="key">Un stakeholder es cualquier grupo o individuo que pueda afectar, o sea afectado por, el logro de los objetivos de la organización. (Freeman, 1984)</p>
+      <p>Ejemplos de stakeholders: trabajadores, clientes, proveedores, comunidad, medio ambiente, accionistas. La teoría se apoya en <b>dos principios</b>:</p>
+      <div class="grid">
+        <div class="card deber"><h4>Principio de los derechos corporativos</h4><p>La corporación tiene la obligación de <b>no violar los derechos</b> de los demás.</p></div>
+        <div class="card deber"><h4>Principio del efecto corporativo</h4><p>Las empresas son <b>responsables de los efectos</b> (positivos y negativos) de sus acciones sobre los demás.</p></div>
+      </div>
+      <div class="box global"><span class="lab">🌍 El "efecto corporativo" es puntaje seguro</span>
+        En la rúbrica del Control 1, la Pregunta 2 completa gira sobre este principio: la empresa es <b>responsable de los efectos de sus decisiones sobre otros, aunque no exista un contrato directo</b>. Su responsabilidad moral <b>trasciende las fronteras legales</b> y alcanza a toda su cadena (proveedores, terceros afectados).</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): definir el principio del efecto corporativo y aplicarlo a una empresa que terceriza producción a un proveedor que contamina un río.</div>
+      <details>
+        <summary><span class="pill">Aplicar</span>Una empresa terceriza producción a un proveedor cuyos trabajadores sufren malas condiciones. La empresa dice: "no son nuestros empleados". ¿Tiene responsabilidad? (formato certamen)</summary>
+        <div class="answer">
+          <b>Sí.</b> Según el <span class="key">principio del efecto corporativo</span>, las empresas son responsables de los efectos (impactos positivos o negativos) que sus decisiones generan sobre los demás, <b>incluso cuando esas personas no son sus empleados directos</b>. La ausencia de un contrato laboral directo <b>no elimina la responsabilidad</b>: al decidir trabajar con ese proveedor y beneficiarse de su producción, la empresa forma parte de la cadena de decisiones que afecta a esos trabajadores (sus stakeholders) y debe considerar esos impactos.
+          <div class="rub">Puntaje Control 1 (5 pts): definición del principio (2) + responsabilidad trasciende lo contractual / stakeholders (1.5) + justificación aplicada al caso (1.5).</div>
+        </div>
+      </details>
+    </section>
+
+    <section id="rse">
+      <h3>Responsabilidad Social Empresarial (RSE) <span class="ext">tema caliente #4</span></h3>
+      <p><b>Definición:</b> la RSE es el intento de las empresas de satisfacer las <b>demandas económicas, legales, éticas y filantrópicas</b> de una sociedad determinada en un momento determinado.</p>
+      <p>Consiste en que, voluntariamente, las empresas integren procesos operacionales de respeto e interrelación con el entorno <b>social, económico y medioambiental</b>, con foco en trabajadores, proveedores, clientes y accionistas, evaluando las consecuencias de su actividad.</p>
+      <div class="grid">
+        <div class="card"><h4>RSE tradicional</h4><p><b>Reactiva</b>, con foco en la gestión de riesgos reputacionales.</p></div>
+        <div class="card"><h4>RSE contemporánea</h4><p><b>Proactiva</b>, con foco en crear valor.</p></div>
+      </div>
+      <p>Su efectividad se mide bajo el concepto de <b>"desempeño social empresarial"</b>, foco de la mayoría de las regulaciones hoy. Los costos de la RSE son en realidad <b>ahorros futuros</b>: generan convergencia entre los intereses propios y los de los stakeholders, previniendo conflictos. Pero no debe verse como un mero instrumento: debe ser un <b>cambio real en la cultura</b> de la ética empresarial.</p>
+
+      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.4em">El "business case" de la RSE: por qué la ética conviene</h4>
+      <div class="grid">
+        <div class="card"><h4>Atracción de talento</h4><p>Empleados más comprometidos, motivados y atraídos por el propósito.</p></div>
+        <div class="card"><h4>Lealtad de clientes</h4><p>Consumidores adicionales, mayor retención y satisfacción sostenible.</p></div>
+        <div class="card"><h4>Anticipación regulatoria</h4><p>Adaptarse antes de que la ley exija el cambio.</p></div>
+        <div class="card"><h4>Ahorro y prevención</h4><p>Los egresos en RSE son ahorros futuros al prevenir conflictos graves con stakeholders.</p></div>
+      </div>
+      <div class="box trap"><span class="lab">⚠️ Distingue "razones comerciales" de "razones morales"</span>
+        El <b>business case</b> son razones <b>comerciales</b> (conviene económicamente). Junto a ellas están las <b>razones morales</b>: usar el poder responsablemente, toda actividad genera impacto, y empresa y sociedad son <b>mutuamente dependientes</b>. Si se pide explicar "por qué" la empresa asume RSE, deben cubrirse <b>ambas</b>.</div>
+    </section>
+
+    <section id="ciudadania">
+      <h3>Ciudadanía empresarial <span class="ext">tema caliente #4</span></h3>
+      <p>Las empresas han comenzado a asumir el papel de <b>actores "políticos"</b>, tomando funciones que antes desempeñaba el gobierno, debido a que:</p>
+      <ul>
+        <li>Los gobiernos <b>fallan</b> (son incapaces) en responder a los problemas sociales.</li>
+        <li>Los gobiernos tienen <b>reducida capacidad</b> para regular e implementar regulaciones, por lo que promueven la <b>autorregulación</b>.</li>
+        <li>Las empresas tienen cada vez más <b>poder e influencia</b> (desregulación, privatización de servicios públicos, globalización).</li>
+      </ul>
+      <p class="key">La ciudadanía empresarial reconoce que las empresas juegan un rol cada vez más central en el gobierno de los derechos —civiles, sociales y políticos— de los ciudadanos.</p>
+      <div class="box global"><span class="lab">🌍 Cómo se conectan RSE y ciudadanía empresarial</span>
+        <span class="ext">⧉ Externo (síntesis):</span> ambos amplían el rol de la empresa más allá de la ganancia, pero enfatizan cosas distintas. <b>RSE</b> = la empresa asume responsabilidades <b>sociales/ambientales</b> por sus impactos. <b>Ciudadanía empresarial</b> = la empresa asume un rol <b>casi político</b>, cubriendo derechos que antes garantizaba el Estado. La conclusión de la clase las une: la empresa no reemplaza al Estado ni a una ONG, pero debe valorarse por su <b>contribución a la sociedad</b>, no solo por su rentabilidad.</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): en dos frases, ¿qué diferencia hay entre RSE y ciudadanía empresarial?</div>
+      <details>
+        <summary><span class="pill">Comparar</span>Diferenciar RSE y ciudadanía empresarial e indicar qué tienen en común.</summary>
+        <div class="answer">
+          <b>En común:</b> ambas sostienen que la empresa tiene responsabilidades <b>más allá de maximizar utilidades</b> y de lo que exige la ley. <b>Diferencia:</b> la <span class="key">RSE</span> apunta a que la empresa integre voluntariamente consideraciones económicas, sociales, ambientales y éticas y se haga cargo de sus <b>impactos</b> sobre los stakeholders. La <span class="key">ciudadanía empresarial</span> va un paso más allá: describe a la empresa como <b>actor político</b> que asume funciones antes estatales (por fallas del gobierno, su reducida capacidad regulatoria y el creciente poder empresarial), influyendo en los <b>derechos civiles, sociales y políticos</b> de los ciudadanos.
+          <div class="rub">La pauta premia "distinguir conceptos cercanos": nombrar primero lo común, luego el rasgo que separa a cada uno.</div>
+        </div>
+      </details>
+    </section>
+
+    <section id="accountability">
+      <h3>Accountability y transparencia</h3>
+      <p><b>Accountability</b> (rendición de cuentas): la necesidad de que las empresas <b>rindan cuentas por las consecuencias de sus acciones</b>. Si tienen tanto poder e influencia, ¿quién las controla?, ¿a quién rinden cuentas?</p>
+      <p><b>Transparencia es la clave:</b> es el <b>grado en que las decisiones, políticas, actividades e impactos corporativos son reconocidos y visibles</b> para los stakeholders relevantes.</p>
+      <div class="box trap"><span class="lab">⚠️ Conceptos clave de la Clase 2 (probable pregunta de definiciones)</span>
+        RSE · Ciudadanía corporativa · Accountability y transparencia · Teoría de los stakeholders. Conviene tener una definición de una línea para cada uno.</div>
+    </section>
+
+    <hr>
+
+    <!-- ============ CLASE 3 ============ -->
+    <div class="banner"><div class="tag">Clase 3 · 20 agosto</div><h2>Modelos prescriptivos: cómo <em>deberíamos</em> decidir</h2></div>
+
+    <section id="tres-lentes">
+      <h3 class="first">Prescriptivo vs descriptivo (primera mención)</h3>
+      <div class="grid">
+        <div class="card consec"><h4>Prescriptivo</h4><p>Indica cómo <b>deberíamos</b> decidir éticamente. Ofrece principios y reglas. → Orienta hacia lo correcto.</p></div>
+        <div class="card deber"><h4>Descriptivo</h4><p>Explica cómo las personas <b>realmente</b> toman decisiones. Analiza procesos psicológicos, sociales y culturales. → Muestra cómo decidimos en la realidad.</p></div>
+      </div>
+      <p>Los modelos prescriptivos parten de una idea exigente: el <b>agente moral consciente</b> piensa cuidadosamente sus opciones y elige lo más correcto. Ofrecen <b>tres lentes</b> para analizar un mismo dilema:</p>
+      <div class="grid three">
+        <div class="card consec"><h4>Consecuencias</h4><p>¿Qué alternativa produce <b>mejores resultados para el conjunto</b>?</p></div>
+        <div class="card deber"><h4>Deberes / principios</h4><p>¿Qué es correcto hacer, <b>aunque tenga un costo</b>?</p></div>
+        <div class="card virtud"><h4>Carácter / virtud</h4><p>¿Qué haría una <b>persona íntegra</b>?</p></div>
+      </div>
+      <p>Teorías clásicas (para ubicar a los autores):</p>
+      <table>
+        <tr><th>Teoría</th><th>Tipo</th><th>Foco</th><th>Autores</th></tr>
+        <tr><td>Egoísmo ético</td><td>Consecuencialista</td><td>Interés propio</td><td>Hobbes · Ayn Rand</td></tr>
+        <tr><td>Utilitarismo</td><td>Consecuencialista</td><td>Bienestar colectivo</td><td>Jeremy Bentham</td></tr>
+        <tr><td>Ética del deber</td><td>Basada en principios</td><td>Deberes</td><td>Immanuel Kant</td></tr>
+        <tr><td>Derechos y justicia</td><td>Basada en principios</td><td>Derechos y justicia</td><td>Locke · Rousseau · Rawls</td></tr>
+      </table>
+      <div class="box trap"><span class="lab">⚠️ El egoísmo ético NO es una cuarta lente</span>
+        El <b>egoísmo ético</b> es consecuencialista (foco: deseos/interés propio), pero la clase lo presenta "antes de las tres lentes". Las tres lentes que se aplican al caso son <b>consecuencias, deberes y virtud</b>. No debe contarse como una de las tres.</div>
+    </section>
+
+    <section id="utilitarismo">
+      <h3>Utilitarismo <span class="ext">tema caliente #3</span></h3>
+      <p>Es la teoría <b>consecuencialista</b> por excelencia (Jeremy Bentham). La bondad de una decisión se evalúa por sus <b>consecuencias</b>.</p>
+      <p class="key">Principio de utilidad: una decisión ética debe MAXIMIZAR los beneficios para la sociedad y MINIMIZAR los daños, considerando a todos los interesados.</p>
+      <p><b>Cómo se aplica (4 pasos):</b></p>
+      <div class="pill-row"><b>1. Identificar</b><b>2. Anticipar</b><b>3. Comparar</b><b>4. Elegir</b></div>
+      <ol>
+        <li><b>Identificar</b> quiénes pueden verse afectados.</li>
+        <li><b>Anticipar</b> qué consecuencias tendría cada alternativa.</li>
+        <li><b>Comparar</b> beneficios y perjuicios de cada opción.</li>
+        <li><b>Elegir</b> la que produce el mejor resultado global.</li>
+      </ol>
+      <div class="box trap"><span class="lab">⚠️ Utilidad y sus límites (punto de evaluación frecuente)</span>
+        <b>Útil:</b> permite comparar alternativas según su efecto sobre el bienestar colectivo. <b>Límites:</b> (1) no siempre es posible conocer o anticipar <b>todas</b> las consecuencias para todos los afectados; (2) la pregunta crítica: <b>¿se justifica vulnerar los derechos de una minoría por el bien de la mayoría?</b> Ese es el talón de Aquiles del utilitarismo — y el punto donde la ética del deber lo contradice.</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): explicar el principio de utilidad y mencionar una crítica al utilitarismo.</div>
+      <details>
+        <summary><span class="pill">Comprender</span>Explicar el utilitarismo con palabras propias, su criterio central y una limitación.</summary>
+        <div class="answer">
+          El utilitarismo es una teoría <b>consecuencialista</b>: evalúa una decisión por sus <b>resultados</b>. Su criterio es el <span class="key">principio de utilidad</span> — elegir la alternativa que <b>maximice los beneficios y minimice los daños</b> para el conjunto, considerando a todos los afectados. <b>Limitación:</b> puede llevar a <b>sacrificar los derechos de una minoría</b> si eso beneficia a la mayoría, y además rara vez podemos anticipar todas las consecuencias reales de una decisión.
+          <div class="rub">Estructura: nombrar el tipo (consecuencialista) → criterio (maximizar beneficio / minimizar daño) → limitación (minoría/mayoría). Si el caso lo permite, aplicar los 4 pasos.</div>
+        </div>
+      </details>
+    </section>
+
+    <section id="deontologia">
+      <h3>Ética del deber (deontología) — Kant</h3>
+      <p>Los principios morales tienen <b>carácter vinculante, independientemente de las consecuencias</b>. Una decisión es correcta cuando se funda en <b>principios, derechos o valores universales</b>. Pregunta clave: <b>¿qué nunca debería sacrificarse, aunque hacerlo produjera un buen resultado?</b></p>
+      <p><b>Imperativo categórico de Kant:</b> <i>"Actúa como si la máxima de tu acción se convirtiera por tu voluntad en una ley universal de la naturaleza."</i> En simple: <b>¿la regla que justifica mi acción podría convertirse en una regla para que todos la siguieran?</b></p>
+      <p><b>Cómo se aplica (4 pasos):</b></p>
+      <div class="pill-row"><b>1. Identificar deberes</b><b>2. Reconocer derechos</b><b>3. Definir límites</b><b>4. Universalizar</b></div>
+      <div class="box trap"><span class="lab">⚠️ Contraste clave con el utilitarismo</span>
+        Utilitarismo mira el <b>resultado</b>; deontología mira el <b>principio</b>, pase lo que pase con el resultado. Donde el utilitarismo aceptaría dañar a pocos por el bien de muchos, la ética del deber lo prohíbe si vulnera un derecho o deber universal (universalidad / dignidad).</div>
+    </section>
+
+    <section id="virtud">
+      <h3>Ética de la virtud — Aristóteles</h3>
+      <p>La pregunta ética no se concentra solo en la acción, sino también en <b>la persona</b>. El individuo debe comprometerse con la formación de su <b>carácter e integridad moral</b>.</p>
+      <p>Perspectiva aristotélica: existe una relación entre <b>actos → hábitos → carácter</b>. El carácter desde el cual enfrentamos las circunstancias es central para decidir.</p>
+      <p><b>Pregunta central:</b> ¿qué decisión sería coherente con una <b>persona íntegra</b>? Virtudes que sirven para discutir un caso (no es lista cerrada): integridad, honestidad, prudencia, lealtad, respeto.</p>
+      <p><b>Cómo se aplica (3 pasos):</b> identificar qué virtudes son relevantes → examinar qué revela cada alternativa sobre el carácter → elegir la acción coherente con la integridad moral.</p>
+      <div class="box ex"><span class="lab">📌 Cómo aplicó la virtud la pauta de la Tarea 2</span>
+        Caso: un ejecutivo, presionado por la meta, puede registrar como cerrada una venta aún no confirmada. Desde la ética de la virtud, la pregunta es si eso es coherente con actuar de manera <b>honesta e íntegra</b>. Como registrar la venta implica presentar como cerrado algo que no lo está, la decisión coherente es <b>no registrarla</b> hasta que el cliente confirme. Estructura de la respuesta: identificar el modelo → explicar su criterio (carácter/virtudes) → aplicar y decidir.</div>
+      <div class="box global"><span class="lab">🌍 Tabla comparativa de las tres lentes (de referencia)</span></div>
+      <table>
+        <tr><th></th><th>Consecuencias</th><th>Deberes / principios</th><th>Virtud</th></tr>
+        <tr><td><b>Mira</b></td><td>Resultados</td><td>Reglas, deberes y derechos</td><td>Carácter</td></tr>
+        <tr><td><b>Pregunta</b></td><td>¿Qué opción produce mayor beneficio y menor daño?</td><td>¿Qué debo respetar sin importar el resultado?</td><td>¿Qué haría una persona íntegra?</td></tr>
+        <tr><td><b>Clave</b></td><td>Bienestar colectivo</td><td>Universalidad / dignidad</td><td>Integridad moral</td></tr>
+        <tr><td><b>Autor</b></td><td>Bentham</td><td>Kant</td><td>Aristóteles</td></tr>
+      </table>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): identificar el modelo detrás de cada frase (respuestas en la slide de la Clase 4).</div>
+      <details>
+        <summary><span class="pill">Distinguir</span>¿Qué modelo hay detrás? A: "No podemos ocultárselo al cliente, aunque nos genere pérdidas." · B: "Debemos escoger la alternativa que produzca mayores beneficios y menores daños para todos." · C: "¿Qué decisión sería coherente con actuar como una persona honesta e íntegra?"</summary>
+        <div class="answer">
+          <b>A → Ética del deber</b> (un principio —no engañar— que se respeta aunque el resultado sea peor). <b>B → Utilitarismo</b> (evalúa por beneficios/daños para el conjunto). <b>C → Ética de la virtud</b> (foco en el carácter e integridad de quien decide).
+          <div class="rub">Señales rápidas: "aunque cueste / aunque perdamos" = deber; "mayor beneficio, menor daño, para todos" = utilitarismo; "persona íntegra / honesta / qué clase de líder quiero ser" = virtud.</div>
+        </div>
+      </details>
+    </section>
+
+    <hr>
+
+    <!-- ============ CLASE 4 ============ -->
+    <div class="banner"><div class="tag">Clase 4 · 27 agosto</div><h2>De la decisión a la conducta: modelos descriptivos</h2></div>
+
+    <section id="ocho-pasos">
+      <h3 class="first">Los 8 pasos para una toma de decisiones éticas</h3>
+      <p>No son ocho teorías nuevas: son una <b>guía práctica para ordenar el proceso</b> frente a un dilema real.</p>
+      <table>
+        <tr><th>#</th><th>Paso</th><th>Qué significa</th></tr>
+        <tr><td>1</td><td>Reunir los hechos</td><td>Distinguir información comprobada de supuestos u opiniones.</td></tr>
+        <tr><td>2</td><td>Definir la cuestión ética</td><td>Precisar cuál es el conflicto ético a resolver.</td></tr>
+        <tr><td>3</td><td>Identificar las partes afectadas</td><td>Reconocer quiénes se benefician o perjudican (stakeholders).</td></tr>
+        <tr><td>4</td><td>Identificar las consecuencias</td><td>Anticipar efectos positivos y negativos de cada alternativa.</td></tr>
+        <tr><td>5</td><td>Identificar las obligaciones</td><td>Reconocer deberes, principios o derechos a respetar.</td></tr>
+        <tr><td>6</td><td>Considerar carácter e integridad</td><td>Evaluar qué revela la decisión sobre quien la toma.</td></tr>
+        <tr><td>7</td><td>Pensar creativamente las acciones</td><td>Buscar alternativas distintas de las opciones iniciales.</td></tr>
+        <tr><td>8</td><td>Revisar el instinto</td><td>Comprobar si, tras el análisis, algo aún genera una alerta ética.</td></tr>
+      </table>
+      <div class="box global"><span class="lab">🌍 Las 3 conexiones con los modelos prescriptivos (esto conecta ambas clases)</span>
+        Paso 4 <b>Consecuencias</b> → conecta con <b>Utilitarismo</b>. Paso 5 <b>Obligaciones</b> → conecta con la <b>Ética del deber</b>. Paso 6 <b>Carácter e integridad</b> → conecta con la <b>Ética de la virtud</b>. Los otros pasos ayudan a comprender el problema, ampliar alternativas y revisar la decisión.</div>
+      <div class="box ex"><span class="lab">📌 Cómo lo pidió la pauta de la Tarea 2</span>
+        Dado un caso donde el ejecutivo "identifica quiénes podrían verse afectados; analiza los efectos de cada alternativa; se pregunta qué deber respetar" → los tres pasos presentes son <b>3. Partes afectadas, 4. Consecuencias y 5. Obligaciones</b>. Nota: hay que <b>identificar Y explicar cada uno con el caso</b>, no solo nombrarlos.</div>
+    </section>
+
+    <section id="descriptivos">
+      <h3>Prescriptivos vs descriptivos (la distinción central de la Clase 4)</h3>
+      <p>Conocer lo correcto <b>no garantiza</b> que actuemos de acuerdo con ello. Por eso aparecen dos preguntas complementarias:</p>
+      <div class="grid">
+        <div class="card consec"><h4>Modelos prescriptivos</h4><p>¿Qué <b>deberíamos</b> hacer y por qué? Orientan y fundamentan la decisión. Criterios: consecuencias, deberes/principios, carácter/virtud.</p></div>
+        <div class="card deber"><h4>Modelos descriptivos</h4><p>¿Qué factores influyen en cómo <b>finalmente actuamos</b>? Ayudan a comprender cómo se produce una decisión. Analizan: factores individuales y del contexto.</p></div>
+      </div>
+      <div class="box trap"><span class="lab">⚠️ Frase recurrente en el curso (y posible trampa)</span>
+        <b>"Describir no es justificar."</b> / "Explicar por qué ocurre una conducta ≠ concluir que la conducta es éticamente correcta." Comprender por qué alguien actuó mal <b>no</b> significa que estuvo bien.</div>
+    </section>
+
+    <section id="factores">
+      <h3>Factores que influyen en la conducta + racionalizaciones</h3>
+      <p><b>Factores individuales + factores del contexto → influyen en la CONDUCTA.</b></p>
+
+      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.2em">Factores individuales</h4>
+      <div class="grid three">
+        <div class="card"><h4>Corto vs largo plazo</h4><p>Un beneficio inmediato pesa más que las consecuencias futuras. <i>"Si alcanzo la meta hoy, después vemos."</i></p></div>
+        <div class="card"><h4>Balance moral</h4><p>Las buenas acciones previas dan sensación de "margen" para una conducta cuestionable. <i>"Siempre hago las cosas bien; esta vez no es grave."</i></p></div>
+        <div class="card"><h4>Racionalizaciones</h4><p>Justificaciones que hacen aceptable una conducta cuestionable. <i>"En realidad nadie sale perjudicado."</i></p></div>
+      </div>
+
+      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.2em">Factores del contexto</h4>
+      <div class="grid">
+        <div class="card"><h4>Presión social</h4><p>Lo que otros hacen, esperan o aprueban influye en la decisión (ej: el jefe sugiere una práctica y el equipo la normaliza).</p></div>
+        <div class="card"><h4>Identidad social</h4><p>Las personas adaptan su conducta a las normas del grupo con el que se identifican. <i>"Así se hacen las cosas en este equipo."</i></p></div>
+        <div class="card"><h4>Características del entorno</h4><p>Cómo se organiza el trabajo facilita o dificulta ciertas conductas.</p></div>
+        <div class="card"><h4>Ejemplos del entorno</h4><p>Metas, incentivos, procesos, controles y supervisión pueden orientar la conducta.</p></div>
+      </div>
+
+      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.2em">Racionalizaciones (mecanismo individual clave)</h4>
+      <p>Racionalizar = construir una explicación que hace parecer aceptable una conducta cuestionable.</p>
+      <div class="grid three">
+        <div class="card"><h4>Altruismo egoísta</h4><p><i>"Lo hago por mi equipo."</i> La conducta también me beneficia, pero la justifico por el bien de otros.</p></div>
+        <div class="card"><h4>Lógica de Robin Hood</h4><p><i>"La empresa tiene recursos de sobra."</i> Se justifica porque se cree que quien recibe el daño puede soportarlo.</p></div>
+        <div class="card"><h4>Difusión de responsabilidad</h4><p><i>"Todos participaron; no fue decisión mía."</i> La responsabilidad se diluye al compartirla.</p></div>
+      </div>
+      <div class="box ex"><span class="lab">📌 Aplicación de la pauta Tarea 2 · "La meta del trimestre"</span>
+        Ante la presión de registrar una venta no confirmada, dos factores claros: <b>Presión social</b> (el jefe lo sugiere, los compañeros lo normalizan) e <b>Identidad social / normalización</b> ("esto se ha hecho antes" lo presenta como práctica habitual del grupo). También servían: el <b>beneficio inmediato / corto plazo</b> (la meta y el bono) y la <b>racionalización</b> ("finalmente los clientes compran"). Clave de puntaje: identificar el factor + explicar qué es + conectarlo con un antecedente concreto del caso.</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): nombrar dos factores descriptivos del caso de la venta y explicar cómo actúan.</div>
+      <details>
+        <summary><span class="pill">Aplicar</span>Un vendedor infla una cifra presionado por su jefe, mientras el equipo dice "todos lo hacen". Identificar dos factores descriptivos y explicarlos con el caso.</summary>
+        <div class="answer">
+          <b>1. Presión social:</b> la conducta se ve influida por lo que otros hacen, esperan o aprueban. Aquí la presión viene del <b>jefe</b>, que sugiere la práctica, y de los <b>compañeros</b>, que la presentan como aceptable; eso dificulta que actúe según lo que considera correcto. <b>2. Identidad social / normalización:</b> las personas adaptan su conducta a las normas del grupo. Cuando el equipo dice "todos lo hacen", presentan la práctica como <b>habitual</b>, haciendo que una conducta cuestionable parezca normal.
+          <div class="rub">Puntaje Tarea 2 (por factor): identificar (1) + explicar qué es (1) + conectar con un antecedente concreto del caso (1,5). Sin el "cómo se manifiesta en el caso" se pierde casi la mitad.</div>
+        </div>
+      </details>
+    </section>
+
+    <section id="reducir">
+      <h3>De comprender a intervenir: cómo reducir la deshonestidad <span class="ext">tema caliente #5</span></h3>
+      <p>Si comprendemos qué influye en la conducta, podemos <b>diseñar intervenciones</b> para reducir el riesgo de conductas poco éticas. Hay <b>tres enfoques</b>:</p>
+      <div class="grid three">
+        <div class="card consec"><h4>Valores (la PERSONA)</h4><p>Fortalecer los valores y criterios éticos de las personas.</p><p><b>Cómo:</b> formación y reflexión ética, comunicación de valores, código de ética, liderazgo y ejemplo de quienes dirigen.</p><p><b>Límite:</b> insuficiente si las metas o incentivos empujan a otra conducta.</p></div>
+        <div class="card deber"><h4>Estructura (el CONTEXTO)</h4><p>Modificar elementos del entorno organizacional.</p><p><b>Cómo:</b> revisar metas e incentivos, modificar procesos, establecer controles, fortalecer supervisión.</p><p><b>Límite:</b> los controles por sí solos no aseguran conducta ética.</p></div>
+        <div class="card virtud"><h4>Integrado (PERSONA + CONTEXTO)</h4><p>Actuar sobre ambos a la vez.</p><p><b>Clave:</b> coherencia entre lo que la organización <b>dice</b> que espera y lo que realmente <b>incentiva y permite</b>.</p></div>
+      </div>
+      <div class="box global"><span class="lab">🌍 La lógica completa (síntesis de la Clase 4)</span>
+        1. <b>Comprender</b> la conducta (¿qué ocurre?) → 2. <b>Identificar</b> influencias (factores individuales + del contexto) → 3. <b>Intervenir</b> (valores, estructura o integrado). "Describir no es justificar: comprender las influencias permite prevenir mejor."</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): una empresa tiene fraude en su fuerza de ventas; proponer cómo reducirlo desde los tres enfoques.</div>
+      <details>
+        <summary><span class="pill">Aplicar</span>En un equipo de ventas se han detectado registros falsos de ventas. ¿Cómo reducir esa conducta deshonesta? (con los tres enfoques)</summary>
+        <div class="answer">
+          <b>Enfoque de valores (persona):</b> formación y reflexión ética sobre honestidad, comunicar los valores, código de ética y —clave— <b>liderazgo con el ejemplo</b> de las jefaturas. <b>Enfoque de estructura (contexto):</b> revisar el <b>incentivo</b> que premia vender a cualquier costo, ajustar metas, mejorar controles de registro y la supervisión, para que el entorno no empuje al fraude. <b>Enfoque integrado:</b> combinar ambos buscando <b>coherencia</b> entre lo que la empresa dice esperar (honestidad) y lo que realmente incentiva (bonos por meta). Un enfoque solo suele fallar: los valores no bastan si el bono premia mentir, y los controles no bastan si nadie entiende el sentido de la conducta esperada.
+          <div class="rub">Este es exactamente el tema "cómo reducir la deshonestidad". Nombrar los tres enfoques, indicar dónde interviene cada uno (persona/contexto/ambos) y cerrar con la idea de coherencia.</div>
+        </div>
+      </details>
+    </section>
+
+    <hr>
+
+    <!-- ============ GLOSARIO ============ -->
+    <div class="banner" id="glosario"><div class="tag">Cierre</div><h2>Glosario exprés</h2></div>
+    <p>Definiciones de una línea, listas para escribir. <span class="ext">⧉</span> marca definiciones condensadas o parafraseadas por espacio; el sentido proviene de las slides.</p>
+    <table>
+      <tr><th>Concepto</th><th>Definición</th></tr>
+      <tr><td>Moral</td><td>Normas, valores y creencias sociales que definen lo bueno/malo; subjetiva, varía según cultura y época.</td></tr>
+      <tr><td>Ética</td><td>Estudio de la moral y aplicación de la razón para dilucidar reglas/principios (teorías éticas) sobre lo correcto.</td></tr>
+      <tr><td>Ética empresarial</td><td>Estudio de decisiones comerciales de lo correcto/incorrecto; entrega principios que guían la toma de decisiones.</td></tr>
+      <tr><td>Ley vs ética</td><td>La ley es el mínimo obligatorio; la ética propone ideales más altos (justicia, responsabilidad, efectos).</td></tr>
+      <tr><td>Sostenibilidad</td><td>Mantenimiento a largo plazo según lo ambiental, económico y social (triple bottom line de Elkington).</td></tr>
+      <tr><td>Persona jurídica</td><td>Estatus legal de la empresa: existe y actúa en su propio nombre, independiente de sus accionistas.</td></tr>
+      <tr><td>Responsabilidad fiduciaria</td><td>Deber de gerentes/directores de proteger la inversión de los accionistas. <span class="ext">⧉</span></td></tr>
+      <tr><td>Teoría de accionistas (Friedman)</td><td>La responsabilidad social de la empresa es aumentar sus beneficios (3 argumentos: moral, agencia, competencia).</td></tr>
+      <tr><td>Stakeholder (Freeman)</td><td>Cualquier grupo o individuo que pueda afectar o ser afectado por el logro de los objetivos de la organización.</td></tr>
+      <tr><td>Principio de derechos corporativos</td><td>La corporación debe no violar los derechos de los demás.</td></tr>
+      <tr><td>Principio del efecto corporativo</td><td>La empresa es responsable de los efectos de sus acciones sobre los demás, aun sin contrato directo.</td></tr>
+      <tr><td>RSE</td><td>Intento de la empresa de satisfacer demandas económicas, legales, éticas y filantrópicas de la sociedad.</td></tr>
+      <tr><td>Ciudadanía empresarial</td><td>La empresa como actor "político" que asume roles antes estatales en los derechos de los ciudadanos.</td></tr>
+      <tr><td>Accountability</td><td>Necesidad de que la empresa rinda cuentas por las consecuencias de sus acciones.</td></tr>
+      <tr><td>Transparencia</td><td>Grado en que decisiones, políticas, actividades e impactos son visibles para los stakeholders.</td></tr>
+      <tr><td>Utilitarismo</td><td>Consecuencialista: maximizar beneficios y minimizar daños para el conjunto (Bentham).</td></tr>
+      <tr><td>Ética del deber</td><td>Deontología: principios vinculantes independientes del resultado; imperativo categórico (Kant).</td></tr>
+      <tr><td>Ética de la virtud</td><td>Foco en el carácter e integridad; actos→hábitos→carácter (Aristóteles).</td></tr>
+      <tr><td>Racionalización</td><td>Explicación que hace parecer aceptable una conducta cuestionable (altruismo egoísta, Robin Hood, difusión de responsabilidad).</td></tr>
+      <tr><td>Enfoque integrado</td><td>Intervenir sobre persona (valores) y contexto (estructura) con coherencia entre lo que se dice y lo que se incentiva.</td></tr>
+    </table>
+
+    <!-- ============ SIMULACRO ============ -->
+    <div class="banner" id="simulacro"><div class="tag">Cierre</div><h2>Simulacro final</h2></div>
+    <p>Cinco preguntas al estilo del certamen, una por tema. Se recomienda redactar la respuesta completa antes de abrir la pauta, con las tres capas (posición → teoría → caso): esa es la habilidad que se evalúa.</p>
+
+    <details>
+      <summary><span class="pill">Tema 1</span>"En esta industria siempre se han redondeado los gastos a favor de la empresa." ¿Es un argumento moral o ético? Diferenciar ambos conceptos.</summary>
+      <div class="answer">Es un argumento <b>moral</b> (lo que "se hace", norma heredada y no cuestionada). La <b>moral</b> son normas/valores sociales, subjetivos y variables; la <b>ética</b> es la reflexión razonada que evalúa si esas normas son correctas, justas o legítimas. El argumento no pasa por la ética porque no se pregunta si esa práctica <i>debería</i> hacerse, solo constata que se hace.</div>
+    </details>
+    <details>
+      <summary><span class="pill">Tema 2</span>Una minera cumple toda la normativa ambiental vigente, pero su faena degrada un ecosistema local. ¿Basta con ser legal para ser ética?</summary>
+      <div class="answer">No. La ley es el <b>mínimo obligatorio</b>; la ética propone <b>estándares más altos</b> y evalúa justicia, responsabilidad y <b>efectos</b> sobre las personas y el entorno. Cumplir la normativa no exime a la empresa de los <b>impactos</b> que genera (principio del efecto corporativo): una decisión legal y rentable puede ser no ética si daña a terceros o contradice sus valores.</div>
+    </details>
+    <details>
+      <summary><span class="pill">Tema 3</span>Un hospital con recursos limitados debe asignar un equipo escaso. Explicar cómo lo abordaría el utilitarismo y una crítica.</summary>
+      <div class="answer">El utilitarismo (consecuencialista) elegiría la opción que <b>maximice el beneficio y minimice el daño para el conjunto</b>: identificar afectados, anticipar y comparar consecuencias, y elegir el mejor resultado global. <b>Crítica:</b> puede <b>sacrificar los derechos de una minoría</b> por la mayoría, y no siempre se pueden anticipar todas las consecuencias — ahí la ética del deber objetaría vulnerar derechos individuales.</div>
+    </details>
+    <details>
+      <summary><span class="pill">Tema 4</span>Diferenciar RSE y ciudadanía empresarial, y explicar por qué a una empresa le conviene la RSE.</summary>
+      <div class="answer"><b>RSE</b>: la empresa integra voluntariamente lo económico, social, ambiental y ético, haciéndose cargo de sus impactos sobre los stakeholders. <b>Ciudadanía empresarial</b>: la empresa como actor <b>político</b> que asume roles antes estatales en los derechos civiles, sociales y políticos. <b>Por qué conviene (business case):</b> atrae talento, fideliza clientes, anticipa la regulación y ahorra al prevenir conflictos; además hay razones morales (usar el poder responsablemente, todo genera impacto, empresa y sociedad son mutuamente dependientes).</div>
+    </details>
+    <details>
+      <summary><span class="pill">Tema 5</span>Una empresa detecta que sus vendedores exageran resultados por la presión de metas. Proponer cómo reducir esa deshonestidad.</summary>
+      <div class="answer">Con los <b>tres enfoques</b>: <b>valores</b> (formación ética, código, liderazgo con el ejemplo) para fortalecer a la persona; <b>estructura</b> (revisar el incentivo que premia la exageración, ajustar metas, controles y supervisión) para corregir el contexto; y <b>enfoque integrado</b>, que combina ambos buscando <b>coherencia</b> entre lo que la empresa dice esperar y lo que realmente incentiva. Un enfoque solo falla: los valores no bastan si el bono premia mentir, y los controles no bastan sin comprensión del sentido de la conducta esperada.</div>
+    </details>
+
+    <div class="footer">
+      <p><b>Ética de los Negocios · Sección 4 · Prof. Tatiana Montes · UDD.</b> Guía de estudio para el Certamen 1 (Clases 1–4). Elaborada a partir de las slides del curso y las pautas de corrección (Control 1 y Tarea 2). Las secciones marcadas <span class="ext">⧉ Externo</span> son aclaraciones externas; todo lo demás proviene del material del curso. Los "temas más probables" provienen de un certamen de otra sección (referencia, no garantía).</p>
     </div>
-
-    <h4>Practica</h4>
-    <details><summary><span class="qt">Recordar</span> ¿Qué es un stakeholder y quién acuñó la definición?</summary>
-      <div class="ans">Cualquier <b>grupo o individuo que pueda afectar o ser afectado</b> por el logro de los objetivos de la organización — definición de <b>Edward Freeman (1984)</b>. Ejemplos: trabajadores, clientes, proveedores, comunidad, medio ambiente.</div>
-    </details>
-    <details><summary><span class="qt comp">Comparar</span> Contrasta la postura de Friedman con la de Freeman.</summary>
-      <span class="hint">Estructura tu respuesta: nombre + año + tesis + a quién responde la empresa.</span>
-      <div class="ans"><b>Friedman (1970), teoría de accionistas:</b> la responsabilidad social de la empresa es aumentar sus beneficios; solo los individuos tienen responsabilidad moral, los gerentes sirven al interés financiero de los accionistas y lo social le compete al Estado. <b>Freeman (1984), teoría de stakeholders:</b> la empresa responde ante todas las partes afectadas, con obligación de no violar sus derechos (principio de derechos) y de hacerse responsable de los efectos de sus acciones (principio de efectos).</div>
-    </details>
-    <details><summary><span class="qt apply">Aplicar</span> ¿Por qué se dice que a una empresa “le conviene” ser ética? Da al menos tres razones.</summary>
-      <div class="ans">El <b>business case de la RSE</b>: (1) atrae y compromete talento, (2) genera lealtad y retención de clientes, (3) permite anticiparse a la regulación, (4) ahorra costos al prevenir conflictos con stakeholders. Clave: no es marketing, exige un cambio real de cultura porque empresa y sociedad son interdependientes.</div>
-    </details>
-    <details><summary><span class="qt integ">Integrar</span> Relaciona accountability, transparencia y ciudadanía empresarial.</summary>
-      <div class="ans">Como las empresas asumen un <b>rol cada vez más político</b> (ciudadanía empresarial) por las fallas del Estado y su creciente poder (globalización, privatización, desregulación), la sociedad exige que <b>rindan cuentas</b> por las consecuencias de sus actos (<b>accountability</b>). El mecanismo que lo hace posible es la <b>transparencia</b>: hacer visibles y auditables sus decisiones, políticas e impactos para los stakeholders.</div>
-    </details>
-  </section>
-
-  <!-- ============================================================= -->
-  <!-- ===============        GLOSARIO       ======================== -->
-  <!-- ============================================================= -->
-  <section class="classcard" id="glosario">
-    <h2>Glosario clave para el control</h2>
-    <p class="note">Los términos que más probablemente te pidan definir o usar. Apréndelos para poder <b>producirlos de memoria</b>.</p>
-    <div class="grid g2">
-      <div class="cell"><h5>Ética empresarial</h5><p>Estudio de decisiones comerciales en clave de correcto/incorrecto; entrega principios para decidir.</p></div>
-      <div class="cell"><h5>Moral</h5><p>Normas y valores heredados/practicados; subjetivos, varían por cultura y época.</p></div>
-      <div class="cell"><h5>Ética</h5><p>Reflexión racional sobre la moral → teorías éticas aplicables a todos.</p></div>
-      <div class="cell"><h5>Ley vs Ética</h5><p>Ley = mínimo obligatorio y sancionable; ética = ideal voluntario y esperado socialmente.</p></div>
-      <div class="cell"><h5>Sostenibilidad</h5><p>Mantener sistemas a largo plazo en lo económico, social y ambiental (triple bottom line, Elkington).</p></div>
-      <div class="cell"><h5>Persona jurídica</h5><p>La empresa tiene existencia legal propia, independiente de sus dueños.</p></div>
-      <div class="cell"><h5>Responsabilidad fiduciaria</h5><p>Deber de gerentes/directores de proteger la inversión de los accionistas.</p></div>
-      <div class="cell"><h5>Teoría de accionistas (Friedman, 1970)</h5><p>La responsabilidad social es aumentar beneficios; lo social le toca al Estado.</p></div>
-      <div class="cell"><h5>Stakeholder / Teoría (Freeman, 1984)</h5><p>Grupo que afecta o es afectado por la empresa; principios de derechos y de efectos.</p></div>
-      <div class="cell"><h5>RSE</h5><p>Responsabilidad Social Empresarial: la ética como generadora de valor a largo plazo.</p></div>
-      <div class="cell"><h5>Ciudadanía empresarial</h5><p>La empresa como actor político que asume roles antes estatales.</p></div>
-      <div class="cell"><h5>Accountability</h5><p>Rendir cuentas por las consecuencias de sus acciones; su llave es la transparencia.</p></div>
-    </div>
-  </section>
-
-  <!-- ============================================================= -->
-  <!-- ===============    CÓMO LLEGAR AL CONTROL   ================= -->
-  <!-- ============================================================= -->
-  <section class="classcard" id="cierre">
-    <h2>Cómo llegar bien al control (desarrollo escrito)</h2>
-    <p>Como es <b>desarrollo</b>, no basta reconocer: tienes que <b>escribir la respuesta completa</b>. Tres reflejos que suman puntos:</p>
-    <ol class="fw">
-      <li><b>Nombra los conceptos con su etiqueta.</b> Si es de Friedman, di “Friedman, 1970, teoría de accionistas”. Los correctores buscan los términos exactos.</li>
-      <li><b>Cuando compares, separa las partes.</b> No escribas un párrafo corrido: marca “Friedman:…” / “Freeman:…”, o “Moral:…” / “Ética:…”. Hazlo fácil de tickear.</li>
-      <li><b>Cierra con criterio, no con intuición.</b> En dilemas (tipo mini caso), pon los intereses en la balanza y justifica — recuerda que muchas veces no hay una única respuesta correcta y eso está bien.</li>
-    </ol>
-    <div class="callout glob">
-      <span class="lab">🌍 Antes de dormir</span>
-      Repasa en voz alta, como si le explicaras a alguien: <b>(1)</b> moral vs ética, <b>(2)</b> ley vs ética + “¿leyes no éticas?”, <b>(3)</b> Friedman vs Freeman, <b>(4)</b> qué es sostenibilidad, accountability y ciudadanía empresarial. Si puedes explicarlos sin mirar, los tienes. Dormir consolida más que trasnochar.
-    </div>
-  </section>
-
-  <div class="updatebox" id="futuro">
-    <b>📂 Cómo mantenemos esta guía viva.</b> Cuando subas nuevo material a tu carpeta <i>Ética de los Negocios</i>, solo dime algo como “subí la Clase 3, actualiza la guía”. Agregaré una nueva sección (mismo formato: banner, conceptos, ejemplos, trampas y práctica) y la enlazaré en el menú lateral, manteniendo todo lo anterior. Así llegas a cada control y al examen con un solo archivo ordenado.
-  </div>
-
-  <footer>
-    Guía de estudio · Ética de los Negocios · UDD Sección 4 · fuentes: slides Clase 1 (6 ago), Clase 2 (13 ago) y Calendarización 2026-2.<br>
-    Hecha para estudiar, no para reemplazar tu propio repaso. Última actualización: 19 de agosto de 2026.
-  </footer>
-</main>
+  </main>
 </div>
 </body>
 </html>
