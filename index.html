@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
-<title>Guía de Estudio · Ética de los Negocios (UDD)</title>
+<title>Guía de Estudio · Certamen 2 · Ética de los Negocios (UDD)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
@@ -18,19 +18,11 @@
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{
-    margin:0;background:var(--bg);color:var(--text);
-    font-family:"DM Sans",system-ui,sans-serif;line-height:1.65;font-size:16px;
-  }
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65;font-size:16px;}
   h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif;color:var(--heading);line-height:1.2;font-weight:700}
   a{color:var(--teal);text-decoration:none}
-  code{background:#0d2136;border:1px solid var(--border);border-radius:6px;padding:1px 6px;font-size:.9em}
   .layout{display:flex;max-width:1280px;margin:0 auto;gap:0}
-  /* Sidebar */
-  aside{
-    width:290px;flex:0 0 290px;position:sticky;top:0;height:100vh;overflow-y:auto;
-    background:linear-gradient(180deg,#0c1f34,#0a1728);border-right:1px solid var(--border);padding:26px 18px 60px;
-  }
+  aside{width:300px;flex:0 0 300px;position:sticky;top:0;height:100vh;overflow-y:auto;background:linear-gradient(180deg,#0c1f34,#0a1728);border-right:1px solid var(--border);padding:26px 18px 60px;}
   aside .brand{font-family:"Playfair Display",serif;font-weight:800;font-size:1.15rem;color:#fff;letter-spacing:.3px}
   aside .brand span{color:var(--teal)}
   aside .sub{color:var(--muted);font-size:.82rem;margin:4px 0 18px}
@@ -38,7 +30,6 @@
   nav a:hover{background:#12293f;color:var(--text)}
   nav a.group{margin-top:14px;color:var(--teal);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;pointer-events:none;padding-bottom:2px}
   nav a.sub-link{padding-left:20px;font-size:.85rem}
-  /* Main */
   main{flex:1 1 auto;min-width:0;padding:34px 40px 90px;max-width:900px}
   .hero{background:linear-gradient(135deg,#12365f,#0f2740);border:1px solid var(--border);border-radius:18px;padding:30px 30px 26px;margin-bottom:8px}
   .hero .kicker{color:var(--teal);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.76rem}
@@ -62,28 +53,24 @@
   .card.consec{border-top:3px solid var(--teal)}
   .card.deber{border-top:3px solid #6f89b3}
   .card.virtud{border-top:3px solid var(--gold)}
+  .card.danger{border-top:3px solid var(--danger)}
   .card p,.card ul{font-size:.92rem;margin:.3em 0}
   table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.9rem}
   th,td{border:1px solid var(--border);padding:9px 11px;text-align:left;vertical-align:top}
   th{background:#122c46;color:#fff;font-family:"DM Sans";font-weight:700}
   tr:nth-child(even) td{background:#0f2338}
-  /* callouts */
   .box{border-radius:12px;padding:13px 16px;margin:14px 0;font-size:.93rem;border:1px solid var(--border)}
   .ex{background:rgba(90,160,230,.09);border-left:4px solid var(--ex)}
   .trap{background:rgba(231,177,58,.10);border-left:4px solid var(--trap)}
   .global{background:rgba(84,185,138,.09);border-left:4px solid var(--green)}
   .box .lab{font-weight:700;display:block;margin-bottom:3px}
   .ex .lab{color:var(--ex)} .trap .lab{color:var(--trap)} .global .lab{color:var(--green)}
-  /* external tag */
-  .ext{display:inline-block;background:rgba(224,173,87,.14);color:var(--gold);border:1px solid rgba(224,173,87,.5);
-    border-radius:6px;padding:1px 7px;font-size:.72rem;font-weight:700;letter-spacing:.02em;vertical-align:middle}
+  .ext{display:inline-block;background:rgba(224,173,87,.14);color:var(--gold);border:1px solid rgba(224,173,87,.5);border-radius:6px;padding:1px 7px;font-size:.72rem;font-weight:700;letter-spacing:.02em;vertical-align:middle}
   .ext-note{border-left:4px solid var(--gold);background:rgba(224,173,87,.07)}
-  /* practice */
   details{background:var(--card2);border:1px solid var(--border);border-radius:12px;margin:12px 0;overflow:hidden}
   details summary{cursor:pointer;padding:12px 16px;font-weight:700;color:#fff;list-style:none;display:flex;gap:10px;align-items:flex-start}
   details summary::-webkit-details-marker{display:none}
-  details summary .pill{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;background:var(--deep);color:var(--teal);
-    border-radius:20px;padding:2px 9px;flex:0 0 auto;margin-top:2px}
+  details summary .pill{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;background:var(--deep);color:var(--teal);border-radius:20px;padding:2px 9px;flex:0 0 auto;margin-top:2px}
   details summary::after{content:"▸";margin-left:auto;color:var(--muted);transition:transform .2s}
   details[open] summary::after{transform:rotate(90deg)}
   details .answer{padding:0 16px 14px;border-top:1px solid var(--border);color:var(--text);font-size:.93rem}
@@ -94,14 +81,12 @@
   .pill-row b{background:#12293f;border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-weight:600;font-size:.85rem;color:var(--text)}
   hr{border:none;border-top:1px solid var(--border);margin:34px 0}
   .footer{color:var(--muted);font-size:.82rem;margin-top:40px;border-top:1px solid var(--border);padding-top:16px}
-  .topbar{display:none}
   @media(max-width:860px){
     .layout{flex-direction:column}
     aside{position:static;width:auto;height:auto;flex:none;border-right:none;border-bottom:1px solid var(--border)}
     main{padding:24px 18px 70px}
     .grid,.grid.three{grid-template-columns:1fr}
     .hero h1{font-size:1.6rem}
-    .topbar{display:flex}
   }
 </style>
 </head>
@@ -109,33 +94,10 @@
 <div class="layout">
   <aside>
     <div class="brand">Ética de los <span>Negocios</span></div>
-    <div class="sub">Guía de estudio · Clases 1–6 · Sección 4 · UDD</div>
+    <div class="sub">Guía de estudio · Certamen 2 · Sección 4 · UDD</div>
     <nav>
-      <a href="#relampago">⚡ Repaso para el control (Clases 5–6)</a>
-      <a href="#inicio">Cómo llegar bien al Certamen 1</a>
-      <a href="#calientes">🔥 Temas más probables</a>
-      <a class="group">Clase 1 · Fundamentos</a>
-      <a class="sub-link" href="#moral-etica">Moral vs ética</a>
-      <a class="sub-link" href="#etica-empresarial">Qué es ética empresarial</a>
-      <a class="sub-link" href="#etica-ley">Ética y ley (¿legal = ético?)</a>
-      <a class="sub-link" href="#sostenibilidad">Sostenibilidad</a>
-      <a class="group">Clase 2 · Empresa y sociedad</a>
-      <a class="sub-link" href="#empresa">Qué es una empresa</a>
-      <a class="sub-link" href="#friedman">Friedman (accionistas)</a>
-      <a class="sub-link" href="#freeman">Freeman (stakeholders)</a>
-      <a class="sub-link" href="#rse">RSE y business case</a>
-      <a class="sub-link" href="#ciudadania">Ciudadanía empresarial</a>
-      <a class="sub-link" href="#accountability">Accountability</a>
-      <a class="group">Clase 3 · Modelos prescriptivos</a>
-      <a class="sub-link" href="#tres-lentes">Las 3 lentes</a>
-      <a class="sub-link" href="#utilitarismo">Utilitarismo</a>
-      <a class="sub-link" href="#deontologia">Ética del deber (Kant)</a>
-      <a class="sub-link" href="#virtud">Ética de la virtud</a>
-      <a class="group">Clase 4 · Decisión y conducta</a>
-      <a class="sub-link" href="#ocho-pasos">Los 8 pasos</a>
-      <a class="sub-link" href="#descriptivos">Prescriptivo vs descriptivo</a>
-      <a class="sub-link" href="#factores">Factores + racionalizaciones</a>
-      <a class="sub-link" href="#reducir">Reducir deshonestidad</a>
+      <a href="#relampago">⚡ Last Read (Clases 5–8)</a>
+      <a href="#evalua">Cómo se evalúa</a>
       <a class="group">Clase 5 · Ética y compliance</a>
       <a class="sub-link" href="#etica-compliance">Ética vs compliance</a>
       <a class="sub-link" href="#proposito-programa">Propósito y elementos</a>
@@ -144,21 +106,31 @@
       <a class="sub-link" href="#stakeholder-def">Qué es un stakeholder</a>
       <a class="sub-link" href="#mapeo">Mapeo poder × interés</a>
       <a class="sub-link" href="#involucramiento">Involucramiento</a>
+      <a class="group">Clase 7 · Gobierno y regulación</a>
+      <a class="sub-link" href="#estado-gobierno">Estado, Gobierno, reguladores</a>
+      <a class="sub-link" href="#leyes-regulacion">Leyes, regulación, hard/soft law</a>
+      <a class="sub-link" href="#influencia-corporativa">Influencia corporativa</a>
+      <a class="sub-link" href="#corrupcion">Corrupción y privatización</a>
+      <a class="group">Clase 8 · Sociedad civil y activismo</a>
+      <a class="sub-link" href="#sociedad-civil">OSC y tercer sector</a>
+      <a class="sub-link" href="#osc-influencia">Influencia: tácticas y boicot</a>
+      <a class="sub-link" href="#colaboracion-osc">Colaboración y alianzas</a>
+      <a class="sub-link" href="#empresa-social">OSC vs empresa social</a>
       <a class="group">Cierre</a>
       <a href="#glosario">Glosario</a>
-      <a href="#simulacro">Simulacro final</a>
+      <a href="#simulacro">Simulacro tipo certamen</a>
     </nav>
   </aside>
 
   <main>
     <div class="hero" id="inicio">
-      <div class="kicker">Ética de los Negocios · Sección 4 · UDD</div>
-      <h1>Guía de estudio — Ética de los Negocios</h1>
-      <p>Foco inmediato: el <b>control (Tarea 3)</b> sobre programa de ética y compliance (Clase 5) y análisis de stakeholders (Clase 6) — resumido arriba en el repaso relámpago. El resto de la página cubre las Clases 1 a 6 en detalle (Clases 1–4 fueron la materia del Certamen 1). Evaluación escrita e individual, de desarrollo.</p>
+      <div class="kicker">Certamen 2 · Jueves 22 de octubre · 20%</div>
+      <h1>Guía de estudio — Certamen 2</h1>
+      <p>Cubre las cuatro clases que entran: <b>Clase 5</b> (programa de ética y compliance), <b>Clase 6</b> (stakeholders), <b>Clase 7</b> (gobierno y regulación) y <b>Clase 8</b> (sociedad civil y activismo). Evaluación escrita e individual, de desarrollo, 60 minutos. Recomendación del profesor: no memorizar definiciones — comprender, explicar y <b>aplicar a casos</b>, fundamentando.</p>
     </div>
 
     <div class="legend">
-      <span>📌 Ejemplo aplicado</span>
+      <span>📌 Ejemplo / caso aplicado</span>
       <span>⚠️ Trampa de examen</span>
       <span>🌍 Nota clave</span>
       <span class="ext">⧉ Externo</span> = aclaración externa, no proviene de las slides del curso
@@ -166,459 +138,67 @@
 
     <div class="box ext-note">
       <span class="lab">Cómo leer esta guía</span>
-      El contenido proviene de las slides de las Clases 1–6 y de las pautas de corrección de la profesora Tatiana Montes. Las aclaraciones que no aparecen de forma literal en las slides se marcan con <span class="ext">⧉ Externo</span>. Todo lo demás está verificado contra la fuente.
+      El contenido proviene de las slides de las Clases 5 a 8 de la profesora Tatiana Montes. Las aclaraciones que no aparecen de forma literal en las slides se marcan con <span class="ext">⧉ Externo</span>. Todo lo demás está verificado contra la fuente. La guía del Certamen 1 (Clases 1–4) está en la carpeta del curso.
     </div>
 
-    <!-- ============ REPASO RELÁMPAGO · CONTROL ============ -->
-    <div class="banner" id="relampago"><div class="tag">Repaso para el control · Clases 5–6</div><h2>⚡ Última lectura antes del control</h2></div>
-    <p>Para el control de hoy (Tarea 3), que cubre la <b>Clase 5</b> (programa de ética y compliance) y la <b>Clase 6</b> (análisis de stakeholders). Ambas clases piden la misma fórmula de respuesta: <span class="key">concepto correcto + evidencia del caso + justificación</span>. El desarrollo completo de cada punto está más abajo; el material del Certamen 1 (Clases 1–4) queda al final como referencia.</p>
+    <!-- ============ LAST READ ============ -->
+    <div class="banner" id="relampago"><div class="tag">Última lectura antes del certamen</div><h2>⚡ Last Read · Clases 5–8</h2></div>
+    <p>Las cuatro clases comparten la misma lógica: <span class="key">una decisión empresarial siempre ocurre entre actores con intereses distintos</span> (la empresa, el Estado, los stakeholders, la sociedad civil). El certamen pide <b>aplicar los conceptos a un caso y fundamentar</b>, no recitar definiciones.</p>
 
     <h3 class="first">Conceptos en una línea (recordar)</h3>
     <table>
       <tr><th>Concepto</th><th>En una frase</th></tr>
-      <tr><td>Compliance</td><td>Cumplir obligaciones y prevenir conductas ilegales o contrarias a normas (el "piso" legal).</td></tr>
-      <tr><td>Ética (vs compliance)</td><td>Estándares voluntarios y valores que van más allá de lo legal; se gestionan de forma complementaria.</td></tr>
-      <tr><td>Gobierno corporativo</td><td>Sistema que dirige y controla la empresa: transparencia, rendición de cuentas, confianza.</td></tr>
-      <tr><td>Propósito del programa</td><td>Prevenir · detectar/responder · cumplir · crear cultura · alinear con stakeholders.</td></tr>
-      <tr><td>Programa = sistema</td><td>Gobernanza + prevención + detección/respuesta + cultura/seguimiento. No es una lista.</td></tr>
-      <tr><td>Denuncia protegida (whistleblowing)</td><td>Canal para informar irregularidades: accesible, protegido, confiable y trazable.</td></tr>
+      <tr><td>Programa de ética y compliance</td><td>Sistema (no lista) para prevenir, detectar/responder, cumplir, crear cultura y alinear con stakeholders.</td></tr>
       <tr><td>Existencia ≠ efectividad</td><td>Tener código, capacitación y canal no prueba que funcionen ni que haya cultura ética.</td></tr>
-      <tr><td>Métricas</td><td>Actividad (¿qué hicimos?) vs efectividad (¿qué cambió?); deben alinearse al objetivo.</td></tr>
-      <tr><td>Stakeholder (Freeman, 1984)</td><td>Grupo o individuo que puede afectar o verse afectado por la actividad empresarial.</td></tr>
-      <tr><td>Shareholder ≠ stakeholder</td><td>Todo accionista es stakeholder; no todo stakeholder es accionista.</td></tr>
-      <tr><td>Clasificar stakeholders</td><td>Ubicación (internos / externos) y dependencia (primarios / secundarios).</td></tr>
-      <tr><td>Marco de análisis</td><td>WHO (quiénes) · WHAT (intereses) · WHY (poder × interés) · HOW (cómo involucrar).</td></tr>
-      <tr><td>Materialidad</td><td>Un tema es material si su relevancia/impacto justifica atención; filtra, no ignora.</td></tr>
-      <tr><td>Poder · interés · impacto</td><td>Priorizar no es oír solo al poderoso; el impacto puede obligar a escuchar a los afectados.</td></tr>
-      <tr><td>Involucramiento</td><td>Monitorear → informar → consultar → involucrar → colaborar; proporcional al caso.</td></tr>
-      <tr><td>Gestionar ≠ satisfacer a todos</td><td>Reconocer intereses legítimos, evaluar impactos, decidir y explicar los trade-offs.</td></tr>
+      <tr><td>Stakeholder (Freeman)</td><td>Grupo o individuo que puede afectar o verse afectado por la actividad empresarial.</td></tr>
+      <tr><td>Poder · interés · impacto</td><td>Priorizar no es oír solo al poderoso; el impacto obliga a escuchar a los afectados.</td></tr>
+      <tr><td>Estado vs Gobierno</td><td>Estado = permanente (stakeholder general); Gobierno = transitorio; reguladores = actores estatales específicos.</td></tr>
+      <tr><td>Ley vs regulación</td><td>La ley es el piso obligatorio; la regulación es el conjunto amplio de instrumentos que orientan conductas.</td></tr>
+      <tr><td>Hard law / soft law</td><td>Hard obliga y se sanciona ("sticks"); soft orienta/sugiere, sin sanción estatal ("carrots").</td></tr>
+      <tr><td>Actividad política corporativa</td><td>Influir no es corrupción; el espectro va de transparencia → lobby → conflicto de interés → corrupción.</td></tr>
+      <tr><td>Influencia legítima</td><td>Interés declarado + transparencia + evidencia + reglas de acceso + rendición de cuentas.</td></tr>
+      <tr><td>Corrupción</td><td>Uso indebido de poder para una ventaja ilegítima (cohecho, soborno, etc.).</td></tr>
+      <tr><td>Sociedad civil (tercer sector)</td><td>Organizaciones autónomas del Estado y el mercado, con fines colectivos, sin fin de lucro principal.</td></tr>
+      <tr><td>OSC</td><td>Colectivo fuera del gobierno y las empresas que promueve causas/intereses sociales (ONG, sindicatos…).</td></tr>
+      <tr><td>Licencia social para operar</td><td>Aceptación social amplia; permiso legal ≠ licencia social.</td></tr>
+      <tr><td>Tácticas de influencia (OSC)</td><td>Acción indirecta · directa no violenta · directa violenta.</td></tr>
+      <tr><td>Empresa social</td><td>Vende bienes/servicios con propósito social explícito; rentable + misión.</td></tr>
     </table>
 
-    <h3>Dos marcos para aplicar a un caso</h3>
+    <h3>Marcos que conviene tener listos para un caso</h3>
     <div class="grid">
-      <div class="card consec"><h4>Programa (Clase 5): 4 bloques</h4><p><b>Gobernanza</b> (responsable + compromiso de la dirección) · <b>Prevención</b> (riesgos, reglas/protocolos, capacitación) · <b>Detección/respuesta</b> (denuncia, auditoría, sanciones) · <b>Cultura/seguimiento</b> (transparencia, métricas, mejora).</p></div>
-      <div class="card deber"><h4>Stakeholders (Clase 6): poder × interés</h4><p>Alto poder/alto interés → <b>involucrar</b> · alto poder/bajo interés → <b>satisfacer</b> · bajo poder/alto interés → <b>informar</b> · bajo poder/bajo interés → <b>monitorear</b>. Suma siempre el <b>impacto</b>.</p></div>
+      <div class="card consec"><h4>Legitimidad de la influencia (Clase 7)</h4><p>Interés declarado + transparencia + evidencia + reglas de acceso (lobby regulado, consultas) + rendición de cuentas. El problema no es influir, sino <b>cómo</b>.</p></div>
+      <div class="card deber"><h4>Evaluar una acción de OSC (Clase 8)</h4><p>Veracidad de los antecedentes + proporcionalidad de los medios + respeto a derechos de terceros + transparencia + rendición de cuentas. La causa legítima no exime de evaluar los medios.</p></div>
     </div>
 
-    <h3>Trampas que más cuestan puntos</h3>
-    <div class="box trap"><span class="lab">⚠️ Las del control</span>
+    <h3>Las igualdades-trampa de este certamen</h3>
+    <div class="box trap"><span class="lab">⚠️ Las que más cuestan puntos</span>
       <ul>
-        <li><b>Existencia ≠ efectividad:</b> "tiene código y canal" no prueba cultura ética.</li>
-        <li><b>Actividad ≠ efectividad:</b> "100% capacitado" mide participación, no conducta.</li>
-        <li><b>Shareholder ≠ stakeholder:</b> los accionistas son solo un tipo de stakeholder.</li>
-        <li><b>Interés ≠ poder:</b> son dimensiones distintas; agrega el impacto.</li>
-        <li><b>Gestionar ≠ satisfacer a todos:</b> hay que decidir y explicar los trade-offs.</li>
-        <li><b>No basta nombrar:</b> concepto + evidencia del caso + justificación.</li>
+        <li><b>Existencia ≠ efectividad</b> (programa) · <b>actividad ≠ efectividad</b> (métricas).</li>
+        <li><b>Estado ≠ Gobierno</b> (permanente vs transitorio) · <b>hard law ≠ soft law</b> (obliga vs orienta).</li>
+        <li><b>Influir ≠ corromper:</b> la influencia es legítima si es transparente y rinde cuentas.</li>
+        <li><b>Permiso legal ≠ licencia social:</b> se pueden tener permisos y no tener aceptación.</li>
+        <li><b>OSC ≠ empresa social ≠ empresa tradicional:</b> mirar el propósito y el financiamiento, no el nombre.</li>
+        <li><b>La causa legítima ≠ medios legítimos:</b> hay que evaluar los dos.</li>
       </ul>
     </div>
 
-    <h3>Cómo se responde (ambas clases, igual)</h3>
-    <p><span class="key">Concepto correcto + evidencia del caso + justificación.</span> Verbos posibles: explicar, distinguir, identificar, mapear, justificar, evaluar, proponer, argumentar.</p>
+    <h3>Cómo se responde</h3>
+    <p><span class="key">Concepto correcto + evidencia del caso + justificación.</span> Verbos que puede pedir: distinguir, explicar, analizar, identificar, clasificar, evaluar, justificar, proponer.</p>
 
     <hr>
 
-    <h3 class="first">Qué entra (pauta oficial, Clase 4)</h3>
-    <p>La profesora entregó la pauta en la última slide de la Clase 4, con una advertencia en amarillo: <span class="key">"entra la materia de TODAS las clases realizadas hasta hoy"</span>. La lista es una orientación, no un límite.</p>
-    <div class="grid">
-      <div class="card"><h4>Clase 1 · Fundamentos</h4><ul><li>Qué es ética empresarial</li><li>Ética y legalidad</li><li>Rol de la empresa y responsabilidad por sus decisiones</li></ul></div>
-      <div class="card"><h4>Clase 2 · Empresa y sociedad</h4><ul><li>RSE</li><li>Ciudadanía empresarial</li><li>Partes afectadas / stakeholders</li><li>Efectos e impactos de las decisiones</li></ul></div>
-      <div class="card"><h4>Clase 3 · Prescriptivos</h4><ul><li>Utilitarismo</li><li>Ética del deber</li><li>Ética de la virtud</li><li>Diferencias entre los tres</li><li>Aplicación a dilemas</li></ul></div>
-      <div class="card"><h4>Clase 4 · Decisión y conducta</h4><ul><li>8 pasos</li><li>Prescriptivos vs descriptivos</li><li>Factores individuales y del contexto</li><li>Racionalizaciones</li><li>Valores, estructura e integrado</li></ul></div>
-    </div>
-
-    <h3>Cómo se evalúa (lo más importante)</h3>
-    <p>Las pautas de corrección (Control 1 y Tarea 2) muestran un patrón claro. Cada respuesta bien puntuada tiene <span class="key">tres capas</span>, y la corrección reparte puntaje por cada una:</p>
-    <ol>
-      <li><b>Respuesta directa</b> — toma posición y nombra el concepto correcto (ej: "No, no basta con que sea legal" / "es Ética de la Virtud").</li>
-      <li><b>Fundamento teórico</b> — define el concepto con precisión (qué dice la teoría, sus términos propios).</li>
-      <li><b>Aplicación al caso</b> — conectas el concepto con hechos concretos del caso. Sin esto, no hay puntaje completo.</li>
-    </ol>
-    <div class="box trap"><span class="lab">⚠️ Trampa #1 de este ramo</span>
-      Nombrar el concepto <b>no basta</b>. La slide "¿Cómo debes prepararte?" lo dice literal: <i>"No basta con nombrar un concepto: debes demostrar que entiendes qué significa y cómo se usa"</i>. Cuatro verbos que se pueden pedir: <b>comprender</b> (explicar el concepto con palabras propias), <b>distinguir</b> (diferenciar conceptos cercanos), <b>aplicar</b> (usar el modelo en un caso) y <b>fundamentar</b> (explicar por qué la respuesta corresponde al concepto, apoyándose en el caso).</div>
-
-    <!-- ============ TEMAS CALIENTES ============ -->
-    <div class="banner" id="calientes">
-      <div class="tag">Prioridad de estudio</div>
-      <h2>🔥 Los 5 temas más probables</h2>
-    </div>
-    <p>Estos cinco temas provienen de un certamen de <b>otra sección</b> del mismo ramo <span class="ext">⧉ Externo</span> (no forman parte de las slides, pero el temario y la profesora son los mismos, por lo que sirven de orientación). No garantizan las preguntas del certamen, pero conviene dominarlos a fondo. Cada uno enlaza a su sección correspondiente.</p>
-    <table>
-      <tr><th>Tema señalado</th><th>Dónde está en el material del curso</th></tr>
-      <tr><td><b>1.</b> Analizar un caso desde la moral y la ética, y diferenciar los conceptos</td><td><a href="#moral-etica">Moral vs ética</a></td></tr>
-      <tr><td><b>2.</b> Si una decisión es legal, ¿es éticamente correcta?</td><td><a href="#etica-ley">Ética y ley</a> (+ rúbrica Control 1)</td></tr>
-      <tr><td><b>3.</b> Utilitarismo</td><td><a href="#utilitarismo">Utilitarismo</a></td></tr>
-      <tr><td><b>4.</b> Ciudadanía empresarial y RSE</td><td><a href="#rse">RSE</a> · <a href="#ciudadania">Ciudadanía empresarial</a></td></tr>
-      <tr><td><b>5.</b> Cómo reducir la deshonestidad</td><td><a href="#reducir">Reducir deshonestidad</a> (valores / estructura / integrado)</td></tr>
-    </table>
-
-    <hr>
-
-    <!-- ============ CLASE 1 ============ -->
-    <div class="banner"><div class="tag">Clase 1 · 6 agosto</div><h2>Fundamentos de la ética de los negocios</h2></div>
-
-    <section id="moral-etica">
-      <h3 class="first">Moral vs ética <span class="ext">tema caliente #1</span></h3>
-      <p>Esta es la distinción base del curso y una diferencia que se pide "distinguir" de forma explícita.</p>
-      <div class="grid">
-        <div class="card consec"><h4>Moral</h4>
-          <p>Se ocupa de las <b>normas, valores y creencias</b> arraigadas en los procesos sociales que definen lo que está bien y mal para un individuo o comunidad.</p>
-          <p>Es un concepto <b>"subjetivo"</b> que varía según los individuos, las culturas y las épocas.</p>
-        </div>
-        <div class="card deber"><h4>Ética</h4>
-          <p>Se ocupa del <b>estudio de la moral</b> y de la <b>aplicación de la razón</b> para dilucidar reglas y principios que determinan lo bueno/malo en una situación determinada.</p>
-          <p>Es un <b>sistema organizado de directrices</b> aplicable a todos los miembros de una sociedad. Esas reglas y principios se llaman <b>teorías éticas</b>.</p>
-        </div>
-      </div>
-      <table>
-        <tr><th>Moral</th><th>Ética</th></tr>
-        <tr><td>Lo que "se hace" en una cultura o grupo</td><td>Reflexión sobre si eso "debería hacerse"</td></tr>
-        <tr><td>Normas heredadas (familia, religión)</td><td>Criterios razonados y personales</td></tr>
-        <tr><td>Interiorizadas sin necesariamente pensarlas</td><td>Pensadas, argumentadas y discutidas</td></tr>
-        <tr><td>"Siempre se ha hecho así"</td><td>"¿Esto es correcto, justo o legítimo?"</td></tr>
-      </table>
-      <div class="box ex"><span class="lab">📌 Ejemplo de la slide</span>
-        En algunas familias se considera inmoral que los hijos contradigan a los padres (norma moral). Pero si un hijo ve a su padre actuar injustamente y se pregunta "¿está bien callarme solo porque es mi papá?", ahí aparece la <b>ética</b>: pensar más allá de la obediencia, cuestionar lo aprendido, actuar con responsabilidad personal.</div>
-      <div class="box global"><span class="lab">🌍 Frase para anclar</span>
-        Moral = <b>lo que se hace</b> (heredado, subjetivo). Ética = <b>la reflexión razonada sobre lo que debería hacerse</b> (sistemática, aplicable a todos). La ética estudia y evalúa la moral.</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): explicar en una frase la diferencia moral/ética y dar un ejemplo donde algo sea "moralmente aceptado" pero éticamente cuestionable.</div>
-      <details>
-        <summary><span class="pill">Aplicar</span>Un ejecutivo dice: "Aquí siempre se han inflado un poco las cifras, todos lo hacen". ¿Se razona desde la moral o desde la ética? Justificar.</summary>
-        <div class="answer">
-          Razona desde la <span class="key">moral</span>: se apoya en lo que "se hace" en el grupo, una norma interiorizada y no cuestionada ("siempre se ha hecho así", "todos lo hacen"). No hay reflexión ética, que exigiría preguntarse <i>si esa práctica es correcta, justa o legítima</i> más allá de que sea habitual. La ética aplicaría la razón para evaluar la norma, no solo repetirla.
-          <div class="rub">Estructura que premia la corrección: (1) nombrar el concepto — moral; (2) fundamentar — moral = lo que se hace/heredado, ética = reflexión razonada; (3) aplicar al caso — "todos lo hacen" es la señal de norma no cuestionada.</div>
-        </div>
-      </details>
-    </section>
-
-    <section id="etica-empresarial">
-      <h3>Qué es la ética empresarial</h3>
-      <p>La <b>ética empresarial</b> es el estudio de situaciones, actividades y decisiones comerciales donde se abordan cuestiones de lo correcto y lo incorrecto. Nos entrega <b>principios que guían la toma de decisiones</b>.</p>
-      <p>Estudia cómo deben comportarse las empresas, sus líderes y trabajadores para actuar de manera <b>responsable, justa y coherente</b> con los valores de la sociedad. No se trata de que las empresas sean "perfectas" o "buenas personas", sino de que sean <b>conscientes de su impacto</b> y asuman responsabilidades <b>más allá de lo estrictamente legal o financiero</b>.</p>
-      <p>Preguntas típicas de la ética empresarial: ¿Es justo lo que hacemos? ¿Qué consecuencias tiene en los grupos involucrados? ¿Está alineado con nuestros valores y propósito? ¿Somos coherentes con lo que decimos públicamente?</p>
-      <div class="box ex"><span class="lab">📌 ¿Por qué estudiar ética empresarial? (razones de la clase)</span>
-        La innovación (IA, reconocimiento facial) abre dilemas donde la línea correcto/incorrecto es delgada y puede crear oportunidades de abuso; las empresas responden a cada vez más <b>stakeholders</b>, no solo a sus dueños; pueden impactar negativamente a las personas, la sociedad y el medio ambiente; y <b>no todas</b> las situaciones en que hay que decidir están reguladas por la ley.</div>
-      <div class="box trap"><span class="lab">⚠️ Distinción fina</span>
-        En este curso <b>no</b> se habla de la moral individual ("lo que cada uno cree bueno o malo"), sino de <b>ética en el mundo profesional</b>: decisiones que afectan a muchas personas y exigen reflexión más allá de lo que cada uno siente.</div>
-    </section>
-
-    <section id="etica-ley">
-      <h3>Ética y ley: ¿si es legal, es ético? <span class="ext">tema caliente #2</span></h3>
-      <p>La pregunta de la slide es directa: <b>"¿Podemos tener leyes no éticas?"</b> La respuesta corta: sí. Ley y ética se solapan, pero no son lo mismo.</p>
-      <p class="key">La ley establece un mínimo: lo que está permitido y lo que está prohibido. La ética, en cambio, pregunta: ¿esto está bien más allá de que sea legal? ¿qué consecuencias tiene para otros? ¿es justo o responsable?</p>
-      <table>
-        <tr><th>Ley</th><th>Ética</th></tr>
-        <tr><td>Es obligatoria</td><td>Es voluntaria (pero esperada socialmente)</td></tr>
-        <tr><td>Establece mínimos</td><td>Propone ideales y estándares más altos</td></tr>
-        <tr><td>Se sanciona externamente (castigo legal)</td><td>Se juzga interna o socialmente</td></tr>
-        <tr><td>Aplica igual para todos</td><td>Considera contexto, intenciones y valores</td></tr>
-        <tr><td>Puede cambiar con gobiernos o épocas</td><td>Apunta a principios más estables</td></tr>
-      </table>
-      <div class="box global"><span class="lab">🌍 La frase de oro (sale en la rúbrica del Control 1)</span>
-        "La ley establece un <b>piso o mínimo obligatorio</b> de conducta. La ética permite evaluar si una decisión, <b>aun siendo legal, es además justa, responsable</b> y consistente con estándares que pueden ir más allá de la exigencia legal." Una decisión puede ser <b>legal y rentable, pero no ética</b> si daña a personas o contradice los valores de la organización.</div>
-      <div class="box ex"><span class="lab">📌 Caso real del Control 1 · "El costo de la moda de bajo costo"</span>
-        Una empresa de ropa terceriza su producción a un proveedor extranjero con bajos estándares laborales, pero <b>legales</b> en ese país, para bajar precios. Pregunta: ¿basta el argumento "es legal"? <b>No.</b> Aunque la fábrica cumpla la ley local, la empresa chilena conoce las jornadas extensas y las malas condiciones; no puede justificar su decisión solo diciendo que es legal o que son trabajadores de un tercero. La ética exige evaluar <b>justicia, responsabilidad y efectos</b> sobre las personas.</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): redactar la respuesta completa a la pregunta siguiente con las tres capas (posición → teoría → caso), idealmente cronometrada.</div>
-      <details>
-        <summary><span class="pill">Fundamentar</span>Una empresa dice: "Nuestra práctica es legal, por lo tanto es correcta". ¿Es suficiente ese argumento desde la ética empresarial? (formato certamen)</summary>
-        <div class="answer">
-          <b>No, no es suficiente.</b> Que una práctica sea legal significa que cumple los <span class="key">mínimos obligatorios</span> que establece la ley, pero eso no implica que sea ética. La ley fija un piso (lo permitido/prohibido); la ética propone <span class="key">ideales y estándares más altos</span> y evalúa la decisión según criterios de <b>justicia, responsabilidad y sus efectos sobre las personas</b>, pudiendo exigir más que la ley. Una decisión puede ser legal y rentable y aun así no ética si daña a personas o contradice los valores de la organización. <b>Aplicado a un caso</b>: aunque un proveedor cumpla la legislación local, si la empresa conoce condiciones laborales indignas, no puede escudarse solo en la legalidad; debe considerar los efectos de su decisión.
-          <div class="rub">Puntaje del Control 1 (5 pts): respuesta directa (1) + fundamento ley=mínimo/ética=ideales (2) + análisis "legal y rentable ≠ ético" (1) + aplicación al caso (1).</div>
-        </div>
-      </details>
-    </section>
-
-    <section id="sostenibilidad">
-      <h3>El objetivo de la ética: ser sostenibles</h3>
-      <p>La <b>sostenibilidad</b> (o sustentabilidad) se refiere al <b>mantenimiento a largo plazo</b> de los sistemas de acuerdo con consideraciones <b>ambientales, económicas y sociales</b>.</p>
-      <div class="pill-row"><b>Económico</b><b>Social</b><b>Ambiental</b></div>
-      <p>Estas tres dimensiones son el <b>triple bottom line</b> de John Elkington: la empresa no rinde cuenta solo por lo económico, sino también por lo social y lo ambiental.</p>
-      <div class="box trap"><span class="lab">⚠️ No olvides el autor</span>Triple bottom line → <b>John Elkington</b>. Tres pilares: económico, social, ambiental.</div>
-    </section>
-
-    <hr>
-
-    <!-- ============ CLASE 2 ============ -->
-    <div class="banner"><div class="tag">Clase 2 · 13 agosto</div><h2>El rol de la empresa en la sociedad</h2></div>
-
-    <section id="empresa">
-      <h3 class="first">¿Qué es una empresa? ¿Es responsable moralmente?</h3>
-      <ul>
-        <li>Una empresa se define esencialmente por su <b>estatus legal</b> y la <b>propiedad de activos</b>.</li>
-        <li>Las empresas son <b>"personas jurídicas"</b>.</li>
-        <li>Son teóricamente "propiedad" de los accionistas, pero <b>existen independientemente</b> de ellos.</li>
-        <li>Los gerentes y directores tienen una <b>responsabilidad "fiduciaria"</b> de proteger la inversión de los accionistas. <span class="ext">⧉ Externo:</span> "fiduciaria" = deber de actuar con lealtad y cuidado gestionando algo que es de otro (aquí, el dinero de los accionistas).</li>
-      </ul>
-      <p><b>¿Son responsables moralmente?</b> No tienen todas las atribuciones de una persona adulta (ej. votar), pero sí <b>existen legalmente</b>, tienen <b>agencia</b> (hacen cosas en su propio nombre), tienen <b>cultura organizacional</b> e <b>identidad funcional</b> (un nombre y marca que les permite interactuar). Por eso se les puede atribuir cierta responsabilidad.</p>
-    </section>
-
-    <section id="friedman">
-      <h3>El debate clásico — Milton Friedman (1970): teoría de los accionistas</h3>
-      <p>Friedman proponía que <b>"la responsabilidad social de las empresas es aumentar sus beneficios"</b>. Argumentó <b>contra</b> la idea de responsabilidades sociales con <b>tres argumentos</b>:</p>
-      <div class="grid three">
-        <div class="card"><h4>1 · Naturaleza moral</h4><p>Solo los <b>seres humanos individuales</b> tienen responsabilidad moral, no las corporaciones.</p></div>
-        <div class="card"><h4>2 · Agencia</h4><p>Es responsabilidad de los gerentes actuar <b>únicamente en interés (financiero) de los accionistas</b>.</p></div>
-        <div class="card"><h4>3 · Competencia</h4><p>Los problemas sociales son competencia del <b>Estado</b>, no de la administración corporativa.</p></div>
-      </div>
-      <div class="box trap"><span class="lab">⚠️ Trampa de memoria</span>Friedman = <b>teoría de los accionistas</b> (shareholders) = maximizar beneficios. Los 3 argumentos: <b>moral, agencia, competencia</b>. No confundir con los principios de Freeman.</div>
-    </section>
-
-    <section id="freeman">
-      <h3>La evolución — Edward Freeman (1984): teoría de los stakeholders</h3>
-      <p>Freeman propuso que <b>no solo los accionistas</b> tienen expectativas sobre lo que hace la empresa. Definición clave:</p>
-      <p class="key">Un stakeholder es cualquier grupo o individuo que pueda afectar, o sea afectado por, el logro de los objetivos de la organización. (Freeman, 1984)</p>
-      <p>Ejemplos de stakeholders: trabajadores, clientes, proveedores, comunidad, medio ambiente, accionistas. La teoría se apoya en <b>dos principios</b>:</p>
-      <div class="grid">
-        <div class="card deber"><h4>Principio de los derechos corporativos</h4><p>La corporación tiene la obligación de <b>no violar los derechos</b> de los demás.</p></div>
-        <div class="card deber"><h4>Principio del efecto corporativo</h4><p>Las empresas son <b>responsables de los efectos</b> (positivos y negativos) de sus acciones sobre los demás.</p></div>
-      </div>
-      <div class="box global"><span class="lab">🌍 El "efecto corporativo" es puntaje seguro</span>
-        En la rúbrica del Control 1, la Pregunta 2 completa gira sobre este principio: la empresa es <b>responsable de los efectos de sus decisiones sobre otros, aunque no exista un contrato directo</b>. Su responsabilidad moral <b>trasciende las fronteras legales</b> y alcanza a toda su cadena (proveedores, terceros afectados).</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): definir el principio del efecto corporativo y aplicarlo a una empresa que terceriza producción a un proveedor que contamina un río.</div>
-      <details>
-        <summary><span class="pill">Aplicar</span>Una empresa terceriza producción a un proveedor cuyos trabajadores sufren malas condiciones. La empresa dice: "no son nuestros empleados". ¿Tiene responsabilidad? (formato certamen)</summary>
-        <div class="answer">
-          <b>Sí.</b> Según el <span class="key">principio del efecto corporativo</span>, las empresas son responsables de los efectos (impactos positivos o negativos) que sus decisiones generan sobre los demás, <b>incluso cuando esas personas no son sus empleados directos</b>. La ausencia de un contrato laboral directo <b>no elimina la responsabilidad</b>: al decidir trabajar con ese proveedor y beneficiarse de su producción, la empresa forma parte de la cadena de decisiones que afecta a esos trabajadores (sus stakeholders) y debe considerar esos impactos.
-          <div class="rub">Puntaje Control 1 (5 pts): definición del principio (2) + responsabilidad trasciende lo contractual / stakeholders (1.5) + justificación aplicada al caso (1.5).</div>
-        </div>
-      </details>
-    </section>
-
-    <section id="rse">
-      <h3>Responsabilidad Social Empresarial (RSE) <span class="ext">tema caliente #4</span></h3>
-      <p><b>Definición:</b> la RSE es el intento de las empresas de satisfacer las <b>demandas económicas, legales, éticas y filantrópicas</b> de una sociedad determinada en un momento determinado.</p>
-      <p>Consiste en que, voluntariamente, las empresas integren procesos operacionales de respeto e interrelación con el entorno <b>social, económico y medioambiental</b>, con foco en trabajadores, proveedores, clientes y accionistas, evaluando las consecuencias de su actividad.</p>
-      <div class="grid">
-        <div class="card"><h4>RSE tradicional</h4><p><b>Reactiva</b>, con foco en la gestión de riesgos reputacionales.</p></div>
-        <div class="card"><h4>RSE contemporánea</h4><p><b>Proactiva</b>, con foco en crear valor.</p></div>
-      </div>
-      <p>Su efectividad se mide bajo el concepto de <b>"desempeño social empresarial"</b>, foco de la mayoría de las regulaciones hoy. Los costos de la RSE son en realidad <b>ahorros futuros</b>: generan convergencia entre los intereses propios y los de los stakeholders, previniendo conflictos. Pero no debe verse como un mero instrumento: debe ser un <b>cambio real en la cultura</b> de la ética empresarial.</p>
-
-      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.4em">El "business case" de la RSE: por qué la ética conviene</h4>
-      <div class="grid">
-        <div class="card"><h4>Atracción de talento</h4><p>Empleados más comprometidos, motivados y atraídos por el propósito.</p></div>
-        <div class="card"><h4>Lealtad de clientes</h4><p>Consumidores adicionales, mayor retención y satisfacción sostenible.</p></div>
-        <div class="card"><h4>Anticipación regulatoria</h4><p>Adaptarse antes de que la ley exija el cambio.</p></div>
-        <div class="card"><h4>Ahorro y prevención</h4><p>Los egresos en RSE son ahorros futuros al prevenir conflictos graves con stakeholders.</p></div>
-      </div>
-      <div class="box trap"><span class="lab">⚠️ Distingue "razones comerciales" de "razones morales"</span>
-        El <b>business case</b> son razones <b>comerciales</b> (conviene económicamente). Junto a ellas están las <b>razones morales</b>: usar el poder responsablemente, toda actividad genera impacto, y empresa y sociedad son <b>mutuamente dependientes</b>. Si se pide explicar "por qué" la empresa asume RSE, deben cubrirse <b>ambas</b>.</div>
-    </section>
-
-    <section id="ciudadania">
-      <h3>Ciudadanía empresarial <span class="ext">tema caliente #4</span></h3>
-      <p>Las empresas han comenzado a asumir el papel de <b>actores "políticos"</b>, tomando funciones que antes desempeñaba el gobierno, debido a que:</p>
-      <ul>
-        <li>Los gobiernos <b>fallan</b> (son incapaces) en responder a los problemas sociales.</li>
-        <li>Los gobiernos tienen <b>reducida capacidad</b> para regular e implementar regulaciones, por lo que promueven la <b>autorregulación</b>.</li>
-        <li>Las empresas tienen cada vez más <b>poder e influencia</b> (desregulación, privatización de servicios públicos, globalización).</li>
-      </ul>
-      <p class="key">La ciudadanía empresarial reconoce que las empresas juegan un rol cada vez más central en el gobierno de los derechos —civiles, sociales y políticos— de los ciudadanos.</p>
-      <div class="box global"><span class="lab">🌍 Cómo se conectan RSE y ciudadanía empresarial</span>
-        <span class="ext">⧉ Externo (síntesis):</span> ambos amplían el rol de la empresa más allá de la ganancia, pero enfatizan cosas distintas. <b>RSE</b> = la empresa asume responsabilidades <b>sociales/ambientales</b> por sus impactos. <b>Ciudadanía empresarial</b> = la empresa asume un rol <b>casi político</b>, cubriendo derechos que antes garantizaba el Estado. La conclusión de la clase las une: la empresa no reemplaza al Estado ni a una ONG, pero debe valorarse por su <b>contribución a la sociedad</b>, no solo por su rentabilidad.</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): en dos frases, ¿qué diferencia hay entre RSE y ciudadanía empresarial?</div>
-      <details>
-        <summary><span class="pill">Comparar</span>Diferenciar RSE y ciudadanía empresarial e indicar qué tienen en común.</summary>
-        <div class="answer">
-          <b>En común:</b> ambas sostienen que la empresa tiene responsabilidades <b>más allá de maximizar utilidades</b> y de lo que exige la ley. <b>Diferencia:</b> la <span class="key">RSE</span> apunta a que la empresa integre voluntariamente consideraciones económicas, sociales, ambientales y éticas y se haga cargo de sus <b>impactos</b> sobre los stakeholders. La <span class="key">ciudadanía empresarial</span> va un paso más allá: describe a la empresa como <b>actor político</b> que asume funciones antes estatales (por fallas del gobierno, su reducida capacidad regulatoria y el creciente poder empresarial), influyendo en los <b>derechos civiles, sociales y políticos</b> de los ciudadanos.
-          <div class="rub">La pauta premia "distinguir conceptos cercanos": nombrar primero lo común, luego el rasgo que separa a cada uno.</div>
-        </div>
-      </details>
-    </section>
-
-    <section id="accountability">
-      <h3>Accountability y transparencia</h3>
-      <p><b>Accountability</b> (rendición de cuentas): la necesidad de que las empresas <b>rindan cuentas por las consecuencias de sus acciones</b>. Si tienen tanto poder e influencia, ¿quién las controla?, ¿a quién rinden cuentas?</p>
-      <p><b>Transparencia es la clave:</b> es el <b>grado en que las decisiones, políticas, actividades e impactos corporativos son reconocidos y visibles</b> para los stakeholders relevantes.</p>
-      <div class="box trap"><span class="lab">⚠️ Conceptos clave de la Clase 2 (probable pregunta de definiciones)</span>
-        RSE · Ciudadanía corporativa · Accountability y transparencia · Teoría de los stakeholders. Conviene tener una definición de una línea para cada uno.</div>
-    </section>
-
-    <hr>
-
-    <!-- ============ CLASE 3 ============ -->
-    <div class="banner"><div class="tag">Clase 3 · 20 agosto</div><h2>Modelos prescriptivos: cómo <em>deberíamos</em> decidir</h2></div>
-
-    <section id="tres-lentes">
-      <h3 class="first">Prescriptivo vs descriptivo (primera mención)</h3>
-      <div class="grid">
-        <div class="card consec"><h4>Prescriptivo</h4><p>Indica cómo <b>deberíamos</b> decidir éticamente. Ofrece principios y reglas. → Orienta hacia lo correcto.</p></div>
-        <div class="card deber"><h4>Descriptivo</h4><p>Explica cómo las personas <b>realmente</b> toman decisiones. Analiza procesos psicológicos, sociales y culturales. → Muestra cómo decidimos en la realidad.</p></div>
-      </div>
-      <p>Los modelos prescriptivos parten de una idea exigente: el <b>agente moral consciente</b> piensa cuidadosamente sus opciones y elige lo más correcto. Ofrecen <b>tres lentes</b> para analizar un mismo dilema:</p>
-      <div class="grid three">
-        <div class="card consec"><h4>Consecuencias</h4><p>¿Qué alternativa produce <b>mejores resultados para el conjunto</b>?</p></div>
-        <div class="card deber"><h4>Deberes / principios</h4><p>¿Qué es correcto hacer, <b>aunque tenga un costo</b>?</p></div>
-        <div class="card virtud"><h4>Carácter / virtud</h4><p>¿Qué haría una <b>persona íntegra</b>?</p></div>
-      </div>
-      <p>Teorías clásicas (para ubicar a los autores):</p>
-      <table>
-        <tr><th>Teoría</th><th>Tipo</th><th>Foco</th><th>Autores</th></tr>
-        <tr><td>Egoísmo ético</td><td>Consecuencialista</td><td>Interés propio</td><td>Hobbes · Ayn Rand</td></tr>
-        <tr><td>Utilitarismo</td><td>Consecuencialista</td><td>Bienestar colectivo</td><td>Jeremy Bentham</td></tr>
-        <tr><td>Ética del deber</td><td>Basada en principios</td><td>Deberes</td><td>Immanuel Kant</td></tr>
-        <tr><td>Derechos y justicia</td><td>Basada en principios</td><td>Derechos y justicia</td><td>Locke · Rousseau · Rawls</td></tr>
-      </table>
-      <div class="box global"><span class="lab">🌍 Cómo concibe al ser humano cada teoría (de la tabla ampliada)</span>
-        <b>Egoísmo ético:</b> el individuo está objetivamente obligado a servir solo sus propios intereses. <b>Utilitarismo:</b> las personas se motivan por evitar el dolor y obtener placer (utilitarismo de acto o de regla). <b>Ética del deber:</b> somos actores morales racionales con libre albedrío (respeto a la autonomía). <b>Derechos y justicia:</b> el ser humano se distingue por su dignidad (normas universalizables).</div>
-      <div class="box trap"><span class="lab">⚠️ El egoísmo ético NO es una cuarta lente</span>
-        El <b>egoísmo ético</b> es consecuencialista (foco: deseos/interés propio), pero la clase lo presenta "antes de las tres lentes". Las tres lentes que se aplican al caso son <b>consecuencias, deberes y virtud</b>. No debe contarse como una de las tres.</div>
-    </section>
-
-    <section id="utilitarismo">
-      <h3>Utilitarismo <span class="ext">tema caliente #3</span></h3>
-      <p>Es la teoría <b>consecuencialista</b> por excelencia (Jeremy Bentham). La bondad de una decisión se evalúa por sus <b>consecuencias</b>.</p>
-      <p class="key">Principio de utilidad: una decisión ética debe MAXIMIZAR los beneficios para la sociedad y MINIMIZAR los daños, considerando a todos los interesados.</p>
-      <p><b>Cómo se aplica (4 pasos):</b></p>
-      <div class="pill-row"><b>1. Identificar</b><b>2. Anticipar</b><b>3. Comparar</b><b>4. Elegir</b></div>
+    <section id="evalua">
+      <h3 class="first">Cómo se evalúa (y cómo ganar puntos)</h3>
+      <p>Las slides de las cuatro clases y la recomendación del profesor coinciden: el certamen es de <b>desarrollo</b> y pide <b>aplicar</b>. La fórmula que se repite en las pautas es <span class="key">concepto correcto + evidencia del caso + justificación</span>.</p>
       <ol>
-        <li><b>Identificar</b> quiénes pueden verse afectados.</li>
-        <li><b>Anticipar</b> qué consecuencias tendría cada alternativa.</li>
-        <li><b>Comparar</b> beneficios y perjuicios de cada opción.</li>
-        <li><b>Elegir</b> la que produce el mejor resultado global.</li>
+        <li><b>Nombra el concepto correcto</b> (ej: "es soft law", "es un boicot / acción directa no violenta", "el Estado actúa como regulador").</li>
+        <li><b>Define o explica</b> con precisión qué significa.</li>
+        <li><b>Aplica al caso</b> con un dato concreto del enunciado y <b>fundamenta</b> tu juicio (por qué es legítimo/problemático, qué falta saber).</li>
       </ol>
-      <div class="box trap"><span class="lab">⚠️ Utilidad y sus límites (punto de evaluación frecuente)</span>
-        <b>Útil:</b> permite comparar alternativas según su efecto sobre el bienestar colectivo. <b>Límites:</b> (1) no siempre es posible conocer o anticipar <b>todas</b> las consecuencias para todos los afectados; (2) la pregunta crítica: <b>¿se justifica vulnerar los derechos de una minoría por el bien de la mayoría?</b> Ese es el talón de Aquiles del utilitarismo — y el punto donde la ética del deber lo contradice.</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): explicar el principio de utilidad y mencionar una crítica al utilitarismo.</div>
-      <details>
-        <summary><span class="pill">Comprender</span>Explicar el utilitarismo con palabras propias, su criterio central y una limitación.</summary>
-        <div class="answer">
-          El utilitarismo es una teoría <b>consecuencialista</b>: evalúa una decisión por sus <b>resultados</b>. Su criterio es el <span class="key">principio de utilidad</span> — elegir la alternativa que <b>maximice los beneficios y minimice los daños</b> para el conjunto, considerando a todos los afectados. <b>Limitación:</b> puede llevar a <b>sacrificar los derechos de una minoría</b> si eso beneficia a la mayoría, y además rara vez podemos anticipar todas las consecuencias reales de una decisión.
-          <div class="rub">Estructura: nombrar el tipo (consecuencialista) → criterio (maximizar beneficio / minimizar daño) → limitación (minoría/mayoría). Si el caso lo permite, aplicar los 4 pasos.</div>
-        </div>
-      </details>
+      <div class="box trap"><span class="lab">⚠️ Patrón de los mini-casos de la profe</span>
+        Casi todos los casos piden tres cosas: (1) clasificar o identificar el concepto, (2) decir qué lo hace legítimo o problemático, y (3) qué información adicional haría falta o qué cambiaría el juicio. Responder las tres asegura el puntaje.</div>
     </section>
-
-    <section id="deontologia">
-      <h3>Ética del deber (deontología) — Kant</h3>
-      <p>Los principios morales tienen <b>carácter vinculante, independientemente de las consecuencias</b>. Una decisión es correcta cuando se funda en <b>principios, derechos o valores universales</b>. Pregunta clave: <b>¿qué nunca debería sacrificarse, aunque hacerlo produjera un buen resultado?</b></p>
-      <p><b>Imperativo categórico de Kant:</b> <i>"Actúa como si la máxima de tu acción se convirtiera por tu voluntad en una ley universal de la naturaleza."</i> En simple: <b>¿la regla que justifica mi acción podría convertirse en una regla para que todos la siguieran?</b></p>
-      <p><b>Cómo se aplica (4 pasos):</b></p>
-      <div class="pill-row"><b>1. Identificar deberes</b><b>2. Reconocer derechos</b><b>3. Definir límites</b><b>4. Universalizar</b></div>
-      <div class="box trap"><span class="lab">⚠️ Contraste clave con el utilitarismo</span>
-        Utilitarismo mira el <b>resultado</b>; deontología mira el <b>principio</b>, pase lo que pase con el resultado. Donde el utilitarismo aceptaría dañar a pocos por el bien de muchos, la ética del deber lo prohíbe si vulnera un derecho o deber universal (universalidad / dignidad).</div>
-    </section>
-
-    <section id="virtud">
-      <h3>Ética de la virtud — Aristóteles</h3>
-      <p>La pregunta ética no se concentra solo en la acción, sino también en <b>la persona</b>. El individuo debe comprometerse con la formación de su <b>carácter e integridad moral</b>.</p>
-      <p>Perspectiva aristotélica: existe una relación entre <b>actos → hábitos → carácter</b>. El carácter desde el cual enfrentamos las circunstancias es central para decidir.</p>
-      <p><b>Pregunta central:</b> ¿qué decisión sería coherente con una <b>persona íntegra</b>? Virtudes que sirven para discutir un caso (no es lista cerrada): integridad, honestidad, prudencia, lealtad, respeto.</p>
-      <p><b>Cómo se aplica (3 pasos):</b> identificar qué virtudes son relevantes → examinar qué revela cada alternativa sobre el carácter → elegir la acción coherente con la integridad moral.</p>
-      <div class="box ex"><span class="lab">📌 Cómo aplicó la virtud la pauta de la Tarea 2</span>
-        Caso: un ejecutivo, presionado por la meta, puede registrar como cerrada una venta aún no confirmada. Desde la ética de la virtud, la pregunta es si eso es coherente con actuar de manera <b>honesta e íntegra</b>. Como registrar la venta implica presentar como cerrado algo que no lo está, la decisión coherente es <b>no registrarla</b> hasta que el cliente confirme. Estructura de la respuesta: identificar el modelo → explicar su criterio (carácter/virtudes) → aplicar y decidir.</div>
-      <div class="box global"><span class="lab">🌍 Tabla comparativa de las tres lentes (de referencia)</span></div>
-      <table>
-        <tr><th></th><th>Consecuencias</th><th>Deberes / principios</th><th>Virtud</th></tr>
-        <tr><td><b>Mira</b></td><td>Resultados</td><td>Reglas, deberes y derechos</td><td>Carácter</td></tr>
-        <tr><td><b>Pregunta</b></td><td>¿Qué opción produce mayor beneficio y menor daño?</td><td>¿Qué debo respetar sin importar el resultado?</td><td>¿Qué haría una persona íntegra?</td></tr>
-        <tr><td><b>Clave</b></td><td>Bienestar colectivo</td><td>Universalidad / dignidad</td><td>Integridad moral</td></tr>
-        <tr><td><b>Autor</b></td><td>Bentham</td><td>Kant</td><td>Aristóteles</td></tr>
-      </table>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): identificar el modelo detrás de cada frase (respuestas en la slide de la Clase 4).</div>
-      <details>
-        <summary><span class="pill">Distinguir</span>¿Qué modelo hay detrás? A: "No podemos ocultárselo al cliente, aunque nos genere pérdidas." · B: "Debemos escoger la alternativa que produzca mayores beneficios y menores daños para todos." · C: "¿Qué decisión sería coherente con actuar como una persona honesta e íntegra?"</summary>
-        <div class="answer">
-          <b>A → Ética del deber</b> (un principio —no engañar— que se respeta aunque el resultado sea peor). <b>B → Utilitarismo</b> (evalúa por beneficios/daños para el conjunto). <b>C → Ética de la virtud</b> (foco en el carácter e integridad de quien decide).
-          <div class="rub">Señales rápidas: "aunque cueste / aunque perdamos" = deber; "mayor beneficio, menor daño, para todos" = utilitarismo; "persona íntegra / honesta / qué clase de líder quiero ser" = virtud.</div>
-        </div>
-      </details>
-    </section>
-
-    <hr>
-
-    <!-- ============ CLASE 4 ============ -->
-    <div class="banner"><div class="tag">Clase 4 · 27 agosto</div><h2>De la decisión a la conducta: modelos descriptivos</h2></div>
-
-    <section id="ocho-pasos">
-      <h3 class="first">Los 8 pasos para una toma de decisiones éticas</h3>
-      <p>No son ocho teorías nuevas: son una <b>guía práctica para ordenar el proceso</b> frente a un dilema real.</p>
-      <table>
-        <tr><th>#</th><th>Paso</th><th>Qué significa</th></tr>
-        <tr><td>1</td><td>Reunir los hechos</td><td>Distinguir información comprobada de supuestos u opiniones.</td></tr>
-        <tr><td>2</td><td>Definir la cuestión ética</td><td>Precisar cuál es el conflicto ético a resolver.</td></tr>
-        <tr><td>3</td><td>Identificar las partes afectadas</td><td>Reconocer quiénes se benefician o perjudican (stakeholders).</td></tr>
-        <tr><td>4</td><td>Identificar las consecuencias</td><td>Anticipar efectos positivos y negativos de cada alternativa.</td></tr>
-        <tr><td>5</td><td>Identificar las obligaciones</td><td>Reconocer deberes, principios o derechos a respetar.</td></tr>
-        <tr><td>6</td><td>Considerar carácter e integridad</td><td>Evaluar qué revela la decisión sobre quien la toma.</td></tr>
-        <tr><td>7</td><td>Pensar creativamente las acciones</td><td>Buscar alternativas distintas de las opciones iniciales.</td></tr>
-        <tr><td>8</td><td>Revisar el instinto</td><td>Comprobar si, tras el análisis, algo aún genera una alerta ética.</td></tr>
-      </table>
-      <div class="box global"><span class="lab">🌍 Las 3 conexiones con los modelos prescriptivos (esto conecta ambas clases)</span>
-        Paso 4 <b>Consecuencias</b> → conecta con <b>Utilitarismo</b>. Paso 5 <b>Obligaciones</b> → conecta con la <b>Ética del deber</b>. Paso 6 <b>Carácter e integridad</b> → conecta con la <b>Ética de la virtud</b>. Los otros pasos ayudan a comprender el problema, ampliar alternativas y revisar la decisión.</div>
-      <div class="box ex"><span class="lab">📌 Cómo lo pidió la pauta de la Tarea 2</span>
-        Dado un caso donde el ejecutivo "identifica quiénes podrían verse afectados; analiza los efectos de cada alternativa; se pregunta qué deber respetar" → los tres pasos presentes son <b>3. Partes afectadas, 4. Consecuencias y 5. Obligaciones</b>. Nota: hay que <b>identificar Y explicar cada uno con el caso</b>, no solo nombrarlos.</div>
-    </section>
-
-    <section id="descriptivos">
-      <h3>Prescriptivos vs descriptivos (la distinción central de la Clase 4)</h3>
-      <p>Conocer lo correcto <b>no garantiza</b> que actuemos de acuerdo con ello. Por eso aparecen dos preguntas complementarias:</p>
-      <div class="grid">
-        <div class="card consec"><h4>Modelos prescriptivos</h4><p>¿Qué <b>deberíamos</b> hacer y por qué? Orientan y fundamentan la decisión. Criterios: consecuencias, deberes/principios, carácter/virtud.</p></div>
-        <div class="card deber"><h4>Modelos descriptivos</h4><p>¿Qué factores influyen en cómo <b>finalmente actuamos</b>? Ayudan a comprender cómo se produce una decisión. Analizan: factores individuales y del contexto.</p></div>
-      </div>
-      <div class="box trap"><span class="lab">⚠️ Frase recurrente en el curso (y posible trampa)</span>
-        <b>"Describir no es justificar."</b> / "Explicar por qué ocurre una conducta ≠ concluir que la conducta es éticamente correcta." Comprender por qué alguien actuó mal <b>no</b> significa que estuvo bien.</div>
-    </section>
-
-    <section id="factores">
-      <h3>Factores que influyen en la conducta + racionalizaciones</h3>
-      <p><b>Factores individuales + factores del contexto → influyen en la CONDUCTA.</b></p>
-
-      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.2em">Factores individuales</h4>
-      <div class="grid three">
-        <div class="card"><h4>Corto vs largo plazo</h4><p>Un beneficio inmediato pesa más que las consecuencias futuras. <i>"Si alcanzo la meta hoy, después vemos."</i></p></div>
-        <div class="card"><h4>Balance moral</h4><p>Las buenas acciones previas dan sensación de "margen" para una conducta cuestionable. <i>"Siempre hago las cosas bien; esta vez no es grave."</i></p></div>
-        <div class="card"><h4>Racionalizaciones</h4><p>Justificaciones que hacen aceptable una conducta cuestionable. <i>"En realidad nadie sale perjudicado."</i></p></div>
-      </div>
-
-      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.2em">Factores del contexto</h4>
-      <div class="grid">
-        <div class="card"><h4>Presión social</h4><p>Lo que otros hacen, esperan o aprueban influye en la decisión (ej: el jefe sugiere una práctica y el equipo la normaliza).</p></div>
-        <div class="card"><h4>Identidad social</h4><p>Las personas adaptan su conducta a las normas del grupo con el que se identifican. <i>"Así se hacen las cosas en este equipo."</i></p></div>
-        <div class="card"><h4>Características del entorno</h4><p>Cómo se organiza el trabajo facilita o dificulta ciertas conductas.</p></div>
-        <div class="card"><h4>Ejemplos del entorno</h4><p>Metas, incentivos, procesos, controles y supervisión pueden orientar la conducta.</p></div>
-      </div>
-
-      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.2em">Racionalizaciones (mecanismo individual clave)</h4>
-      <p>Racionalizar = construir una explicación que hace parecer aceptable una conducta cuestionable.</p>
-      <div class="grid three">
-        <div class="card"><h4>Altruismo egoísta</h4><p><i>"Lo hago por mi equipo."</i> La conducta también me beneficia, pero la justifico por el bien de otros.</p></div>
-        <div class="card"><h4>Lógica de Robin Hood</h4><p><i>"La empresa tiene recursos de sobra."</i> Se justifica porque se cree que quien recibe el daño puede soportarlo.</p></div>
-        <div class="card"><h4>Difusión de responsabilidad</h4><p><i>"Todos participaron; no fue decisión mía."</i> La responsabilidad se diluye al compartirla.</p></div>
-      </div>
-      <div class="box ex"><span class="lab">📌 Aplicación de la pauta Tarea 2 · "La meta del trimestre"</span>
-        Ante la presión de registrar una venta no confirmada, dos factores claros: <b>Presión social</b> (el jefe lo sugiere, los compañeros lo normalizan) e <b>Identidad social / normalización</b> ("esto se ha hecho antes" lo presenta como práctica habitual del grupo). También servían: el <b>beneficio inmediato / corto plazo</b> (la meta y el bono) y la <b>racionalización</b> ("finalmente los clientes compran"). Clave de puntaje: identificar el factor + explicar qué es + conectarlo con un antecedente concreto del caso.</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): nombrar dos factores descriptivos del caso de la venta y explicar cómo actúan.</div>
-      <details>
-        <summary><span class="pill">Aplicar</span>Un vendedor infla una cifra presionado por su jefe, mientras el equipo dice "todos lo hacen". Identificar dos factores descriptivos y explicarlos con el caso.</summary>
-        <div class="answer">
-          <b>1. Presión social:</b> la conducta se ve influida por lo que otros hacen, esperan o aprueban. Aquí la presión viene del <b>jefe</b>, que sugiere la práctica, y de los <b>compañeros</b>, que la presentan como aceptable; eso dificulta que actúe según lo que considera correcto. <b>2. Identidad social / normalización:</b> las personas adaptan su conducta a las normas del grupo. Cuando el equipo dice "todos lo hacen", presentan la práctica como <b>habitual</b>, haciendo que una conducta cuestionable parezca normal.
-          <div class="rub">Puntaje Tarea 2 (por factor): identificar (1) + explicar qué es (1) + conectar con un antecedente concreto del caso (1,5). Sin el "cómo se manifiesta en el caso" se pierde casi la mitad.</div>
-        </div>
-      </details>
-    </section>
-
-    <section id="reducir">
-      <h3>De comprender a intervenir: cómo reducir la deshonestidad <span class="ext">tema caliente #5</span></h3>
-      <p>Si comprendemos qué influye en la conducta, podemos <b>diseñar intervenciones</b> para reducir el riesgo de conductas poco éticas. Hay <b>tres enfoques</b>:</p>
-      <div class="grid three">
-        <div class="card consec"><h4>Valores (la PERSONA)</h4><p>Fortalecer los valores y criterios éticos de las personas.</p><p><b>Cómo:</b> formación y reflexión ética, comunicación de valores, código de ética, liderazgo y ejemplo de quienes dirigen.</p><p><b>Límite:</b> insuficiente si las metas o incentivos empujan a otra conducta.</p></div>
-        <div class="card deber"><h4>Estructura (el CONTEXTO)</h4><p>Modificar elementos del entorno organizacional.</p><p><b>Cómo:</b> revisar metas e incentivos, modificar procesos, establecer controles, fortalecer supervisión.</p><p><b>Límite:</b> los controles por sí solos no aseguran conducta ética.</p></div>
-        <div class="card virtud"><h4>Integrado (PERSONA + CONTEXTO)</h4><p>Actuar sobre ambos a la vez.</p><p><b>Clave:</b> coherencia entre lo que la organización <b>dice</b> que espera y lo que realmente <b>incentiva y permite</b>.</p></div>
-      </div>
-      <div class="box global"><span class="lab">🌍 La lógica completa (síntesis de la Clase 4)</span>
-        1. <b>Comprender</b> la conducta (¿qué ocurre?) → 2. <b>Identificar</b> influencias (factores individuales + del contexto) → 3. <b>Intervenir</b> (valores, estructura o integrado). "Describir no es justificar: comprender las influencias permite prevenir mejor."</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): una empresa tiene fraude en su fuerza de ventas; proponer cómo reducirlo desde los tres enfoques.</div>
-      <details>
-        <summary><span class="pill">Aplicar</span>En un equipo de ventas se han detectado registros falsos de ventas. ¿Cómo reducir esa conducta deshonesta? (con los tres enfoques)</summary>
-        <div class="answer">
-          <b>Enfoque de valores (persona):</b> formación y reflexión ética sobre honestidad, comunicar los valores, código de ética y —clave— <b>liderazgo con el ejemplo</b> de las jefaturas. <b>Enfoque de estructura (contexto):</b> revisar el <b>incentivo</b> que premia vender a cualquier costo, ajustar metas, mejorar controles de registro y la supervisión, para que el entorno no empuje al fraude. <b>Enfoque integrado:</b> combinar ambos buscando <b>coherencia</b> entre lo que la empresa dice esperar (honestidad) y lo que realmente incentiva (bonos por meta). Un enfoque solo suele fallar: los valores no bastan si el bono premia mentir, y los controles no bastan si nadie entiende el sentido de la conducta esperada.
-          <div class="rub">Este es exactamente el tema "cómo reducir la deshonestidad". Nombrar los tres enfoques, indicar dónde interviene cada uno (persona/contexto/ambos) y cerrar con la idea de coherencia.</div>
-        </div>
-      </details>
-    </section>
-
-    <hr>
 
     <hr>
 
@@ -627,67 +207,54 @@
 
     <section id="etica-compliance">
       <h3 class="first">Ética vs compliance</h3>
-      <p>Pregunta de entrada de la clase: una empresa con código de ética, capacitación anual y canal de denuncias, ¿tiene una cultura ética? <span class="key">No necesariamente.</span> Tener los elementos no garantiza que funcionen.</p>
+      <p>Pregunta de entrada: una empresa con código de ética, capacitación anual y canal de denuncias, ¿tiene una cultura ética? <span class="key">No necesariamente.</span> Tener los elementos no garantiza que funcionen.</p>
       <div class="grid">
         <div class="card consec"><h4>Compliance</h4><p>Foco: <b>cumplir obligaciones y prevenir conductas ilegales</b> o contrarias a normas. Es el "piso".</p></div>
         <div class="card deber"><h4>Ética</h4><p>Incluye <b>estándares voluntarios, valores</b> y decisiones que van más allá de lo legal (políticas y normas internas).</p></div>
       </div>
-      <p>En la práctica se gestionan de forma complementaria (a veces como sinónimos). Cuando ética y compliance trabajan juntos fortalecen el <b>gobierno corporativo</b>: el sistema que dirige y controla la empresa, que además de cumplir leyes fomenta transparencia, rendición de cuentas y confianza con los grupos de interés.</p>
-      <div class="box global"><span class="lab">🌍 Idea clave de la clase</span>Compliance no es "tener un Código": es lograr que los <b>sistemas funcionen y orienten la conducta</b>. <span class="ext">⧉ Externo:</span> en Chile esto se ancla en la Ley 20.393 (Modelo de Prevención de Delitos "efectivamente implementado"), la CMF y la Ley 21.719 de datos personales — nombres de referencia por si aparece un caso chileno.</div>
+      <p>Se gestionan de forma complementaria (a veces como sinónimos). Cuando ética y compliance trabajan juntos fortalecen el <b>gobierno corporativo</b>: el sistema que dirige y controla la empresa y que fomenta transparencia, rendición de cuentas y confianza.</p>
+      <div class="box global"><span class="lab">🌍 Idea clave</span>Compliance no es "tener un Código": es lograr que los <b>sistemas funcionen y orienten la conducta</b>. En Chile se ancla en la Ley 20.393 (Modelo de Prevención de Delitos "efectivamente implementado"), la CMF y la Ley 21.719 de datos personales.</div>
     </section>
 
     <section id="proposito-programa">
       <h3>Propósito y elementos del programa</h3>
       <p><b>¿Para qué existe? (cinco propósitos):</b></p>
-      <div class="pill-row"><b>Prevenir conductas inapropiadas</b><b>Detectar y responder</b><b>Cumplir regulación/obligaciones</b><b>Crear cultura ética</b><b>Alinear con expectativas de stakeholders</b></div>
+      <div class="pill-row"><b>Prevenir conductas inapropiadas</b><b>Detectar y responder</b><b>Cumplir regulación/obligaciones</b><b>Crear cultura ética</b><b>Alinear con stakeholders</b></div>
       <p><b>Obligaciones que gestiona:</b> legislación · compromisos voluntarios · estándares del sector · expectativas de stakeholders.</p>
       <p class="key">Un programa efectivo es un sistema, no una lista. Cuatro bloques:</p>
       <div class="grid">
-        <div class="card"><h4>1 · Gobernanza</h4><p>Encargado de ética/compliance (diseña, implementa, monitorea) + compromiso de la dirección ("tono desde arriba").</p></div>
+        <div class="card"><h4>1 · Gobernanza</h4><p>Encargado de ética/compliance + compromiso de la dirección ("tono desde arriba").</p></div>
         <div class="card"><h4>2 · Prevención</h4><p>Gestión de riesgos · reglas y protocolos · capacitación.</p></div>
         <div class="card"><h4>3 · Detección y respuesta</h4><p>Canal de denuncia protegida · auditoría · investigación · sanciones.</p></div>
         <div class="card"><h4>4 · Cultura y seguimiento</h4><p>Transparencia · métricas · mejora continua.</p></div>
       </div>
-      <p><b>Los elementos que piden conocer:</b> encargado de ética/compliance (gobernanza) · gestión de riesgos (prevención) · auditorías internas (detección) · reglas y protocolos (prevención) · capacitación (prevención) · sanciones internas (respuesta) · transparencia (cultura) · denuncia protegida / whistleblowing (detección).</p>
+      <p><b>Elementos que piden conocer:</b> encargado de ética/compliance · gestión de riesgos · auditorías internas · reglas y protocolos · capacitación · sanciones internas · transparencia · denuncia protegida (whistleblowing).</p>
       <div class="box ex"><span class="lab">📌 Detalles para aplicar a un caso</span>
-        <b>Riesgos por área:</b> Ventas (presión por metas / información engañosa) · Compras (regalos / conflictos de interés) · Finanzas (fraude / registros incorrectos) · Terceros (proveedores de riesgo). <b>Reglas:</b> Código de ética (estándares generales) → Políticas (criterios específicos) → Protocolos (qué hacer y a quién acudir). <b>Canal de denuncia efectivo:</b> accesible, protegido, confiable y trazable. <b>Ciclo de respuesta:</b> detectar → investigar → responder.</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): nombrar los cuatro bloques de un programa y un elemento de cada uno.</div>
+        <b>Riesgos por área:</b> Ventas (presión por metas / información engañosa) · Compras (regalos / conflictos de interés) · Finanzas (fraude / registros) · Terceros (proveedores de riesgo). <b>Reglas:</b> Código → Políticas → Protocolos. <b>Canal efectivo:</b> accesible, protegido, confiable y trazable. <b>Respuesta:</b> detectar → investigar → responder.</div>
       <details>
         <summary><span class="pill">Explicar</span>¿Qué es un programa de ética y compliance y cuál es su propósito?</summary>
-        <div class="answer">Es el <span class="key">sistema</span> con el que una empresa asegura que sus decisiones y acciones sean coherentes con sus valores y obligaciones, todos los días. Sus propósitos: <b>prevenir</b> conductas inapropiadas, <b>detectar y responder</b>, <b>cumplir</b> regulación y obligaciones, <b>crear cultura</b> ética y <b>alinear</b> la conducta con las expectativas de los stakeholders. No es un documento guardado en un cajón: se compone de gobernanza, prevención, detección/respuesta y cultura/seguimiento.
-          <div class="rub">Fórmula de la clase: concepto correcto + evidencia del caso + justificación.</div>
-        </div>
+        <div class="answer">Es el <span class="key">sistema</span> con el que una empresa asegura que sus decisiones sean coherentes con sus valores y obligaciones, todos los días. Propósitos: <b>prevenir</b>, <b>detectar y responder</b>, <b>cumplir</b>, <b>crear cultura</b> y <b>alinear</b> con los stakeholders. No es un documento: se compone de gobernanza, prevención, detección/respuesta y cultura/seguimiento.</div>
       </details>
     </section>
 
     <section id="existencia-efectividad">
-      <h3>Existencia ≠ efectividad (el corazón del control)</h3>
-      <p>Tener los elementos no prueba que funcionen. La clase insiste en varias desigualdades:</p>
+      <h3>Existencia ≠ efectividad</h3>
       <div class="box trap"><span class="lab">⚠️ Las desigualdades que conviene citar</span>
         <ul>
           <li>Código + capacitación + canal <b>≠ cultura ética</b>.</li>
-          <li>100% capacitado <b>≠</b> 100% sabe actuar correctamente (la asistencia mide actividad, no aprendizaje).</li>
+          <li>100% capacitado <b>≠</b> 100% sabe actuar (la asistencia mide actividad, no aprendizaje).</li>
           <li>Canal disponible <b>≠</b> canal efectivo.</li>
-          <li>Código de ética <b>≠</b> cultura ética.</li>
         </ul>
       </div>
-      <p><b>¿Por qué puede fallar un programa?</b> Falta de compromiso directivo · falta de apoyo al implementar · diseño sin retroalimentación · métricas inadecuadas (se confunde actividad con efectividad).</p>
-      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.2em">Métricas: actividad vs efectividad</h4>
+      <p><b>¿Por qué falla un programa?</b> Falta de compromiso directivo · falta de apoyo al implementar · diseño sin retroalimentación · métricas inadecuadas.</p>
       <table>
-        <tr><th>Actividad (¿qué hicimos?)</th><th>Efectividad (¿qué cambió?)</th></tr>
+        <tr><th>Métricas de actividad (¿qué hicimos?)</th><th>Métricas de efectividad (¿qué cambió?)</th></tr>
         <tr><td>% capacitado · % que firmó el código · nº de comunicaciones</td><td>¿reconocen riesgos? · ¿usan los canales con confianza? · ¿se detectan y corrigen problemas?</td></tr>
       </table>
-      <p>Una buena métrica debe estar <b>alineada con el objetivo</b> que evalúa. Ej.: "aumentaron las denuncias" no es bueno ni malo por sí solo — requiere contexto.</p>
-      <div class="box global"><span class="lab">🌍 Conexión con la Clase 4 (descriptivos)</span>El contexto influye en la conducta, y el programa interviene deliberadamente en él: presión por resultados → controles · ejemplo de líderes → liderazgo y accountability · normas del grupo → código + comunicación · recompensas → incentivos y sanciones · percepción de justicia → canal de denuncia + respuesta coherente. La cultura se construye con <b>señales + sistemas + ejemplos + consecuencias</b>.</div>
-      <div class="box ex"><span class="lab">📌 Caso tipo "MetaPlus" (de la clase)</span>Empresa con código, curso anual y canal; 100% capacitado. Pero: jefes presionan metas "a cualquier costo", temor a represalias, denuncias que demoran meses, y la métrica principal es el % de capacitación. <b>Conclusión correcta:</b> no es que "no tenga programa"; <b>tiene elementos formales, pero su implementación y contexto reducen su efectividad</b>. Mejoras: liderazgo/accountability, protección y respuesta del canal, capacitación aplicada, revisar incentivos. Mejores métricas: confianza en el canal, tiempos de respuesta, reincidencia, acciones correctivas.</div>
-      <div class="box ex"><span class="lab">📌 Matices de la clase (prevención, cultura y checklist)</span>
-        <b>Capacitación:</b> sirve para reconocer riesgos y saber qué hacer ante una duda; debería conectarse con situaciones reales de cada grupo. <b>Transparencia:</b> comunicar lo que se espera, escuchar y responder — la comunicación formal y la cotidiana deben decir lo mismo. <b>Checklist de implementación real:</b> ¿cómo los líderes alientan o desalientan la conducta ética?, ¿se implementan las políticas?, ¿se evalúa la efectividad de la capacitación?, ¿se analizan denuncias e investigaciones?, ¿hay incentivos y sanciones coherentes?, ¿se audita el programa y se monitorean terceros?</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): dado un programa que existe "en el papel" pero no cambia la conducta, identificar dos señales de inefectividad y proponer dos mejoras.</div>
+      <div class="box ex"><span class="lab">📌 Caso tipo "MetaPlus"</span>Empresa con código, curso anual y canal; 100% capacitado. Pero: jefes presionan metas "a cualquier costo", temor a represalias, denuncias que demoran meses, y la métrica principal es el % de capacitación. <b>Conclusión:</b> no es que "no tenga programa"; <b>tiene elementos formales, pero su implementación y contexto reducen su efectividad</b>. Mejoras: liderazgo/accountability, protección del canal, capacitación aplicada, revisar incentivos.</div>
       <details>
         <summary><span class="pill">Evaluar</span>Una empresa reporta "100% del personal capacitado" como prueba de su cultura ética. ¿Es una métrica adecuada?</summary>
-        <div class="answer">No. Es una <span class="key">métrica de actividad</span> (mide participación), no de <span class="key">efectividad</span> (si cambió la conducta). Que todos completen la capacitación no demuestra que reconozcan riesgos ni que sepan actuar. Una métrica adecuada debe alinearse con el objetivo: confianza en los canales, detección y corrección de problemas, aplicación de lo aprendido.
-          <div class="rub">Fórmula: identificar el concepto (actividad vs efectividad) → explicar la diferencia → aplicarlo al dato del caso.</div>
-        </div>
+        <div class="answer">No. Es una <span class="key">métrica de actividad</span> (mide participación), no de <span class="key">efectividad</span> (si cambió la conducta). Que todos completen la capacitación no demuestra que reconozcan riesgos ni que sepan actuar. Una métrica adecuada se alinea con el objetivo: confianza en los canales, detección y corrección de problemas, aplicación de lo aprendido.</div>
       </details>
     </section>
 
@@ -699,120 +266,285 @@
     <section id="stakeholder-def">
       <h3 class="first">Qué es un stakeholder (y qué no)</h3>
       <p class="key">Stakeholder (Freeman, 1984): grupos e individuos que pueden afectar o verse afectados por la actividad empresarial.</p>
-      <p>La relación es de <b>doble vía</b>: la empresa afecta (empleo, productos, ambiente, información) y es afectada (recursos, reputación, regulación, ventas).</p>
-      <div class="box trap"><span class="lab">⚠️ Shareholder ≠ stakeholder</span>Los <b>accionistas</b> (propiedad, retorno, valor de la inversión) son solo un tipo de stakeholder. <b>Todo accionista es stakeholder; no todo stakeholder es accionista</b> (también lo son clientes, trabajadores, proveedores, comunidad, autoridad).</div>
-      <p><b>Clasificar ayuda (dos lentes):</b></p>
+      <p>Relación de <b>doble vía</b>: la empresa afecta (empleo, productos, ambiente, información) y es afectada (recursos, reputación, regulación, ventas).</p>
+      <div class="box trap"><span class="lab">⚠️ Shareholder ≠ stakeholder</span>Los <b>accionistas</b> son solo un tipo de stakeholder. <b>Todo accionista es stakeholder; no todo stakeholder es accionista</b> (clientes, trabajadores, proveedores, comunidad, autoridad).</div>
       <div class="grid">
         <div class="card"><h4>Lente 1 · Ubicación</h4><p><b>Internos:</b> trabajadores, ejecutivos, propietarios. <b>Externos:</b> clientes, proveedores, comunidad, reguladores.</p></div>
         <div class="card"><h4>Lente 2 · Dependencia</h4><p><b>Primarios:</b> críticos para la operación/viabilidad. <b>Secundarios:</b> influyen o son afectados.</p></div>
       </div>
-      <p>Clasificar orienta, pero no reemplaza el juicio sobre la situación. <b>El mapa depende de la decisión</b>: dos empresas del mismo sector pueden tener mapas distintos.</p>
-      <div class="box ex"><span class="lab">📌 Antes de listar: alcance e identificación (WHO)</span>
-        <b>Define el alcance:</b> ¿qué? (empresa / proyecto / producto / decisión), ¿dónde? (territorio, sede, país), ¿cuándo? (actuales, futuros, afectados después). <b>No quedarse en etiquetas:</b> "empleados" puede ser actuales, potenciales, contratistas, proveedores o jubilados. Se identifican con expertos, entrevistas, grupos de discusión o referencias (bola de nieve).</div>
+      <p>Clasificar orienta, pero no reemplaza el juicio. <b>El mapa depende de la decisión.</b></p>
     </section>
 
     <section id="mapeo">
-      <h3>El marco de 4 preguntas + mapeo poder × interés</h3>
-      <p>Cuatro preguntas ordenan cualquier caso:</p>
-      <div class="pill-row"><b>WHO · identificar quiénes</b><b>WHAT · qué intereses están en juego</b><b>WHY · mapear poder × interés</b><b>HOW · cómo involucrar</b></div>
-      <div class="box ex"><span class="lab">📌 WHAT · qué está en juego (ejemplos de la clase)</span>Trabajadores: ingreso / seguridad / trato justo (tensión costos vs empleo) · Clientes: seguridad / información / valor (precio vs calidad) · Accionistas: retorno / sostenibilidad (corto vs largo plazo) · Proveedores: pago / respeto / continuidad (precio vs relación) · Comunidad: salud / desarrollo / respeto (inversión vs impacto). <b>Stake</b> = aquello que el stakeholder quiere, espera o necesita proteger.</div>
-      <h4 style="color:#fff;font-family:'DM Sans';font-weight:700;margin-top:1.2em">Matriz poder × interés (memorizar)</h4>
+      <h3>Marco de 4 preguntas + mapeo poder × interés</h3>
+      <div class="pill-row"><b>WHO · quiénes</b><b>WHAT · qué intereses</b><b>WHY · poder × interés</b><b>HOW · cómo involucrar</b></div>
       <table>
-        <tr><th>Posición en la matriz</th><th>Estrategia</th></tr>
-        <tr><td>Alto poder · alto interés</td><td><b>Involucrar</b> (diálogo frecuente, consulta, participación)</td></tr>
-        <tr><td>Alto poder · bajo interés</td><td><b>Satisfacer</b> (información focalizada, relación activa)</td></tr>
-        <tr><td>Bajo poder · alto interés</td><td><b>Informar</b> (comunicación, escucha sistemática)</td></tr>
+        <tr><th>Posición</th><th>Estrategia</th></tr>
+        <tr><td>Alto poder · alto interés</td><td><b>Involucrar</b> (diálogo, consulta, participación)</td></tr>
+        <tr><td>Alto poder · bajo interés</td><td><b>Satisfacer</b> (información focalizada)</td></tr>
+        <tr><td>Bajo poder · alto interés</td><td><b>Informar</b> (comunicación, escucha)</td></tr>
         <tr><td>Bajo poder · bajo interés</td><td><b>Monitorear</b> (seguimiento proporcional)</td></tr>
       </table>
-      <div class="box trap"><span class="lab">⚠️ La tercera pregunta ética (clave para no perder puntos)</span>Priorizar <b>no</b> es escuchar solo al más poderoso. Además de <b>poder</b> (¿puede influir?) e <b>interés</b> (¿cuánto le importa?), se agrega <b>impacto</b> (¿cuánto le afecta?). Una comunidad pequeña puede tener poco poder y sufrir un gran impacto → el juicio ético puede exigir escucharla más. Gestión estratégica + juicio ético.</div>
-      <p><span class="ext">⧉ Externo:</span> "materialidad" (otro concepto de la clase) = un tema es material si es relevante para la organización y/o los stakeholders y su impacto justifica atención de gestión. Sirve para <b>filtrar, no para ignorar</b>.</p>
+      <div class="box trap"><span class="lab">⚠️ La tercera pregunta ética</span>Priorizar <b>no</b> es escuchar solo al más poderoso. Además de <b>poder</b> e <b>interés</b>, se agrega <b>impacto</b> (¿cuánto le afecta?). Una comunidad pequeña puede tener poco poder y gran impacto → el juicio ético puede exigir escucharla más.</div>
     </section>
 
     <section id="involucramiento">
       <h3>Niveles de involucramiento y errores frecuentes</h3>
-      <p>El involucramiento tiene grados, de menor a mayor intensidad:</p>
       <div class="pill-row"><b>Monitorear</b><b>Informar</b><b>Consultar</b><b>Involucrar</b><b>Colaborar</b></div>
-      <p>Más involucramiento no siempre es mejor: debe ser <b>proporcional</b> al tema, al impacto y a la relación. Y <b>gestionar ≠ satisfacer a todos</b>: reconocer intereses legítimos, evaluar impactos, decidir y explicar los trade-offs.</p>
-      <div class="box trap"><span class="lab">⚠️ Seis errores frecuentes (mapa pobre)</span>
-        <ul>
-          <li>Lista infinita sin definir límites ni relevancia.</li>
-          <li>Confundir interés con poder (son dimensiones distintas).</li>
-          <li>Escuchar solo al poderoso (ignora impactos sobre actores débiles).</li>
-          <li>Prometer satisfacer a todos (gestionar también exige decidir).</li>
-          <li>Involucrar sin propósito (consulta que no influye en nada).</li>
-          <li>Mapear una vez y olvidar (expectativas y relaciones cambian).</li>
-        </ul>
-      </div>
-      <div class="box ex"><span class="lab">📌 Dos marcos más de la clase</span>
-        <b>Tres formas de gestionar stakeholders (madurez):</b> reaccionar (presión urgente) → gestionar riesgos (anticipar) → crear valor (relaciones sostenibles). <b>El poder viaja por redes:</b> una parte interesada puede amplificar su influencia a través de otras (medios, ONG, autoridad), aunque por sí sola tenga poco poder.</div>
-      <div class="box global"><span class="lab">🌍 El mapa completo en una mirada</span>Identificar (quiénes) → Entender (qué esperan) → Priorizar (con criterios) → Involucrar (cómo). Es decir: comprender relaciones + evaluar impactos + decidir + sostener diálogo.</div>
-      <div class="warmup">Ejercicio (antes de ver la respuesta): para una empresa que instala una planta, identificar cuatro stakeholders, ubicar dos en la matriz poder × interés y proponer su estrategia de involucramiento.</div>
+      <p>Más no siempre es mejor: proporcional al tema, al impacto y a la relación. Y <b>gestionar ≠ satisfacer a todos</b>: reconocer intereses legítimos, evaluar impactos, decidir y explicar los trade-offs.</p>
+      <div class="box trap"><span class="lab">⚠️ Seis errores (mapa pobre)</span>Lista infinita · confundir interés con poder · escuchar solo al poderoso · prometer satisfacer a todos · involucrar sin propósito · mapear una vez y olvidar.</div>
       <details>
-        <summary><span class="pill">Distinguir</span>Define "stakeholder" y distínguelo de "shareholder".</summary>
-        <div class="answer">Un <b>stakeholder</b> es cualquier grupo o individuo que puede afectar o verse afectado por la actividad empresarial (Freeman, 1984): clientes, trabajadores, proveedores, comunidad, autoridad, accionistas. Un <b>shareholder / accionista</b> es quien tiene propiedad y busca retorno sobre su inversión. Relación: <span class="key">todo accionista es stakeholder, pero no todo stakeholder es accionista</span>; la teoría de stakeholders amplía la mirada más allá de los dueños.</div>
+        <summary><span class="pill">Aplicar</span>Una minera proyecta una faena junto a una comunidad pequeña, con poca influencia política pero fuertemente afectada. ¿Cómo debería tratarla?</summary>
+        <div class="answer">Aunque en la matriz <span class="key">poder × interés</span> caería en "bajo poder", hay que agregar el <span class="key">impacto</span>. Como el impacto es alto, el <b>juicio ético</b> puede exigir escucharla e involucrarla más de lo que su poder sugeriría. Priorizar no es atender solo al poderoso: implica reconocer intereses legítimos y evaluar impactos, sobre todo en grupos vulnerables.</div>
       </details>
+    </section>
+
+    <hr>
+
+    <!-- ============ CLASE 7 ============ -->
+    <div class="banner"><div class="tag">Clase 7 · 1 octubre · Unidad 4</div><h2>Gobierno y aspectos regulatorios</h2></div>
+
+    <section id="estado-gobierno">
+      <h3 class="first">Estado, Gobierno y reguladores: no son lo mismo</h3>
+      <p>La pregunta de la clase: ¿qué ocurre cuando un stakeholder —el Estado— puede <b>crear reglas, fiscalizar y sancionar</b>? El Estado es un <b>stakeholder particular</b>: habilita, restringe y supervisa la actividad empresarial.</p>
+      <div class="grid three">
+        <div class="card consec"><h4>Estado</h4><p>Estructura <b>permanente</b> que organiza políticamente a la sociedad en un territorio; incluye los poderes (ejecutivo, legislativo, judicial) y órganos autónomos. <b>Existe más allá de quien gobierne.</b></p></div>
+        <div class="card deber"><h4>Gobierno</h4><p>Conjunto de autoridades (Presidente, ministros) que ejercen el poder en un <b>período determinado</b>; lidera la conducción política. Es <b>transitorio</b>.</p></div>
+        <div class="card virtud"><h4>Reguladores / fiscalizadores</h4><p>Órganos con atribuciones <b>específicas</b> para dictar reglas, supervisar o fiscalizar sectores y conductas (ej. CMF, un ministerio, una municipalidad).</p></div>
+      </div>
+      <div class="box trap"><span class="lab">⚠️ Distinción que piden (Gobierno = transitorio · Estado = permanente)</span>
+        El <b>Estado</b> es el stakeholder general; el <b>Gobierno, los reguladores y otros organismos públicos</b> son actores estatales específicos que pueden ser el <b>stakeholder relevante según la decisión</b> analizada. Conecta con la Clase 6: el stakeholder concreto depende del caso.</div>
+      <div class="box global"><span class="lab">🌍 El Estado como stakeholder (4 roles)</span>
+        <b>Restringe</b> (límites: seguridad, competencia, medioambiente, trabajo) · <b>Habilita</b> (infraestructura, reglas estables, permisos, incentivos) · <b>Depende</b> (la actividad empresarial aporta empleo, inversión, impuestos) · <b>Interactúa</b> (empresa y Estado intercambian información e inciden en políticas).</div>
+      <div class="box ex"><span class="lab">📌 El triángulo empresa–Estado–sociedad</span>
+        Empresa → Estado: empleos, inversiones, impuestos. Estado → empresa: marco/reglas, estabilidad, incentivos. Estado → sociedad: regulación, protección, bienes públicos. Sociedad → Estado: legitimidad, demandas, consenso. <b>Desafío ético:</b> equilibrar intereses <b>sin confundir el interés particular con el interés público</b>. El Gobierno tiene una doble responsabilidad: generar condiciones para la actividad económica y proteger el interés público.</div>
+    </section>
+
+    <section id="leyes-regulacion">
+      <h3>Leyes, regulación y formas (hard / soft law)</h3>
+      <div class="grid">
+        <div class="card consec"><h4>Leyes</h4><p>Normas jurídicas <b>generales y obligatorias</b>; fijan un <b>piso mínimo</b>; respaldadas por sanción (tribunales, policías, fiscalizadores); se crean por proceso legislativo (Congreso aprueba + Ejecutivo promulga).</p><p><b>Ej.:</b> Ley 21.521 "Ley Karin" (acoso laboral y sexual); Ley 20.393 (responsabilidad penal de las personas jurídicas).</p></div>
+        <div class="card deber"><h4>Regulación</h4><p>Conjunto de <b>normas, reglas e instrumentos</b> que orientan conductas: leyes, reglamentos, circulares, incentivos, estándares, sanciones, información y control. Puede provenir del Estado <b>o de otros actores</b> (gremios, empresas, sociedad civil).</p></div>
+      </div>
+      <p><b>El continuo hard law ↔ soft law:</b></p>
+      <table>
+        <tr><th></th><th>Hard law / regulation</th><th>Soft law / regulation</th></tr>
+        <tr><td><b>Qué es</b></td><td>Reglas <b>vinculantes</b>; el Estado (o las agencias) las supervisa y hace cumplir.</td><td>Normas <b>no jurídicamente vinculantes</b>; sugieren o facilitan conductas en vez de prescribirlas.</td></tr>
+        <tr><td><b>Mecanismo</b></td><td>Sanciones ("sticks")</td><td>Persuasión y fuerzas del mercado ("carrots")</td></tr>
+        <tr><td><b>Instrumentos</b></td><td>Mando y control (leyes, sentencias) · incentivos económicos (impuestos, permisos, tarifas)</td><td>Cumplir o explicar (códigos, requisitos de información) · incentivos económicos opcionales (subsidios, contratación pública) · instrumentos informativos (campañas, investigación, capacitación)</td></tr>
+      </table>
+      <div class="box trap"><span class="lab">⚠️ Para no confundir</span><b>Hard law obliga</b> y se sanciona jurídicamente; <b>soft law orienta</b> y puede generar presión reputacional o de mercado, pero sin sanción estatal directa. Una empresa puede enfrentar ambas.</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): clasificar como hard o soft law — (a) un impuesto al tabaco, (b) un código de conducta sectorial voluntario, (c) una sentencia judicial, (d) un sello/certificación ambiental.</div>
       <details>
-        <summary><span class="pill">Aplicar</span>Una minera proyecta una faena junto a una comunidad pequeña, con poca influencia política pero fuertemente afectada. ¿Cómo debería tratarla según el análisis de stakeholders?</summary>
-        <div class="answer">Aunque en una matriz <span class="key">poder × interés</span> la comunidad caería en "bajo poder" (tentación de solo informar o monitorear), hay que agregar la tercera pregunta: el <span class="key">impacto</span>. Como el impacto sobre ella es alto, el <b>juicio ético</b> puede exigir escucharla e involucrarla más de lo que su poder sugeriría. Priorizar no es atender solo al más poderoso: implica reconocer intereses legítimos y evaluar impactos, especialmente sobre grupos vulnerables o fuertemente afectados.
-          <div class="rub">Fórmula: concepto correcto (poder/interés/impacto) + evidencia del caso (comunidad afectada, poco poder) + justificación (juicio ético sobre el impacto).</div>
+        <summary><span class="pill">Clasificar</span>Clasifica como hard o soft law: (a) impuesto al tabaco · (b) código voluntario sectorial · (c) sentencia judicial · (d) sello ambiental.</summary>
+        <div class="answer">(a) <b>Hard law</b> — incentivo económico obligatorio (impuesto). (b) <b>Soft law</b> — código voluntario, orienta sin sanción estatal. (c) <b>Hard law</b> — mando y control, vinculante y exigible. (d) <b>Soft law</b> — instrumento informativo/de mercado; presiona por reputación, no por sanción legal.
+          <div class="rub">Criterio: ¿es jurídicamente vinculante y sancionable por el Estado? Sí → hard; no, solo orienta/persuade → soft.</div>
         </div>
       </details>
     </section>
 
+    <section id="influencia-corporativa">
+      <h3>Actividad política corporativa: influir no es corromper</h3>
+      <p>Una empresa puede defender sus intereses e intentar influir en decisiones públicas. <span class="key">El problema ético no es influir, sino CÓMO lo hace.</span> Espectro de la influencia:</p>
+      <div class="pill-row"><b>Transparencia</b><b>→ Lobby regulado</b><b>→ Conflicto de interés</b><b>→ Corrupción</b></div>
+      <p><b>Dos preguntas éticas:</b> ¿la influencia es legítima, transparente y accesible a escrutinio? ¿empresa y autoridades pueden rendir cuentas (accountability) por la relación que establecen?</p>
+      <p><b>Formas de actividad política corporativa:</b></p>
+      <ul>
+        <li><b>Lobby (cabildeo):</b> contactos formales con autoridades para influir en leyes o regulaciones. En Chile lo regula la <b>Ley 20.730 (Ley de Lobby)</b>, que da publicidad a las gestiones de intereses para fortalecer transparencia y probidad.</li>
+        <li><b>Gremios o asociaciones empresariales:</b> presión colectiva para incidir en políticas sectoriales.</li>
+        <li><b>Think tanks y centros de estudio:</b> financiamiento de investigaciones o propuestas de políticas.</li>
+        <li><b>Puertas giratorias (revolving doors):</b> paso de personas entre el sector público y el privado.</li>
+      </ul>
+      <div class="box global"><span class="lab">🌍 La fórmula de la influencia legítima (PARA RECORDAR)</span>
+        <span class="key">Interés declarado + transparencia + evidencia + reglas de acceso + rendición de cuentas.</span> Es decir: declarar quién participa y qué interés representa, presentar datos/argumentos, usar mecanismos formales (lobby regulado, consultas públicas, participación gremial) y someter la relación a escrutinio. <b>El problema aparece</b> cuando se busca un trato especial mediante dinero, favores, relaciones privilegiadas u opacidad.</div>
+      <div class="box ex"><span class="lab">📌 Financiamiento político en Chile</span>
+        Las <b>personas jurídicas NO pueden aportar</b> a campañas electorales; el financiamiento privado está sujeto a reglas, límites, trazabilidad y fiscalización del <b>Servel</b>. Pregunta ética: ¿cómo participar en el debate público <b>sin convertir recursos económicos en privilegio político</b>?</div>
+      <div class="box ex"><span class="lab">📌 Caso de la clase · ¿influencia legítima o problema ético?</span>
+        Una asociación empresarial pide una reunión formal con una autoridad, entrega datos técnicos, propone una implementación gradual y la reunión queda registrada públicamente. <b>Con esa información, la influencia es legítima</b> (interés declarado, transparencia, evidencia, reglas de acceso, registro público). Faltaría saber: si la información es completa/verificable, si hay otros afectados que puedan ser escuchados, si hubo gestiones no declaradas. <b>Cambiaría del todo</b> si apareciera un beneficio privado para la autoridad → posible conflicto de interés o corrupción.</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): una empresa consigue que una autoridad flexibilice una norma tras pagarle un "asesoramiento". ¿Influencia legítima o problema ético? Fundamenta.</div>
+      <details>
+        <summary><span class="pill">Analizar</span>Una empresa logra que una autoridad flexibilice una norma después de pagarle un "asesoramiento" personal. Analiza éticamente.</summary>
+        <div class="answer">Es un <span class="key">problema ético</span>, probablemente <b>corrupción / conflicto de interés</b>. Falla la fórmula de la influencia legítima: hay un <b>beneficio privado</b> para la autoridad y <b>opacidad</b>, no persuasión mediante argumentos ni reglas de acceso transparentes. Aunque influir es legítimo en sí, aquí se busca un <b>trato especial mediante dinero</b>, lo que cruza la línea hacia el uso indebido de poder para una ventaja ilegítima.
+          <div class="rub">Estructura: nombrar el problema (corrupción/conflicto) → por qué falla la fórmula (beneficio privado + opacidad) → contraste con la influencia legítima.</div>
+        </div>
+      </details>
+    </section>
+
+    <section id="corrupcion">
+      <h3>Corrupción, puertas giratorias y privatización</h3>
+      <p><b>Corrupción:</b> uso indebido de poder para obtener una <b>ventaja ilegítima</b>. Puede involucrar soborno, cohecho, extorsión, malversación de fondos, lavado de dinero o fraude. Se conecta con <b>compliance</b> (controles y modelos de prevención, reglas sobre regalos y terceros, canales de denuncia, debida diligencia y trazabilidad).</p>
+      <p>En Chile es un delito del Código Penal; entre otros:</p>
+      <table>
+        <tr><th>Figura</th><th>En qué consiste</th></tr>
+        <tr><td>Cohecho</td><td>Un <b>funcionario público</b> solicita o acepta un beneficio económico para realizar o dejar de realizar un acto de su cargo.</td></tr>
+        <tr><td>Soborno</td><td>Un <b>particular</b> ofrece o da un beneficio económico a un empleado público para que ejecute un acto de su cargo.</td></tr>
+        <tr><td>Violación de secretos</td><td>Un funcionario revela secretos que conoce por su cargo o usa información reservada obteniendo un beneficio.</td></tr>
+      </table>
+      <div class="box trap"><span class="lab">⚠️ Puertas giratorias: no es automáticamente indebido</span>
+        El movimiento entre sector público y privado <b>no es automáticamente indebido</b>. El riesgo aparece cuando información privilegiada, relaciones previas o decisiones públicas generan <b>ventajas particulares</b> o <b>comprometen la imparcialidad</b>.</div>
+      <div class="box ex"><span class="lab">📌 Privatización de funciones del Estado</span>
+        Ocurre cuando el Estado deja que ciertas funciones, servicios o infraestructuras las gestionen actores privados. Puede aportar <b>eficiencia, innovación y mayor cobertura</b>. El <b>dilema ético</b> aparece cuando la búsqueda de rentabilidad entra en tensión con <b>acceso, calidad, precio justo y bienestar social</b>. Requiere especial atención a la transparencia de los contratos, una regulación clara y justa, y mecanismos de acceso.</div>
+      <div class="box global"><span class="lab">🌍 Lo esencial de la Clase 7</span>
+        <b>Regular:</b> el Estado no solo limita, también habilita y ordena mercados. <b>Distinguir:</b> hard law obliga; soft law orienta. <b>Influir:</b> la participación empresarial puede ser legítima si es transparente y responsable. <b>Vigilar:</b> conflictos de interés y corrupción aparecen cuando el interés particular captura o distorsiona la decisión pública.</div>
+    </section>
+
+    <hr>
+
+    <!-- ============ CLASE 8 ============ -->
+    <div class="banner"><div class="tag">Clase 8 · 15 octubre</div><h2>Sociedad civil y activismo (OSC)</h2></div>
+
+    <section id="sociedad-civil">
+      <h3 class="first">La sociedad civil como "tercer sector" y las OSC</h3>
+      <p>Tras ver cómo las empresas influyen en el Estado (Clase 7), hoy se estudia la <b>dirección inversa</b>: cómo la ciudadanía organizada puede modificar las prácticas empresariales.</p>
+      <p>La <b>sociedad civil</b> reúne organizaciones y colectivos que actúan de forma <b>autónoma respecto del Estado y del mercado</b>. Se la llama <b>tercer sector</b> porque busca fines colectivos y <b>no ejerce autoridad pública ni persigue principalmente utilidades</b>.</p>
+      <div class="pill-row"><b>Sector público = Gobierno</b><b>Sector privado = Empresas</b><b>Tercer sector = Sociedad civil</b></div>
+      <p class="key">OSC (organización de la sociedad civil): organización o colectivo que actúa fuera de las estructuras del gobierno y de las empresas para promover causas, intereses u objetivos sociales.</p>
+      <p><b>Tipos:</b> ONG, grupos de presión, organizaciones benéficas, grupos religiosos, sindicatos, asociaciones comunitarias. <b>Ejemplos:</b> Fundación Teletón (alianza sociedad civil–empresas–Estado), Greenpeace (ONG ambiental que presiona a gobiernos y empresas), juntas de vecinos (intereses locales).</p>
+      <div class="box ex"><span class="lab">📌 Las OSC como stakeholders: representación indirecta</span>
+        <b>Representan personas:</b> comunidades, consumidores o trabajadores afectados, aunque no negocien directamente con la empresa. <b>Representan intereses no humanos:</b> dan voz a ecosistemas o especies (ej. una ONG que cuestiona la contaminación de un río). <b>Criterio de análisis:</b> no basta con declararse representante — hay que examinar a quiénes defiende, su vínculo con el impacto, su legitimidad y la evidencia que aporta.</div>
+      <div class="box global"><span class="lab">🌍 Dato de la clase (Edelman Trust Barometer 2024)</span>Según el Edelman Trust Barometer 2024, las personas <b>confían en las ONG como organizaciones éticas</b>. Esto eleva el valor de las OSC en la representación de intereses y las sitúa en una posición cada vez más relevante en la interacción entre las empresas y la sociedad.</div>
+      <div class="box global"><span class="lab">🌍 Licencia social para operar (concepto clave y trampa)</span>
+        Es la <b>aprobación y aceptación social amplia</b> de una actividad empresarial, más allá de los permisos formales. Las OSC hacen visibles impactos y movilizan la opinión pública. <b>Distinción importante:</b> <span class="key">permiso legal ≠ licencia social</span> — una empresa puede tener todas las autorizaciones y aun así enfrentar oposición de la comunidad.</div>
+      <p><b>Cuatro funciones de la sociedad civil:</b></p>
+      <div class="grid">
+        <div class="card"><h4>Representación</h4><p>Articulan necesidades de personas/comunidades sin acceso directo a las decisiones.</p></div>
+        <div class="card"><h4>Vigilancia y accountability</h4><p>Investigan, hacen públicos impactos y exigen explicaciones: la rendición de cuentas también se exige a privados.</p></div>
+        <div class="card"><h4>Propuestas y colaboración</h4><p>Elaboran propuestas, aportan conocimiento técnico y construyen soluciones con empresas o autoridades.</p></div>
+        <div class="card"><h4>Solidaridad y acción directa</h4><p>Ejecutan programas, prestan servicios o movilizan voluntarios para necesidades no cubiertas.</p></div>
+      </div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): una planta tiene todos los permisos ambientales, pero vecinos y una OSC organizan una campaña. ¿Puede decir que tiene licencia social? ¿Qué debería analizar?</div>
+      <details>
+        <summary><span class="pill">Aplicar</span>Una planta obtiene todos los permisos ambientales exigidos, pero vecinos y una OSC cuestionan sus impactos y organizan una campaña. ¿Tiene licencia social?</summary>
+        <div class="answer">No. Los permisos acreditan el <b>cumplimiento de exigencias legales</b>; la <span class="key">licencia social</span> depende de la <b>aceptación y la confianza</b> de la comunidad. Tener permisos no equivale a tener licencia social. La empresa debería <b>escuchar las preocupaciones, verificar los impactos, dialogar y justificar sus decisiones</b>.
+          <div class="rub">Clave: distinguir permiso legal de licencia social + proponer qué hacer (escuchar, verificar, dialogar).</div>
+        </div>
+      </details>
+    </section>
+
+    <section id="osc-influencia">
+      <h3>Cómo influyen las OSC: tácticas y boicot</h3>
+      <p>Una OSC puede posicionarse frente a una empresa con <b>declaraciones</b> (apoyar o rechazar públicamente), <b>campañas</b> (mensajes + datos + movilización) y <b>acciones dirigidas</b> (boicot, protestas, presión sobre inversionistas).</p>
+      <p><b>Tres tipos de tácticas de influencia:</b></p>
+      <div class="grid three">
+        <div class="card consec"><h4>Acción indirecta</h4><p>Influencia mediada por información o terceros: publicar una investigación para que consumidores y autoridades exijan cambios.</p></div>
+        <div class="card deber"><h4>Directa no violenta</h4><p>Presión visible sin agresión: una marcha pacífica o un <b>boicot</b> para modificar decisiones y generar costos reputacionales o comerciales.</p></div>
+        <div class="card danger"><h4>Directa violenta</h4><p>Agresiones o daños para presionar. A menudo <b>ilegal</b>, compromete derechos de terceros y tiende a generar la mayor publicidad.</p></div>
+      </div>
+      <div class="box ex"><span class="lab">📌 Boicot: presión a través del mercado</span>
+        Llamado organizado a <b>dejar de comprar</b> hasta que la empresa modifique una práctica. Puede ser eficaz porque afecta ventas, reputación y relaciones comerciales: transforma el poder de compra en presión colectiva. <b>Para evaluarlo éticamente:</b> evidencia, finalidad, proporcionalidad, efectos sobre los trabajadores y posibilidad de diálogo.</div>
+      <div class="box trap"><span class="lab">⚠️ La pregunta ética clave de la Clase 8</span>
+        <span class="key">La legitimidad no depende solo de la causa.</span> Aunque el fin sea bueno, hay que evaluar la <b>veracidad de los antecedentes</b>, la <b>proporcionalidad de los medios</b>, el <b>respeto a los derechos de terceros</b>, la <b>transparencia</b> y la <b>rendición de cuentas</b>. La legitimidad del fin no exime de evaluar los medios.</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): una organización publica datos de contaminación, luego convoca a una marcha pacífica y propone dejar de comprar a la empresa un mes. Clasifica cada acción y di qué criterio ético aplicarías.</div>
+      <details>
+        <summary><span class="pill">Clasificar</span>Una organización publica datos de contaminación, convoca a una marcha pacífica y propone un boicot de un mes. Clasifica las acciones y evalúa.</summary>
+        <div class="answer">Publicar datos = <span class="key">acción indirecta</span> (influencia mediada por información). Marcha pacífica y boicot = <span class="key">acciones directas no violentas</span>. <b>Evaluación ética:</b> veracidad de los datos, proporcionalidad, respeto a derechos, transparencia y efectos sobre terceros (p. ej. trabajadores). La causa ambiental puede ser legítima, pero igual deben evaluarse los medios.</div>
+      </details>
+    </section>
+
+    <section id="colaboracion-osc">
+      <h3>De la confrontación a la colaboración (y sus riesgos)</h3>
+      <p>La relación empresa–OSC va desde el conflicto hasta la alianza. La <b>ciudadanía corporativa</b> entiende que las empresas, además de producir, participan en la vida social y tienen responsabilidades ante problemas colectivos; una forma de ejercerla es el involucramiento con OSC.</p>
+      <div class="grid three">
+        <div class="card danger"><h4>Confrontación</h4><p>La OSC denuncia impactos, cuestiona decisiones o moviliza a otros. Puede coexistir con el diálogo.</p></div>
+        <div class="card deber"><h4>Filantropía y voluntariado</h4><p>La empresa aporta dinero, bienes o tiempo (fundaciones corporativas, voluntariado). Relación <b>unilateral</b>: no necesariamente cambia sus prácticas.</p></div>
+        <div class="card consec"><h4>Alianzas (social partnerships)</h4><p>Ambas partes definen objetivos, aportan capacidades y <b>comparten decisiones</b>. Exige acuerdos claros, seguimiento e independencia.</p></div>
+      </div>
+      <p><b>¿Por qué colaboran?</b> Las empresas buscan conocimiento de problemas sociales, legitimidad, diálogo con afectados, soluciones y reputación. Las OSC buscan recursos, redes, capacidad de ejecución y transformar prácticas desde dentro. <b>Advertencia:</b> una alianza no es automáticamente positiva.</p>
+      <div class="box trap"><span class="lab">⚠️ Riesgos éticos de las alianzas</span>
+        <b>Objetivos distintos</b> (la empresa prioriza rentabilidad; la OSC, impacto social → el acuerdo debe explicitarlo). <b>Asimetría de poder</b> (quien financia puede imponer temas, limitar críticas o condicionar la participación de comunidades). <b>Independencia y reputación</b> (riesgo de <b>greenwashing</b> o de perder credibilidad si la alianza encubre problemas) → se necesita transparencia, indicadores e independencia para cuestionar.</div>
+      <div class="box global"><span class="lab">🌍 Las OSC también deben rendir cuentas</span>
+        No solo la empresa: una OSC debe explicar <b>a quién representa</b> y por qué está legitimada (legitimidad/representatividad), informar sus <b>fuentes de financiamiento</b> y conflictos de interés (independencia), y <b>fundamentar sus denuncias</b> con información verificable, reconocer errores y rendir cuentas de recursos y resultados (transparencia/accountability).</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): una empresa ofrece financiar a una OSC ambiental con la condición de que no critique sus operaciones por dos años. ¿Colaboración o dependencia? ¿Qué riesgo aparece?</div>
+      <details>
+        <summary><span class="pill">Evaluar</span>Una empresa ofrece financiar a una OSC ambiental a condición de que no critique públicamente sus operaciones durante dos años. ¿Colaboración o dependencia?</summary>
+        <div class="answer">Es <span class="key">dependencia</span>, no una alianza legítima: el aporte condiciona la <b>autonomía</b> y compromete la <b>independencia</b> de la OSC (asimetría de poder; riesgo de greenwashing). <b>La alianza no debe comprar silencio.</b> Deberían existir condiciones transparentes, libertad de evaluación crítica y mecanismos de rendición de cuentas.
+          <div class="rub">Nombrar el riesgo (asimetría/independencia) + por qué (condiciona la crítica) + alternativa (transparencia + libertad de evaluación).</div>
+        </div>
+      </details>
+    </section>
+
+    <section id="empresa-social">
+      <h3>OSC, empresa social y empresa tradicional + regulación civil</h3>
+      <p>El uso de mecanismos de mercado para problemas sociales dio origen a dos estrategias: <b>venture philanthropy / filantrocapitalismo</b> (aplicar métodos empresariales —planificación, metas, medición— a la filantropía) y la <b>empresa social</b>.</p>
+      <p class="key">Empresa social: vende productos o servicios para sostener una actividad cuyo propósito incluye resolver un problema social o ambiental. Tener ingresos no elimina su misión social: es rentable y a la vez genera impacto positivo.</p>
+      <table>
+        <tr><th></th><th>Empresa social</th><th>OSC</th><th>Empresa tradicional</th></tr>
+        <tr><td><b>Objetivo</b></td><td>Valor social <b>y</b> económico</td><td>Valor social</td><td>Valor económico</td></tr>
+        <tr><td><b>Ganancias</b></td><td>Las genera, con <b>límites a su distribución</b></td><td>Sin fines de lucro</td><td>Maximización de ganancias</td></tr>
+        <tr><td><b>Fondos</b></td><td>Autofinanciación (al menos parcial)</td><td>Subvenciones, donaciones, cuotas</td><td>Autofinanciación</td></tr>
+        <tr><td><b>Gobernanza</b></td><td>Participación entre stakeholders</td><td>Participación entre stakeholders</td><td>Rendición de cuentas a los proveedores de capital</td></tr>
+      </table>
+      <div class="box trap"><span class="lab">⚠️ Clasificar por los hechos, no por el nombre</span>
+        La diferencia no es solo "ganar dinero o no": importa el <b>propósito predominante</b>, cómo se financia, cómo se decide y qué se hace con los excedentes. Una "fundación" que opera como negocio puede ser empresa social, y un "negocio verde" sin misión real es empresa tradicional.</div>
+      <div class="box ex"><span class="lab">📌 Las OSC también influyen en la regulación</span>
+        <b>Regulación civil (civil regulation):</b> las OSC promueven compromisos y estándares que influyen en las empresas sin convertirse en leyes. <b>Gobernanza global:</b> redes internacionales fijan criterios comunes cuando los problemas superan fronteras. Va de instrumentos formalizados (Pacto Mundial, ISO) a campañas informales (ej. <b>#MeToo</b>, que cambió políticas internas sin producir una ley). <b>Conexión:</b> la ley obliga jurídicamente; los compromisos voluntarios y la presión social influyen sin sanción estatal directa — una empresa puede enfrentar ambas exigencias.</div>
+      <div class="warmup">Ejercicio (antes de ver la respuesta): clasifica — (A) fundación financiada por donaciones que apoya a personas vulnerables; (B) negocio que vende productos y destina su modelo a resolver un problema social; (C) empresa comercial orientada a rentabilidad.</div>
+      <details>
+        <summary><span class="pill">Distinguir</span>Clasifica: (A) fundación por donaciones que apoya a vulnerables · (B) negocio que vende y resuelve un problema social · (C) empresa comercial orientada a rentabilidad. Justifica con objetivo y financiamiento.</summary>
+        <div class="answer">(A) <b>OSC</b> — propósito social y financiamiento por donaciones. (B) <b>Empresa social</b> — combina actividad comercial con propósito social explícito. (C) <b>Empresa tradicional</b> — prioridad económica. La clasificación exige mirar los <b>hechos</b> (objetivo + financiamiento + qué se hace con los excedentes), <b>no el nombre</b>.</div>
+      </details>
+    </section>
+
+    <hr>
+
     <!-- ============ GLOSARIO ============ -->
-    <div class="banner" id="glosario"><div class="tag">Cierre</div><h2>Glosario exprés</h2></div>
-    <p>Definiciones de una línea, listas para escribir. <span class="ext">⧉</span> marca definiciones condensadas o parafraseadas por espacio; el sentido proviene de las slides.</p>
+    <div class="banner" id="glosario"><div class="tag">Cierre</div><h2>Glosario exprés · Certamen 2</h2></div>
+    <p>Definiciones de una línea, listas para escribir.</p>
     <table>
       <tr><th>Concepto</th><th>Definición</th></tr>
-      <tr><td>Moral</td><td>Normas, valores y creencias sociales que definen lo bueno/malo; subjetiva, varía según cultura y época.</td></tr>
-      <tr><td>Ética</td><td>Estudio de la moral y aplicación de la razón para dilucidar reglas/principios (teorías éticas) sobre lo correcto.</td></tr>
-      <tr><td>Ética empresarial</td><td>Estudio de decisiones comerciales de lo correcto/incorrecto; entrega principios que guían la toma de decisiones.</td></tr>
-      <tr><td>Ley vs ética</td><td>La ley es el mínimo obligatorio; la ética propone ideales más altos (justicia, responsabilidad, efectos).</td></tr>
-      <tr><td>Sostenibilidad</td><td>Mantenimiento a largo plazo según lo ambiental, económico y social (triple bottom line de Elkington).</td></tr>
-      <tr><td>Persona jurídica</td><td>Estatus legal de la empresa: existe y actúa en su propio nombre, independiente de sus accionistas.</td></tr>
-      <tr><td>Responsabilidad fiduciaria</td><td>Deber de gerentes/directores de proteger la inversión de los accionistas. <span class="ext">⧉</span></td></tr>
-      <tr><td>Teoría de accionistas (Friedman)</td><td>La responsabilidad social de la empresa es aumentar sus beneficios (3 argumentos: moral, agencia, competencia).</td></tr>
-      <tr><td>Stakeholder (Freeman)</td><td>Cualquier grupo o individuo que pueda afectar o ser afectado por el logro de los objetivos de la organización.</td></tr>
-      <tr><td>Principio de derechos corporativos</td><td>La corporación debe no violar los derechos de los demás.</td></tr>
-      <tr><td>Principio del efecto corporativo</td><td>La empresa es responsable de los efectos de sus acciones sobre los demás, aun sin contrato directo.</td></tr>
-      <tr><td>RSE</td><td>Intento de la empresa de satisfacer demandas económicas, legales, éticas y filantrópicas de la sociedad.</td></tr>
-      <tr><td>Ciudadanía empresarial</td><td>La empresa como actor "político" que asume roles antes estatales en los derechos de los ciudadanos.</td></tr>
-      <tr><td>Accountability</td><td>Necesidad de que la empresa rinda cuentas por las consecuencias de sus acciones.</td></tr>
-      <tr><td>Transparencia</td><td>Grado en que decisiones, políticas, actividades e impactos son visibles para los stakeholders.</td></tr>
-      <tr><td>Utilitarismo</td><td>Consecuencialista: maximizar beneficios y minimizar daños para el conjunto (Bentham).</td></tr>
-      <tr><td>Ética del deber</td><td>Deontología: principios vinculantes independientes del resultado; imperativo categórico (Kant).</td></tr>
-      <tr><td>Ética de la virtud</td><td>Foco en el carácter e integridad; actos→hábitos→carácter (Aristóteles).</td></tr>
-      <tr><td>Racionalización</td><td>Explicación que hace parecer aceptable una conducta cuestionable (altruismo egoísta, Robin Hood, difusión de responsabilidad).</td></tr>
-      <tr><td>Enfoque integrado</td><td>Intervenir sobre persona (valores) y contexto (estructura) con coherencia entre lo que se dice y lo que se incentiva.</td></tr>
+      <tr><td>Programa de ética y compliance</td><td>Sistema para prevenir, detectar/responder, cumplir, crear cultura y alinear con stakeholders.</td></tr>
+      <tr><td>Denuncia protegida (whistleblowing)</td><td>Canal para informar irregularidades: accesible, protegido, confiable y trazable.</td></tr>
+      <tr><td>Métrica de efectividad</td><td>Mide si cambió la conducta (no solo la actividad, como % capacitado).</td></tr>
+      <tr><td>Stakeholder (Freeman)</td><td>Grupo o individuo que puede afectar o verse afectado por la actividad empresarial.</td></tr>
+      <tr><td>Matriz poder × interés</td><td>Ubica a los stakeholders para definir la estrategia (involucrar/satisfacer/informar/monitorear).</td></tr>
+      <tr><td>Estado</td><td>Estructura política permanente de un territorio; stakeholder general.</td></tr>
+      <tr><td>Gobierno</td><td>Autoridades que ejercen el poder por un período; transitorio.</td></tr>
+      <tr><td>Reguladores / fiscalizadores</td><td>Órganos con atribuciones específicas para dictar reglas y fiscalizar.</td></tr>
+      <tr><td>Ley</td><td>Norma jurídica general y obligatoria; piso mínimo respaldado por sanción.</td></tr>
+      <tr><td>Regulación</td><td>Conjunto de instrumentos (leyes, incentivos, estándares, info) que orientan conductas.</td></tr>
+      <tr><td>Hard law</td><td>Reglas vinculantes que el Estado hace cumplir (sanciones / "sticks").</td></tr>
+      <tr><td>Soft law</td><td>Normas no vinculantes que orientan o sugieren (persuasión / "carrots").</td></tr>
+      <tr><td>Actividad política corporativa</td><td>Intento de la empresa de influir en decisiones públicas (lobby, gremios, think tanks, puertas giratorias).</td></tr>
+      <tr><td>Lobby (Ley 20.730)</td><td>Gestión remunerada para influir en autoridades; regulada para dar transparencia y probidad.</td></tr>
+      <tr><td>Conflicto de interés</td><td>Cuando un interés particular puede comprometer la imparcialidad de una decisión.</td></tr>
+      <tr><td>Corrupción</td><td>Uso indebido de poder para una ventaja ilegítima (cohecho, soborno, etc.).</td></tr>
+      <tr><td>Privatización</td><td>El Estado delega funciones/servicios a privados; dilema entre rentabilidad y acceso/calidad/bienestar.</td></tr>
+      <tr><td>Sociedad civil (tercer sector)</td><td>Organizaciones autónomas del Estado y el mercado, con fines colectivos, sin fin de lucro principal.</td></tr>
+      <tr><td>OSC</td><td>Colectivo fuera del gobierno y las empresas que promueve causas sociales.</td></tr>
+      <tr><td>Licencia social para operar</td><td>Aceptación social amplia de una actividad, más allá de los permisos formales.</td></tr>
+      <tr><td>Boicot</td><td>Llamado organizado a no comprar hasta que la empresa cambie una práctica.</td></tr>
+      <tr><td>Empresa social</td><td>Vende bienes/servicios con propósito social explícito; rentable + misión.</td></tr>
+      <tr><td>Regulación civil (civil regulation)</td><td>Estándares impulsados por la sociedad civil que influyen sin ser ley.</td></tr>
+      <tr><td>Greenwashing</td><td>Aparentar compromiso ambiental/social encubriendo problemas; riesgo en alianzas.</td></tr>
     </table>
 
     <!-- ============ SIMULACRO ============ -->
-    <div class="banner" id="simulacro"><div class="tag">Cierre</div><h2>Simulacro final</h2></div>
-    <p>Cinco preguntas al estilo del certamen, una por tema. Se recomienda redactar la respuesta completa antes de abrir la pauta, con las tres capas (posición → teoría → caso): esa es la habilidad que se evalúa.</p>
+    <div class="banner" id="simulacro"><div class="tag">Cierre</div><h2>Simulacro tipo certamen (desarrollo)</h2></div>
+    <p>Cinco preguntas de desarrollo al estilo del certamen, orientadas a aplicar conceptos a casos. Se recomienda redactar la respuesta completa antes de abrir la pauta: <b>concepto + evidencia del caso + justificación</b>.</p>
 
     <details>
-      <summary><span class="pill">Tema 1</span>"En esta industria siempre se han redondeado los gastos a favor de la empresa." ¿Es un argumento moral o ético? Diferenciar ambos conceptos.</summary>
-      <div class="answer">Es un argumento <b>moral</b> (lo que "se hace", norma heredada y no cuestionada). La <b>moral</b> son normas/valores sociales, subjetivos y variables; la <b>ética</b> es la reflexión razonada que evalúa si esas normas son correctas, justas o legítimas. El argumento no pasa por la ética porque no se pregunta si esa práctica <i>debería</i> hacerse, solo constata que se hace.</div>
+      <summary><span class="pill">Clase 5</span>Una empresa dice tener "una cultura ética sólida" porque el 100% firmó el código y completó la capacitación anual. Sin embargo, hay temor a denunciar. Evalúa críticamente esa afirmación.</summary>
+      <div class="answer">La afirmación confunde <span class="key">existencia con efectividad</span>. Firmar el código y completar la capacitación son <b>métricas de actividad</b>: miden participación, no conducta. El <b>temor a denunciar</b> indica que el canal no es efectivo y que la cultura no es ética, por más elementos formales que existan. Una evaluación seria usaría <b>métricas de efectividad</b> (confianza en el canal, detección y corrección de problemas) y revisaría el liderazgo y los incentivos. Conclusión: tiene elementos formales, pero su implementación y contexto reducen la efectividad.</div>
     </details>
     <details>
-      <summary><span class="pill">Tema 2</span>Una minera cumple toda la normativa ambiental vigente, pero su faena degrada un ecosistema local. ¿Basta con ser legal para ser ética?</summary>
-      <div class="answer">No. La ley es el <b>mínimo obligatorio</b>; la ética propone <b>estándares más altos</b> y evalúa justicia, responsabilidad y <b>efectos</b> sobre las personas y el entorno. Cumplir la normativa no exime a la empresa de los <b>impactos</b> que genera (principio del efecto corporativo): una decisión legal y rentable puede ser no ética si daña a terceros o contradice sus valores.</div>
+      <summary><span class="pill">Clase 6/7</span>Una constructora planea una obra que afecta a una pequeña comunidad y debe tramitar permisos ante una municipalidad. Identifica a los stakeholders estatales y explica cómo priorizar a la comunidad.</summary>
+      <div class="answer">El <b>Estado</b> es el stakeholder general, pero el <b>stakeholder concreto</b> es la <b>municipalidad</b> (y el regulador ambiental): un actor estatal específico según la decisión. La comunidad tendría <b>bajo poder</b> en una matriz poder × interés, pero <b>alto impacto</b>; por eso, agregando la tercera pregunta (<span class="key">impacto</span>), el juicio ético exige escucharla e involucrarla, no solo informarla. La empresa debe reconocer intereses legítimos, evaluar impactos y mantener diálogo.</div>
     </details>
     <details>
-      <summary><span class="pill">Tema 3</span>Un hospital con recursos limitados debe asignar un equipo escaso. Explicar cómo lo abordaría el utilitarismo y una crítica.</summary>
-      <div class="answer">El utilitarismo (consecuencialista) elegiría la opción que <b>maximice el beneficio y minimice el daño para el conjunto</b>: identificar afectados, anticipar y comparar consecuencias, y elegir el mejor resultado global. <b>Crítica:</b> puede <b>sacrificar los derechos de una minoría</b> por la mayoría, y no siempre se pueden anticipar todas las consecuencias — ahí la ética del deber objetaría vulnerar derechos individuales.</div>
+      <summary><span class="pill">Clase 7</span>Una empresa afectada por una nueva norma contrata a un ex regulador y, por su intermedio, consigue reuniones privadas no registradas para flexibilizarla. Analiza la legitimidad de esta influencia.</summary>
+      <div class="answer">La influencia <b>no es legítima</b>. Aunque influir y defender intereses es válido, aquí fallan varios elementos de la fórmula (<span class="key">interés declarado + transparencia + evidencia + reglas de acceso + rendición de cuentas</span>): las reuniones son <b>privadas y no registradas</b> (opacidad, fuera del lobby regulado), y la <b>puerta giratoria</b> aporta relaciones e información privilegiada que pueden comprometer la imparcialidad (conflicto de interés). Sería legítimo con una solicitud formal registrada, datos técnicos y escrutinio público.</div>
     </details>
     <details>
-      <summary><span class="pill">Tema 4</span>Diferenciar RSE y ciudadanía empresarial, y explicar por qué a una empresa le conviene la RSE.</summary>
-      <div class="answer"><b>RSE</b>: la empresa integra voluntariamente lo económico, social, ambiental y ético, haciéndose cargo de sus impactos sobre los stakeholders. <b>Ciudadanía empresarial</b>: la empresa como actor <b>político</b> que asume roles antes estatales en los derechos civiles, sociales y políticos. <b>Por qué conviene (business case):</b> atrae talento, fideliza clientes, anticipa la regulación y ahorra al prevenir conflictos; además hay razones morales (usar el poder responsablemente, todo genera impacto, empresa y sociedad son mutuamente dependientes).</div>
+      <summary><span class="pill">Clase 8</span>Una ONG publica un informe verificable sobre contaminación de una empresa y llama a un boicot, pero no revela que la financia una empresa competidora. Evalúa la situación.</summary>
+      <div class="answer">Hay aspectos <b>positivos</b> (la <b>evidencia es verificable</b>; publicar datos es acción indirecta legítima) y un <b>problema</b>: la <b>falta de transparencia sobre el financiamiento</b> crea un posible <b>conflicto de interés</b> y afecta su credibilidad. La legitimidad de la causa <b>no exime</b> de evaluar los medios ni la independencia. La OSC debería <b>revelar sus vínculos</b> y explicar sus mecanismos de independencia; el boicot, además, debe evaluarse por proporcionalidad y efectos sobre terceros.</div>
     </details>
     <details>
-      <summary><span class="pill">Tema 5</span>Una empresa detecta que sus vendedores exageran resultados por la presión de metas. Proponer cómo reducir esa deshonestidad.</summary>
-      <div class="answer">Con los <b>tres enfoques</b>: <b>valores</b> (formación ética, código, liderazgo con el ejemplo) para fortalecer a la persona; <b>estructura</b> (revisar el incentivo que premia la exageración, ajustar metas, controles y supervisión) para corregir el contexto; y <b>enfoque integrado</b>, que combina ambos buscando <b>coherencia</b> entre lo que la empresa dice esperar y lo que realmente incentiva. Un enfoque solo falla: los valores no bastan si el bono premia mentir, y los controles no bastan sin comprensión del sentido de la conducta esperada.</div>
+      <summary><span class="pill">Integradora</span>Una minera tiene todos los permisos (Clase 7), pero una OSC y la comunidad organizan campañas (Clase 8). La empresa propone financiar a la OSC si deja de criticarla. Integra los conceptos.</summary>
+      <div class="answer">Tener <b>permisos legales</b> no da <span class="key">licencia social</span>: la aceptación depende de la comunidad. La campaña de la OSC es una táctica de influencia legítima (acción indirecta/directa no violenta) si usa evidencia y medios proporcionales. La oferta de <b>financiar a cambio de silencio</b> es <b>dependencia</b>, no alianza: compromete la independencia de la OSC y roza el <b>greenwashing</b>. Lo correcto: la empresa escucha, verifica impactos y dialoga; cualquier colaboración debe ser transparente, con libertad de crítica y rendición de cuentas de ambas partes.</div>
     </details>
 
     <div class="footer">
-      <p><b>Ética de los Negocios · Sección 4 · Prof. Tatiana Montes · UDD.</b> Guía de estudio del curso (Clases 1–6). Elaborada a partir de las slides del curso y las pautas de corrección (Control 1, Tarea 2 y corrección del Certamen 1). Las secciones marcadas <span class="ext">⧉ Externo</span> son aclaraciones externas; todo lo demás proviene del material del curso. Los "temas más probables" provienen de un certamen de otra sección (referencia, no garantía).</p>
+      <p><b>Ética de los Negocios · Sección 4 · Prof. Tatiana Montes · UDD.</b> Guía de estudio para el Certamen 2 (Clases 5–8: ética y compliance, stakeholders, gobierno y regulación, sociedad civil y activismo). Elaborada a partir de las slides del curso. Las secciones marcadas <span class="ext">⧉ Externo</span> son aclaraciones externas; todo lo demás proviene del material del curso.</p>
     </div>
   </main>
 </div>
