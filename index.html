@@ -1857,26 +1857,44 @@ document.getElementById('dlHtml').href=SUM_HTML;
       out.innerHTML=h;return;
     }
     if(g.ex!==undefined&&g.ex<30){h+='<div class="verdict no">Examen bajo 3,0: <b>reprueba</b> el curso sin importar el resto. Nota final = nota del examen ('+fmt(g.ex)+').</div>';out.innerHTML=h;return;}
-    // mínimo parejo
-    let min=null;for(let x=10;x<=70;x++){const gg=Object.assign({},g);pend.forEach(k=>gg[k]=x);if(ok(gg,target)){min=x;break;}}
-    if(min===null){h+='<div class="verdict no">Con lo ingresado no se alcanza la meta '+fmt2(target/100)+' ni con 7,0 en todo lo pendiente.</div>';}
-    else{const lbl=pend.map(k=>NAMES[k]).join(', ');h+='<div class="verdict '+(min<=55?'ok':'warn')+'">Para llegar a <b>'+fmt2(target/100)+'</b> basta un <b>'+fmt(min)+'</b> parejo en lo pendiente ('+lbl+').'+(pend.includes('ex')&&min<30?' El examen igual debe ser al menos 3,0.':'')+'</div>';}
+    // mínimo parejo: lo pendiente con la misma nota; el examen nunca bajo 3,0
+    const fill=(x)=>{const gg=Object.assign({},g);pend.forEach(k=>gg[k]=(k==='ex'?Math.max(x,30):x));return gg;};
+    const fin=(gg)=>F4(gg)/4000;
+    const rnd=(gg)=>Math.floor((F4(gg)+200)/400);
+    let min=null;for(let x=10;x<=70;x++){if(ok(fill(x),target)){min=x;break;}}
+    const lbl=pend.map(k=>NAMES[k]).join(', ');
+    const exNote=pend.includes('ex')&&pend.length>1?'; el examen, como mínimo 3,0':'';
+    if(min===null){h+='<div class="verdict no">Con lo ingresado no se alcanza la meta '+fmt2(target/100)+' ni con 7,0 en todo lo pendiente ('+lbl+').</div>';}
+    else if(min===10||(pend.length===1&&pend[0]==='ex'&&min===30)){h+='<div class="verdict ok">La meta <b>'+fmt2(target/100)+'</b> ya está asegurada con el mínimo posible en lo pendiente ('+lbl+')'+(pend.includes('ex')?'; solo falta no bajar de 3,0 en el examen':'')+'.</div>';}
+    else{h+='<div class="verdict '+(min<=55?'ok':'warn')+'">Para llegar a <b>'+fmt2(target/100)+'</b> se necesita un <b>'+fmt(min)+'</b> parejo en lo pendiente ('+lbl+exNote+').</div>';}
     out.innerHTML=h;
-    // escenarios
-    if(pend.length>=2&&pend.length<=3&&min!==null){
+    // tabla: promedio final según la nota pareja en lo pendiente (siempre visible)
+    const lo=pend.includes('ex')?30:10;
+    let xs=[];for(let x=lo;x<=70;x+=5)xs.push(x);
+    if(min!==null&&!xs.includes(min)&&min>=lo)xs.push(min);
+    xs.sort((p,q)=>p-q);
+    let t='<h3 style="margin:0 0 8px">Nota final según lo que salga en lo pendiente</h3><div class="tbl-wrap"><table id="scenEven"><tr><th>'+(pend.length===1?NAMES[pend[0]]:'Nota pareja en '+lbl)+'</th><th>Nota final</th><th>Redondeada</th><th>Meta '+fmt2(target/100)+'</th></tr>';
+    xs.forEach(x=>{const gg=fill(x);const f=fin(gg),r=rnd(gg),m=ok(gg,target);const hl=x===min?' style="background:var(--green-bg)"':'';
+      t+='<tr'+hl+'><td><b>'+fmt(x)+'</b>'+(x===min?' · mínimo':'')+'</td><td>'+String(+f.toFixed(3)).replace('.',',')+'</td><td>'+fmt(r)+'</td><td>'+(m?'✔':'—')+'</td></tr>';});
+    t+='</table></div>';
+    if(pend.includes('ex'))t+='<p class="mini">Examen bajo 3,0 = reprobación, sin importar la nota final: por eso la tabla parte en 3,0.</p>';
+    // combinaciones "justo suficientes" con 2–3 pendientes
+    if(pend.length>=2&&pend.length<=3&&min!==null&&min>lo){
       const grid=[];for(let x=30;x<=69;x++)grid.push(x);
       let rows=[];
       const rec=(i,cur)=>{if(i===pend.length){const gg=Object.assign({},g);pend.forEach((k,j)=>gg[k]=cur[j]);if(!ok(gg,target))return;for(let j=0;j<cur.length;j++){if(cur[j]>30){const g2=Object.assign({},gg);g2[pend[j]]=cur[j]-1;if(ok(g2,target))return;}}rows.push(cur.slice());return;}for(const x of grid){cur.push(x);rec(i+1,cur);cur.pop();}};
       rec(0,[]);
       const lim=r=>r.filter(x=>x<40).length<=1&&r.filter(x=>x>=60).length<=1;
       let note='';let good=rows.filter(lim);if(!good.length){good=rows;note='<p class="mini">Ninguna combinación cumple "como máximo una nota en los 3 y una en los 6"; se muestran igual.</p>';}
-      good.sort((a,b)=>(Math.max(...a)-Math.min(...a))-(Math.max(...b)-Math.min(...b)));
+      good.sort((p,q)=>(Math.max(...p)-Math.min(...p))-(Math.max(...q)-Math.min(...q)));
       const pick=[];const n=Math.min(12,good.length);for(let i=0;i<n;i++){pick.push(good[Math.floor(i*good.length/n)]);}
-      let t='<h3 style="margin:0 0 8px">Escenarios "justo suficientes" para '+fmt2(target/100)+'</h3><div class="tbl-wrap"><table id="scen"><tr>'+pend.map(k=>'<th>'+NAMES[k]+'</th>').join('')+'</tr>';
-      pick.forEach(r=>{t+='<tr>'+r.map(x=>'<td>'+fmt(x)+'</td>').join('')+'</tr>';});
-      t+='</table></div><p class="mini">Cada fila alcanza la meta y bajar cualquier nota en 0,1 ya no alcanza. Rango 3,0–6,9.</p>'+note;
-      sw.innerHTML=t;
+      if(pick.length){
+        t+='<h3 style="margin:18px 0 8px">Combinaciones "justo suficientes" para '+fmt2(target/100)+'</h3><div class="tbl-wrap"><table id="scen"><tr>'+pend.map(k=>'<th>'+NAMES[k]+'</th>').join('')+'<th>Nota final</th></tr>';
+        pick.forEach(r=>{const gg=Object.assign({},g);pend.forEach((k,j)=>gg[k]=r[j]);t+='<tr>'+r.map(x=>'<td>'+fmt(x)+'</td>').join('')+'<td>'+String(+fin(gg).toFixed(3)).replace('.',',')+'</td></tr>';});
+        t+='</table></div><p class="mini">Cada fila alcanza la meta y bajar cualquier nota en 0,1 ya no alcanza. Rango 3,0–6,9.</p>'+note;
+      }
     }
+    sw.innerHTML=t;
   }
   KEYS.forEach(k=>inputs[k].addEventListener('input',calc));
   document.querySelectorAll('.tchip[data-t]').forEach(c=>c.addEventListener('click',()=>{document.querySelectorAll('.tchip').forEach(x=>x.classList.remove('on'));c.classList.add('on');target=Math.round(parseFloat(c.dataset.t)*100);document.getElementById('tcIn').value='';calc();}));
